@@ -1,8 +1,20 @@
 # Learned technologies/libraries/approaches
 - [X] Spring
+  - [X] Spring MVC
+  - [X] Spring forms/tags
+  - [X] Spring-context
+  - [X] Logging
+  - [X] @Controller
+  - [X] @Configuration, web.xml  
+  - [X] @RequestParam, @RequestMapping
+  - [X] Presentation Level(JSP)
+  - [X] Validation API(@Valid, @BindingResult)
+  - [X] Encoding(UTF-8)
+  - [X] i18N
 - [ ] Spring boot
 - [X] Hibernate
   - [X] Maven configuration
+  - [X] JPA and different providers
   - [X] H2+JPA/EntityManager
   - [X] persistence.xml
   - [X] Spring Integration 
@@ -12,13 +24,15 @@
   - [ ] @ManyToMany
   - [X] Domain Entities
   - [X] Hibernate tuning via parameters(log, format sql and etc.)
+  - [X] DTO    
   - [X] DAO
   - [ ] @PersitenceUnit
+  - [ ] CLOB/BLOB - different approaches
   - [ ] LAZY-initialization
   - [X] Unit tests
   - [ ] log4j/slf4j
   - [ ] different log configs for development(inc. statistics) and production
-replace build-in connection pool
+  - [ ] replace build-in connection pool
 - [ ] Data Rest
 - [X] Relation DBs: mySQL
 - [X] JUnit
@@ -36,6 +50,9 @@ replace build-in connection pool
 - [ ] FindBugs
 
 # Tools
+- [X] Git/Github
+- [X] Maven
+- [X] Tomcat
 - [X] IntelliJ Idea - DB Viewer
 - [ ] Postman
 - [ ] curl
