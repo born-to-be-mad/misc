@@ -22,6 +22,6 @@
 - [X] TODO: a lot of books for 1Z0-808
 
 # Watching
+- [ ] [JPoint 2019: the best](https://www.youtube.com/playlist?list=PLVe-2wcL84b_fBL9xJTxkEBtvCKfRGEV1&disable_polymer=true)
+- [X] [Voxxed Days Minsk 2019](https://www.youtube.com/playlist?list=PLRsbF2sD7JVq3tPa0jQjCtI1_xeLiPu-Z)
 - [X] LiveLessons - OCA Java SE 8 Programmer I(on December 2018)
-
-
