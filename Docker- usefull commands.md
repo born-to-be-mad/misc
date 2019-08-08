@@ -52,3 +52,22 @@ ENTRYPOINT ["java","-jar","my-docker-application.jar"]
 * check that image is created `docker images` 
 * push this image to Docker `docker run -p 8100:8100 -t my-docker-application`
 * check the running container `docker ps -a`
+
+## Analyze Code Quality With Sonarqube and Docker
+* Download Sonar from DockerHub 
+```
+docker pull sonarqube   
+docker run -d --name sonarqube -p 9000:9000 sonarqube
+```
+
+* Download Sonar Scanner by using [link](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/)
+* Unzip Sonar Scanner and Link the Sonarqube 
+** go to $sonarscanner_install_dir/conf/sonar-scanner.properties  and link the host and port on which your Sonar installation is running. 
+F.e., if it is on localhost and port 9000 as mentioned in  docker run  then 
+```
+sonar.host.url=http://localhost:9000
+```
+
+* Start Analyzing the Source Code
+the source code directory should be placed in the current folder and run the following command:
+`sonar-scanner -Dsonar.projectKey=<Project Name>  -Dsonar.sources=<Project Src Directory>`
