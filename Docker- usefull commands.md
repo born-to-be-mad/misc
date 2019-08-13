@@ -29,9 +29,22 @@ docker run hello-world
 * `docker container stop CONTAINER_NAME` — stop a running container
 
 ## Deploy a Spring Boot application
-* create image file for application. Create new file `"Dockerfile.txt"`. Docker reads commands/instructions from "Dockerfile.txt" and builds the image. 
+* create image file for application. Create new file `Dockerfile.txt`. Docker reads commands/instructions from "Dockerfile.txt" and builds the image. It is a simple text file with all the instructions required to build the image.
 
 Example1:
+```
+FROM java:8
+EXPOSE 8100
+ADD /target/application-0.0.1-SNAPSHORT.jar my-docker-application.jar
+ENTRYPOINT ["java","-jar","my-docker-application.jar"]
+```
+Details:
+* `FROM java:8` means this is a Java application and will require all the Java libraries so it will pull all the Java-related libraries and add them to the container.
+* `EXPOSE PORT_NUMBER` means that we would like to expose PORT_NUMBER to the outside world to access our application.
+* template `ADD <source from where Docker should create the image> <destination>`
+* ENTRYPOINT ["java", "-jar", "docker-application.jar"] will run the command as the entry point as this is a JAR and we need to run this JAR from within Docker.
+
+Example2:
 ```
 FROM java:8
 VOLUME /tmp
@@ -39,19 +52,14 @@ ARG JAR_FILE
 COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
 ```
-java:8 = openjdk:8-jdk-alpine
 
-Example2:
-```
-FROM java:8
-EXPOSE 8100
-ADD /target/ application-0.0.1-SNAPSHORT.jar my-docker-application.jar
-ENTRYPOINT ["java","-jar","my-docker-application.jar"]
-```
 * build image via Docker `docker build -t my-docker-application`
+  * with the concrete file 'docker build -f Dockerfile -t my-docker-application`
 * check that image is created `docker images` 
 * push this image to Docker `docker run -p 8100:8100 -t my-docker-application`
 * check the running container `docker ps -a`
+
+
 
 ## Analyze Code Quality With Sonarqube and Docker
 * Download Sonar from DockerHub 
@@ -71,3 +79,65 @@ sonar.host.url=http://localhost:9000
 * Start Analyzing the Source Code
 the source code directory should be placed in the current folder and run the following command:
 `sonar-scanner -Dsonar.projectKey=<Project Name>  -Dsonar.sources=<Project Src Directory>`
+
+
+## Run databases via Docker
+
+### Run Postgres as docker container
+* download docker image
+```
+$ pull postgres:11
+```
+
+* run postgres container with database port and user password
+```
+$ docker run --name dev-postgres -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres:11
+```
+
+* create database 'dailyqa' for user 'postgres'
+```
+$ docker exec dev-postgres psql -U postgres -c "create database dailyqa" postgres
+```
+
+## Run Oracle as docker container
+* login to Docker hub with your Docker account information with the below command
+```
+$ docker login
+```
+
+* Use the below command to install Oracle 12c image from Docker Hub.
+```
+$ docker run -d -p 1521:1521 --name OracleDB store/oracle/database-enterprise:12.2.0.1-slim
+```
+
+* to start and mount the database.
+```
+$ docker exec -it OracleDB bash -c "source /home/oracle/.bashrc; sqlplus /nolog"
+``` 
+
+* start working on DB
+```
+connect sys as sysdba;
+-- Here enter the password as 'Oradoc_db1'
+alter session set "_ORACLE_SCRIPT"=true;
+create user dummy identified by dummy;
+GRANT CONNECT, RESOURCE, DBA TO dummy;
+--Now create a sample table.
+create table Docker (id int,name varchar2(20));
+--Start inserting values in to the table
+```
+
+* Below are the details of the installed database:
+
+  * HostName: localhost (hostname will be System IP address if you installed in any Linux VM)
+
+  * Port: 1521
+
+  * UserName and Password: dummy
+
+  * Service Name: ORCLCDB.localdomain 
+
+  * Use the below command to get the Service Name of the DB installed.
+```
+select value from v$parameter where name='service_names';
+```
