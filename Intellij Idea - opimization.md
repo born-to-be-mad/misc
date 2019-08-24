@@ -11,6 +11,7 @@
 * *Findbugs-IDEA* 
 * *Checkstyle-IDEA* 
 * *Lombok* -  a plugin that adds first-class support for Project Lombok
+* *JMH Plugin* - a plugin for generating and running JMH benchmarks from your IDE
 * *.ignore* -  is a plugin for .gitignore (Git), .hgignore (Mercurial), .npmignore (NPM), .dockerignore (Docker), .chefignore (Chef), .cvsignore (CVS), .bzrignore (Bazaar), .boringignore (Darcs), .mtn-ignore (Monotone), ignore-glob (Fossil), .jshintignore (JSHint), .tfignore (Team Foundation), .p4ignore (Perforce), .prettierignore (Prettier), .flooignore (Floobits), .eslintignore (ESLint), .cfignore (Cloud Foundry), .jpmignore (Jetpack), .stylelintignore (StyleLint), .stylintignore (Stylint), .swagger-codegen-ignore (Swagger Codegen), .helmignore (Kubernetes Helm), .upignore (Up), .prettierignore (Prettier), .ebignore (ElasticBeanstalk) files in your project. 
 
 
