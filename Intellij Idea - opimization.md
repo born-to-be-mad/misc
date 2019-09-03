@@ -11,9 +11,10 @@
 * *Findbugs-IDEA* 
 * *Checkstyle-IDEA* 
 * *Lombok* -  a plugin that adds first-class support for Project Lombok
+* *JMH Plugin* - a plugin for generating and running JMH benchmarks from your IDE
 * *.ignore* -  is a plugin for .gitignore (Git), .hgignore (Mercurial), .npmignore (NPM), .dockerignore (Docker), .chefignore (Chef), .cvsignore (CVS), .bzrignore (Bazaar), .boringignore (Darcs), .mtn-ignore (Monotone), ignore-glob (Fossil), .jshintignore (JSHint), .tfignore (Team Foundation), .p4ignore (Perforce), .prettierignore (Prettier), .flooignore (Floobits), .eslintignore (ESLint), .cfignore (Cloud Foundry), .jpmignore (Jetpack), .stylelintignore (StyleLint), .stylintignore (Stylint), .swagger-codegen-ignore (Swagger Codegen), .helmignore (Kubernetes Helm), .upignore (Up), .prettierignore (Prettier), .ebignore (ElasticBeanstalk) files in your project. 
 
 
 ## Good talks
 - [x] 'Zen Habits of using IntelliJ IDEA by Victor Kropp'.
-- [x] [РўР°РіРёСЂ Р’Р°Р»РµРµРІ вЂ” РђС‚РѕРјР°СЂРЅС‹Р№ СЂРµС„Р°РєС‚РѕСЂРёРЅРі РІ IntelliJ IDEA: РїСЂРѕРіРёР±Р°РµРј IDE РїРѕРґ СЃРµР±СЏ](https://www.youtube.com/watch?v=C5eD-K8AO3o&list=PLVe-2wcL84b_fBL9xJTxkEBtvCKfRGEV1&index=5)
+- [x] [Тагир Валеев — Атомарный рефакторинг в IntelliJ IDEA: прогибаем IDE под себя](https://www.youtube.com/watch?v=C5eD-K8AO3o&list=PLVe-2wcL84b_fBL9xJTxkEBtvCKfRGEV1&index=5)
