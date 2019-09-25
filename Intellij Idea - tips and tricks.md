@@ -16,7 +16,7 @@
 
 
 ## Good talks
-- [x] 'Zen Habits of using IntelliJ IDEA by Victor Kropp'.
+- [x] ['Zen Habits of using IntelliJ IDEA by Victor Kropp'](https://www.youtube.com/watch?v=MZge92bbU7E).
 - [x] [Тагир Валеев — Атомарный рефакторинг в IntelliJ IDEA: прогибаем IDE под себя](https://www.youtube.com/watch?v=C5eD-K8AO3o&list=PLVe-2wcL84b_fBL9xJTxkEBtvCKfRGEV1&index=5)
 - [x] [Trisha Gee - IntelliJ IDEA 2019.1. Structural Search and Replace](https://www.youtube.com/watch?v=fIPr_ANBpFk)
 
