@@ -68,13 +68,13 @@
 | **Ctrl+E** | Show dialog *Recent Files*  |
 | **Ctrl+Shift+E** | Show dialog *Recent Locations*  |
 | **Ctrl+Shift+V** | Paste from recent clipboards  |
-| **Ctrl+Alt+S ** | Settings  |
-| **Ctrl+Alt+Shift+S ** | Project Settings  |
+| **Ctrl+Alt+S** | Settings  |
+| **Ctrl+Alt+Shift+S** | Project Settings  |
 | **Ctrl+T** | Update `Project`  |
 | **Ctrl+K** | Commit changes window  |
 | **Ctrl+O** | Override methods  |
 | **Ctrl+I** | Implement methods  |
 | **Alt+J** | Select next occurence  |
 | **Ctrl+Alt+T** | Surround with  |
-| **Ctrl+Shift+Alt+T ** | Refactor this  |
+| **Ctrl+Shift+Alt+T** | Refactor this  |
  
