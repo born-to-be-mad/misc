@@ -12,7 +12,7 @@
 # Reading
 - [ ] The Java Module System (by Nicolai Parlog, 2019)
 - [ ] Functional Interfaces in Java: Fundamentals and Examples(by Ralph Lecessi, 2019)
-- [ ] Modern Java in Action. LAMBDAS , STREAMS , FUNCTIONAL AND REACTIVE PROGRAMMING(by Raoul-Gabriel Urma, Mario Fusco, and Alan Mycroft, 2019)
+- [ ] Modern Java in Action. LAMBDAS , STREAMS , FUNCTIONAL AND REACTIVE PROGRAMMING. 2nd Edition.(by Raoul-Gabriel Urma, Mario Fusco, and Alan Mycroft, 2019)
 - [ ] Modern Java Recipes. Simple Solutions to Difficult Problems in Java 8 and 9(by Ken Kousen, 2017)
 - [ ] Effective Java. Third Edition(by Joshua Bloch,2018)
 - [ ] Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series, 2017) 
