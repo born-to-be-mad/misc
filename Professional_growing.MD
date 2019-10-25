@@ -13,7 +13,7 @@
 - [ ] The Java Module System (by Nicolai Parlog, 2019)
 - [ ] Functional Interfaces in Java: Fundamentals and Examples(by Ralph Lecessi, 2019)
 - [ ] Modern Java in Action. LAMBDAS , STREAMS , FUNCTIONAL AND REACTIVE PROGRAMMING. 2nd Edition.(by Raoul-Gabriel Urma, Mario Fusco, and Alan Mycroft, 2019)
-- [ ] Modern Java Recipes. Simple Solutions to Difficult Problems in Java 8 and 9(by Ken Kousen, 2017)
+- [X] Modern Java Recipes. Simple Solutions to Difficult Problems in Java 8 and 9(by Ken Kousen, 2017). :blue_book: 2019.10
 - [ ] Effective Java. Third Edition(by Joshua Bloch,2018)
 - [ ] Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series, 2017) 
 - [ ] Grokking Algorithms. An illustrated guide for programmers and other curious people(Aditya Y. Bhargava, 2016)
@@ -22,7 +22,7 @@
 - [ ] OCP: Oracle Certified Professional Java SE 8 Programmer II Study Guide: Exam 1Z0-809 1st Edition(by Jeanne Boyarsky  (Author), Scott Selikoff, 2015)
 - [ ] Hibernate Tips: More Than 70 Solutions to Common Hibernate Problems(by Thorben Janssen, 2017)
 - [ ] OCP Java SE 8 Programmer II Exam Guide (Exam 1Z0-809), 7th Edition(by Elisabeth Robson, Bert Bates, Kathy Sierra, 2018)
-- [X] Java by Comparison. Become a Java Craftsman in 70 Examples(by Simon Harrer, Jörg Lenhard, Linus Dietz, 2018) - on May 2019.
+- [ ] Java by Comparison. Become a Java Craftsman in 70 Examples(by Simon Harrer, Jörg Lenhard, Linus Dietz, 2018) - on May 2019.
 - [X] Java SE 8 for the Really Impatient(by Cay S. Horstmann, 2014) - on December 2018
 - [X] TODO: a lot of books for 1Z0-808
 
