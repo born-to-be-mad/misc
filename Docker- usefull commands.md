@@ -1,6 +1,10 @@
 ## Terms
+* *Docker* is a platform that packages an application and all its dependencies together in the form of containers.
+* *Dockerfile* is a text document that contains all the commands that a user can call on the command line to assemble an image.
 * *Docker image* - a read-only template with instructions for creating a Docker container. It is a combination of file system and parameters.
 * *Docker container* - a runnable instance of docker image. A container is isolated from the host by default. 
+* *Docker Compose* is a YAML file that contains details about the services, networks, and volumes for setting up the Docker application. It can be used to create separate containers, host them, and get them to communicate with each other. Each container will expose a port for communicating with other containers.
+* *Docker Swarm* is a technique to create and maintain a cluster of Docker engines. The Docker engines can be hosted on different nodes, and these nodes, which are in remote locations, form a cluster when connected in swarm mode.
  
 ## Commands
 Common syntax `docker COMMAND SUBCOMMAND`
@@ -19,14 +23,16 @@ docker run hello-world
 ```
 
 * `docker image ls` — list available images
-* `docker image rm IMAGE_NAME` or `docker image remove IMAGE_NAME` — remove an image
+* `docker image rm IMAGE_NAME` 
+* `docker image remove IMAGE_NAME` — remove an image
 * `docker image inspect IMAGE_NAME` — inspect an image
 * list containers
-  * `docker container ls`
-  * `docker container ls -a`
+  * `docker container ls` - lis of running comntainers
+  * `docker container ls -a` - list of all available  containers
 * `docker container run CONTAINER_NAME` — run a container
 * `docker container start CONTAINER_NAME` — start a stopped container
 * `docker container stop CONTAINER_NAME` — stop a running container
+* `docker container rm CONTAINER_NAME` — remove a container
 
 ## Deploy a Spring Boot application
 * create image file for application. Create new file `Dockerfile.txt`. Docker reads commands/instructions from "Dockerfile.txt" and builds the image. It is a simple text file with all the instructions required to build the image.
