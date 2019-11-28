@@ -15,6 +15,7 @@
 * *.ignore* - is a plugin for .gitignore (Git), .hgignore (Mercurial), .npmignore (NPM), .dockerignore (Docker), .chefignore (Chef), .cvsignore (CVS), .bzrignore (Bazaar), .boringignore (Darcs), .mtn-ignore (Monotone), ignore-glob (Fossil), .jshintignore (JSHint), .tfignore (Team Foundation), .p4ignore (Perforce), .prettierignore (Prettier), .flooignore (Floobits), .eslintignore (ESLint), .cfignore (Cloud Foundry), .jpmignore (Jetpack), .stylelintignore (StyleLint), .stylintignore (Stylint), .swagger-codegen-ignore (Swagger Codegen), .helmignore (Kubernetes Helm), .upignore (Up), .prettierignore (Prettier), .ebignore (ElasticBeanstalk) files in your project. 
 * *InnerBuilder* - adds a Builder action to the Generate menu (Alt+Insert) which generates an inner builder class as described in Effective JavaProvideProvides intelligent spelling and grammar checks for text that you write in the IDE.s intelligent spelling and grammar checks for text that you write in the IDE.
 * *Grazie* - provides intelligent spelling and grammar checks for text that you write in the IDE.
+* *RegexpTester* - Regular Expression Tester for IntelliJ IDEA. Allows you to experiment with Java regular expressions in a dynamic environment.
 
 ## Good talks
 - [x] ['Zen Habits of using IntelliJ IDEA by Victor Kropp'](https://www.youtube.com/watch?v=MZge92bbU7E).
