@@ -27,7 +27,7 @@ docker run hello-world
 * `docker image remove IMAGE_NAME` — remove an image
 * `docker image inspect IMAGE_NAME` — inspect an image
 * list containers
-  * `docker container ls` - lis of running comntainers
+  * `docker container ls` - lis of running containers
   * `docker container ls -a` - list of all available  containers
 * `docker container run CONTAINER_NAME` — run a container
 * `docker container start CONTAINER_NAME` — start a stopped container
@@ -61,7 +61,7 @@ ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
 
 * build image via Docker `docker build -t my-docker-application`
   * with the concrete file 'docker build -f Dockerfile -t my-docker-application`
-* check that image is created `docker images` 
+* check that an image is created `docker images` 
 * push this image to Docker `docker run -p 8100:8100 -t my-docker-application`
 * check the running container `docker ps -a`
 
