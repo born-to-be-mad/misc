@@ -16,6 +16,7 @@
 * *InnerBuilder* - adds a Builder action to the Generate menu (Alt+Insert) which generates an inner builder class as described in Effective JavaProvideProvides intelligent spelling and grammar checks for text that you write in the IDE.s intelligent spelling and grammar checks for text that you write in the IDE.
 * *Grazie* - provides intelligent spelling and grammar checks for text that you write in the IDE.
 * *RegexpTester* - Regular Expression Tester for IntelliJ IDEA. Allows you to experiment with Java regular expressions in a dynamic environment.
+* *Grep Console* - grep, tail, filter, highlight... everything you need for a console. Also can highlight the editor - nice for analyzing logs....
 
 ## Good talks
 - [x] ['Zen Habits of using IntelliJ IDEA by Victor Kropp'](https://www.youtube.com/watch?v=MZge92bbU7E).
