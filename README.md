@@ -5,4 +5,4 @@ Follow me [@DzmitryMarudau](https://twitter.com/DzmitryMarudau) for technical re
 
 ### Table of Contents
 
-## [Code Review Checklist] (../master/Code Review - checklist.md)
+## [Code Review Checklist] (../master/Code%20Review%20-%20checklist.md)
