@@ -1,8 +1,60 @@
-## Terminology
+# Terminology
 * *Git* - an open source program for tracking changes in text files, and is the core technology that GitHub, the social and user interface, is built on top of.
 * *Branch* - a parallel version of a repository. It is contained within the repository, but does not affect the primary or master branch allowing you to work freely without disrupting the "live" version. 
  
-## GIT Popular commands
+ # GIT MUST-HAVE AlIASES
+ ## Common aliases
+#### For Windows users:
+```
+git config --global alias.co checkout
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.br branch
+git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+git config --global alias.type 'cat-file -t'
+git config --global alias.dump 'cat-file -p'
+```
+
+#### For Unix/Mac users:
+
+`git status`, `git add`, `git commit`, and `git checkout` are common commands so it is a good idea to have abbreviations for them.
+
+Add the following to the `.gitconfig` file in your $HOME directory.
+```
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+
+  hide = update-index –-skip-worktree
+  unhide = update-index –-no-skip-worktree
+  unhide-all = ls-files -v | grep -i ^S | cut -c 3- | xargs git update-index –-no-skip-worktree
+  hidden = ! git ls-files -v | grep ‘^S’ | cut -c3-
+```
+
+#### Profile aliases
+If your shell supports aliases, or shortcuts, you can add aliases on this level, too. :
+FILE: .profile
+```
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+alias gco='git checkout '
+alias gk='gitk --all&'
+alias gx='gitx --all'
+
+alias got='git '
+alias get='git '
+```
+
+
+# GIT Popular commands
 
 #### git config
 It configures user data which will be used with your commits.
@@ -95,7 +147,9 @@ git commit -a
 `git stash list` lists all stashed changesets.
 `git stash drop` discards the most recently stashed changeset.
  
- 
+
+# GIT Tips and Tricks
+
 ## Feature branching
 * check branches `git branch`.
 If there are no branches, the result is:
@@ -110,3 +164,52 @@ Check the branches via `git branch`
 * feature-branch
  master
 ```
+
+## Hiding files from comit
+* We have 2 files modified, result via `git status`<BR/>
+```
+Changes not staged for commit:
+
+	modified:   public.txt
+	modified:   secret.txt
+  ```
+* By running the command  `git update-index --skip-worktree secret.txt`  the file secret.txt disappears from the working area.
+
+* By running the command  `git update-index --no-skip-worktree secret.txt`  the file secret.txt returns to the working area.
+
+## Archive Your Repository
+Use the following command:
+```
+git archive master –format=zip –output= ../name-of-file.zip
+```
+It stores all files and data in a single zip file rather than the .git directory.<BR/> This creates only a single snapshot omitting version control completely. 
+
+## Bundle Your Repository
+The following command `git bundle create ../repo.bundler master` turns a repository into a single file. <BR/>>
+This pushes the master branch to a remote branch only contained in a file instead of a repository.
+
+An alternate way to do it is:
+```
+cd..
+
+git clone repo.bundle repo-copy -b master
+
+cd repo-copy
+
+git log
+
+cd.. /my-git-repo
+```
+
+## Stash Uncommitted Changes
+When we want to undo adding a feature or any kind of added data temporarily, we can “stash” them temporarily.
+
+Use the commands below:
+```
+git status
+git stash
+git status
+```
+And when you want to re-apply the changes you “stash”ed , use the command below:
+`git stash apply`
+
