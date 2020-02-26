@@ -213,3 +213,13 @@ git status
 And when you want to re-apply the changes you “stash”ed , use the command below:
 `git stash apply`
 
+
+# BEST PRACTICES
+
+- _Commit often_. When we commit often, we keep our commits small and share our work more frequently. That makes it easier to avoid large merge conflicts.
+- _Don’t commit unfinished work_. Break your feature’s code into small but working chunks. Once you finish a chunk, test it, then commit it. This work method prevents the potential conflicts created by merging large bodies of code all at once. At the same time, it ensures we don’t commit small snippets of non-working code.
+- _Before you commit, test_. Don’t commit something until you’ve tested it. Shared code that isn’t tested can create a lot of headaches and lost time for an entire team.
+- _Commit related changes_. Make your commits small, and confine them to directly related changes. When we fix two separate bugs, they should take the form of two different commits.
+- _Write clear commit messages_. Include a single-sentence summary of your changes. After that, explain the motivation for the change, and how it’s different from the previous version.
+- _Use branches_. Branches are an excellent tool to avoid confusion and keep different lines of development separate.
+- _Agree on your workflow_. Your team should agree on a workflow before the project starts. Whether that’s based on topic-branches, git-flow, long-running branches, or some other workflow will depend on the project.
