@@ -10,7 +10,9 @@
 
 # Courses
 - [x] [Learn and Understand AngularJS](https://www.udemy.com/course/learn-angularjs/) (Udemy, on 14/04/2015)
+![View certificate](../master/certificates/Marudau_Dzmitry_Learn%20and%20Understand%20AngularJS.jpg)
 - [x] [Complete React Developer in 2020 (w/ Redux, Hooks, GraphQL)](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/) (Udemy, on 03/06/2020)
+![View certificate](../master/certificates/Marudau_Dzmitry_Complete%20React%20Developer%20in%202020.jpg)
 - [ ] [Complete Machine Learning and Data Science: Zero to Mastery](https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/)
 - [ ] [Docker Mastery: with Kubernetes +Swarm from a Docker Captain](https://www.udemy.com/course/docker-mastery/)
 
