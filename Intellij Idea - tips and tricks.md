@@ -13,16 +13,30 @@
 * *Lombok* - a plugin that adds first-class support for Project Lombok
 * *JMH Plugin* - a plugin for generating and running JMH benchmarks from your IDE
 * *.ignore* - is a plugin for .gitignore (Git), .hgignore (Mercurial), .npmignore (NPM), .dockerignore (Docker), .chefignore (Chef), .cvsignore (CVS), .bzrignore (Bazaar), .boringignore (Darcs), .mtn-ignore (Monotone), ignore-glob (Fossil), .jshintignore (JSHint), .tfignore (Team Foundation), .p4ignore (Perforce), .prettierignore (Prettier), .flooignore (Floobits), .eslintignore (ESLint), .cfignore (Cloud Foundry), .jpmignore (Jetpack), .stylelintignore (StyleLint), .stylintignore (Stylint), .swagger-codegen-ignore (Swagger Codegen), .helmignore (Kubernetes Helm), .upignore (Up), .prettierignore (Prettier), .ebignore (ElasticBeanstalk) files in your project. 
+* *Grep Console* - grep, tail, filter, highlight... everything you need for a console. Also can highlight the editor - nice for analyzing logs.
+* *Key promoter* - helps you to learn essential shortcuts while you are working. 
+* *Maven helper* -a must have plugin for working with Maven.
+* *BashSupport* - it adds Bash language support for the IntelliJ platform.
 * *InnerBuilder* - adds a Builder action to the Generate menu (Alt+Insert) which generates an inner builder class as described in Effective JavaProvideProvides intelligent spelling and grammar checks for text that you write in the IDE.s intelligent spelling and grammar checks for text that you write in the IDE.
+Supports run configurations, syntax highlighting, rename refactoring, documentation lookup, inspections, quickfixes and much more.
+* *Database Navigator* - database development, scripting and navigation tool. It adds extensive database development and maintenance capabilities to the IntelliJ IDEA development environment and related products
 * *Grazie* - provides intelligent spelling and grammar checks for text that you write in the IDE.
 * *RegexpTester* - Regular Expression Tester for IntelliJ IDEA. Allows you to experiment with Java regular expressions in a dynamic environment.
-* *Grep Console* - grep, tail, filter, highlight... everything you need for a console. Also can highlight the editor - nice for analyzing logs....
+* *Intend RainBow* - a simple extension to make indentation more readable. This extension colorizes the indentation in front of your text alternating four different colors on each step.
+* *Rainbow Brackets* - a simple extension to make the usage of brakets more readable.
+* *IDEA Mind Map* - brain storming and task decomposition
+* *Power Mode II* - for epic coding.
+* *Code Screenshot* - selects a code and press a hot-key (Ctrl+Alt+Shift+A by default) to copy it as the image (make a screenshot).
+Default hot-key can be changed in Settings|Keymap (search for "Copy as image" action)
+* *TweetCode* - share code fragments in twitter
+* *IdeaTweet* - share code fragments in twitter
 
 ## Good talks
-- [x] ['Zen Habits of using IntelliJ IDEA by Victor Kropp'](https://www.youtube.com/watch?v=MZge92bbU7E).
-- [x] [Тагир Валеев — Атомарный рефакторинг в IntelliJ IDEA: прогибаем IDE под себя](https://www.youtube.com/watch?v=C5eD-K8AO3o&list=PLVe-2wcL84b_fBL9xJTxkEBtvCKfRGEV1&index=5)
-- [x] [Trisha Gee - IntelliJ IDEA 2019.1. Structural Search and Replace](https://www.youtube.com/watch?v=fIPr_ANBpFk)
 - [x] [Be More Productive With IntelliJ IDEA by Trisha Gee](https://www.youtube.com/watch?v=CmPJzEqFS4s)
+- [x] [Trisha Gee - IntelliJ IDEA 2019.1. Structural Search and Replace](https://www.youtube.com/watch?v=fIPr_ANBpFk)
+- [x] [Тагир Валеев — Атомарный рефакторинг в IntelliJ IDEA: прогибаем IDE под себя](https://www.youtube.com/watch?v=C5eD-K8AO3o&list=PLVe-2wcL84b_fBL9xJTxkEBtvCKfRGEV1&index=5)
+- [x] ['Zen Habits of using IntelliJ IDEA by Victor Kropp'](https://www.youtube.com/watch?v=MZge92bbU7E).
+
 
 # Top keybindings in Intellij Idea
 | Keybind | What it does |
