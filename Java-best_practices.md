@@ -187,3 +187,29 @@ _It is best to throw exceptions as soon as possible and at the point in which th
 - The JDK source code can be found lib/src.zip under a standard JDK installation
 - Garner a great deal of information about how a particular class works by looking at its implementation
 - Read as much code written by experienced Java developers as possible. Each developer has his or her own style, and each are human and can make poor choices, but on the whole, developers should emulate the code written by many of the original authors of Java and many of its most prolific practitioners.
+
+## String Formatting
+
+| Conversion | Category       | Description                                         |
+| ---------- | -------------- | --------------------------------------------------- |
+| %b, %B     | general        | true of false                                       |
+| %h, %H     | general        | hash code value of the object                       |
+| %s, %S     | general        | string                                              |
+| %c, %C     | character      | unicode character                                   |
+| %d         | integral       | decimal integer                                     |
+| %o         | integral       | octal integer, base 8                               |
+| %x, %X     | integral       | hexadecimal integer, base 16                        |
+| %e, %E     | floating point | decimal number in scientific notation, 1.000000e+02 |
+| %f         | floating point | decimal number                                      |
+| %g,%G      | floating point | decimal number, rounding for the precision          |
+| %a,%A      | floating point | hexadecimal floating-point, 0x1.4333333333333p3     |
+| %t,%T      | date/time      | prefix for date and time conversion                 |
+| %%         | percent        | display literal ‘%’                                 |
+| %n         | line separator | new line, System.getProperty("line.separator")      |
+
+Reorder the arguments with `%{index}${conversion}`:
+
+- 1\$ – first argument
+- %2\$ – second argument
+- %3\$ – third argument
+- %{index}\$ – {index} argument
