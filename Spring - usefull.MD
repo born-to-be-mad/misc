@@ -1,6 +1,6 @@
 # Ways to change Embedded Tomcat Server Port in Spring Boot Application
 
-- By using VM options <BR/>`$ java -jar -Dserver.port=8100 springbootapp.jar`
+- By using VM options <BR/> `$ java -jar -Dserver.port=8100 springbootapp.jar`
 
 - By specifying the server.port property in the resource file `application.properties`<BR/>
 
