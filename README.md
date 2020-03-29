@@ -9,10 +9,14 @@ Follow me [@DzmitryMarudau](https://twitter.com/DzmitryMarudau) for technical re
 
 ## [Intellij Idea - optimized settings, plugins, best practices ](Intellij%20Idea%20-%20tips%20and%20tricks.md)
 
-## [Git Top must-know commands](Git%20-%20usefull%20commands.md)
+## [Git - best practices, must-know commands and etc.](Git_best_practices.md)
 
-## [Docker - terminology and must-know commands](Docker-%20usefull%20commands.md)
+## [Docker - terminology and must-know commands](Docker_best_practices.md)
 
-## [Code Review Checklist](Code%20Review%20-%20checklist.md)
+## [Java Best Practices](Java_best_practices.md)
+
+## [JavaScript Best Practices](JavaScript_best_practices.md)
+
+## [Code Review Checklist](Code_Review_checklist.md)
 
 ## [HOW TO PASS 1Z0-816 OCP JAVA 11 PART 2 EXAM](1z0-816.md)
