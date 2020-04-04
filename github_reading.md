@@ -1,5 +1,5 @@
 Подборка из 11 репозиториев, которые помогут прокачаться любому разработчику
-# Github repositories to learn
+# Github repositories to learn and read
 
 ## [Awesome](https://github.com/sindresorhus/awesome) - different topics from software development to hardware and business
 
@@ -21,6 +21,15 @@
    * How to prioritize
    * How to measure the progress
 
+## [JavaScript Garden](https://github.com/BonsaiDen/JavaScript-Garden)
+  * JavaScript Garden is a growing collection of documentation about the most quirky parts of the JavaScript programming language.
+  * It gives advice to avoid common mistakes, subtle bugs, as well as performance issues and bad practices 
+    that non-expert JavaScript programmers may encounter on their endeavours into the depths of the language.
+  * Github pages:
+    [EN](https://bonsaiden.github.io/JavaScript-Garden/) 
+    [RU](https://bonsaiden.github.io/JavaScript-Garden/ru/) 
+    [BY](https://bonsaiden.github.io/JavaScript-Garden/by/)
+  
 ## [Advanced JavaScript Questions](https://github.com/lydiahallie/javascript-questions)
 
 ## [Algorithms and Data Structures in JavaScript](https://github.com/trekhleb/javascript-algorithms)
@@ -28,3 +37,12 @@
 ## [Clean Code in JavaScript](https://github.com/ryanmcdermott/clean-code-javascript)
 
 ## [A Big List of Naughty Strings to damage your programm](https://github.com/minimaxir/big-list-of-naughty-strings)
+
+## [React Interview Questions & Answers](https://github.com/sudheerj/reactjs-interview-questions)
+
+## [Angular Interview Questions & Answers](https://github.com/sudheerj/angular-interview-questions)
+
+# Github repositories with demos
+ 
+## [20+ Web Projects With Vanilla JavaScript](https://github.com/bradtraversy/vanillawebprojects)
+   * every project has description, implementation and demo
