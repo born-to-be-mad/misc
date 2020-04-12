@@ -3,6 +3,10 @@
 - _Git_ - an open source program for tracking changes in text files, and is the core technology that GitHub, the social and user interface, is built on top of.
 - _Branch_ - a parallel version of a repository. It is contained within the repository, but does not affect the primary or master branch allowing you to work freely without disrupting the "live" version.
 
+# How to Write a Git Commit Message (!)
+
+- https://chris.beams.io/posts/git-commit/
+
 # GIT MUST-HAVE AlIASES
 
 ## Common aliases
