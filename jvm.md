@@ -40,7 +40,7 @@ Typically, GC logs are used for tuning garbage collection performance.
 ```java
 -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:/opt/workspace/myAppgc.log 
 ```
-* From JDK 9 and above `-Xlog:gc*:file={file-path}`
+* From JDK 9 and above `-Xlog:gc* 7:file={file-path}`
 ```java
 -Xlog:gc*:file=/opt/workspace/myAppgc.log
 ```
