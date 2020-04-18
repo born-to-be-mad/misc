@@ -4,6 +4,13 @@
 Fat arrows are used as function shortcuts. Instead of writing `function()` , you can omit the function keyword and write  `() =>`. 
 * You can omit the return statement and the curly brackets if you return only line, `() => "some string"` .  
 * You can assign the function to a constant: `const MyExport = () => { code goes here }`.
+* we can write less
+```javascript
+[1, 2, 3].map(i => i + 1).reduce((s, i) => s + i);
+[1, 2, 3].filter(i => i % 2 == 0).sort();
+[1, 2, 3].some(i => i % 2 == 0);
+[1, 2, 3].every(i => i % 2 == 0);
+```
 
 ### Template Literals
 Three ways to specify strings in JavaScript.
@@ -11,11 +18,18 @@ Three ways to specify strings in JavaScript.
 * Single quote  \'string\' 
 * Back-tick  \`string\`
 
-The back-tick string comes with special power. You can render variables into the string:
+The back-tick string(sometimes called _template string_) comes with special power. 
+The template string is just a better way of constructing strings cause you can render variables into the string.
+It removes the challenges inherent in formatting strings. It can also evaluate the logic inside.
 ```javascript
 const name = "James Bond";
 const description = "a secret agent"
 console.log(`${name} is ${description}.` );
+
+let name = 'James', agentId = 7;
+console.log(`Hello ${name}`);
+let url = `http://secretagents.com/${agentId}`;
+console.log(url);
 ```
 
 Another back-tick feature is that the string can span multiple lines.
@@ -30,6 +44,7 @@ blue`);
 You can import code from one file into another: `import { MyExport } from "./MyExport.js";`
 
 ### Destructuring  
+This is truly magical. You can destruct objects and arrays. You can just get the property you are looking for easily.
 You can destructure objects or arrays with this syntax: `const {userId, title} = json` 
 ```javascript
 const fetch = require('node-fetch');
@@ -47,7 +62,16 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
     const {userId, title} = json;
     console.log(`the userId is ${userId}`);
     console.log(`the title is ${title}`);
-    })
+    });
+
+const [a, ...b] = [1, 2, 3]; // a becomes 1 and b becomes [2, 3]
+const {id, person} = { id: 3, person: {name: 'James'}}; // id becomes 3 and person becomes {name: 'James'}
+const newArray = [1, ...[2, 3]]; // newArray becomes [1,2,3]
+//You can also destruct in a for loop
+const people = [{ id: 7, person: {name: 'James'}}, { id: 10, person: {name: 'Alfred'}}];
+for (var {id: id, person: {name: name}} of people) {
+  console.log(`The person with id=${id} is ${name}.`);
+}
 ```
 
 ### Map
