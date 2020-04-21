@@ -17,6 +17,12 @@
 
 * https://chris.beams.io/posts/git-commit/
 
+# Oh Shit, Git!?!
+
+- https://ohshitgit.com/
+- [Как это отменить?! Git-команды для исправления своих ошибок](https://tproger.ru/translations/problems-with-git/)
+- [Полезные команды Git: безопасная отмена коммитов, добавление файла из другой ветки и другие](https://tproger.ru/translations/git-tips-and-tricks/)
+
 # GIT MUST-HAVE AlIASES
 
 ## Common aliases
