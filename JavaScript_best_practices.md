@@ -1,5 +1,26 @@
 ## Must-know Things
 
+#Tips for console.log() usage
+* Naming Output Variables
+```javascript
+function sum(a, b) {
+  console.log({ b });
+  return a + b;
+}
+
+sum(3, 5);
+sum(4, 6);
+```
+* Advanced formatting
+`console.log()` can format string similar to ` sprintf()`with the different specificators like  `%s`, `%i`  and similar.
+```javascript
+const user = 'james_bond';
+const attempts = 3;
+
+console.log('%s failed to login %i times', user, attempts);
+// logs "james_bond failed to login 3 times"
+```
+
 ### Fat Arrow
 Fat arrows are used as function shortcuts. Instead of writing `function()` , you can omit the function keyword and write  `() =>`. 
 * You can omit the return statement and the curly brackets if you return only line, `() => "some string"` .  
