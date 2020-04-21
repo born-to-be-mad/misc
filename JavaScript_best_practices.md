@@ -21,6 +21,45 @@ console.log('%s failed to login %i times', user, attempts);
 // logs "james_bond failed to login 3 times"
 ```
 
+| Specifier    | Value  |
+| --------- | ---------- |
+| `%s`      | Transform into string    |
+| `%d` or `%i | Transform into number    |
+| `%f`      | Transform into float number   |
+| `%o`      | View with optimal formatting    |
+| `%O`      | View with Javascript common formatting    |
+| `%c`      | Used with CSS    |
+
+* Log output using CSS styles
+```javascript
+console.log('%c Big message', 'font-size: 36px; font-weight: bold');
+```
+
+* Interactive Logs
+Browsers such as Chrome and Firefox offer interactive logs of objects and arrays, and the Node console displays logs as text.
+```javascript
+const heroes = ['Neo', 'Morpheus', 'John Smith'];
+console.log(heroes);
+
+console.log(document.getElementById('root'));
+```
+
+* Large Objects in the Console
+To see the full structure of the object, use `JSON.stringify()`
+```javascript
+const myObject = {
+  propA: {
+    propB: {
+      propC: {
+        propD: 'test'
+      }
+    }
+  }
+};
+
+console.log(JSON.stringify(myObject, null, 4));
+```
+
 ### Fat Arrow
 Fat arrows are used as function shortcuts. Instead of writing `function()` , you can omit the function keyword and write  `() =>`. 
 * You can omit the return statement and the curly brackets if you return only line, `() => "some string"` .  
