@@ -23,7 +23,7 @@
 - [Как это отменить?! Git-команды для исправления своих ошибок](https://tproger.ru/translations/problems-with-git/)
 - [Полезные команды Git: безопасная отмена коммитов, добавление файла из другой ветки и другие](https://tproger.ru/translations/git-tips-and-tricks/)
 
-# GIT MUST-HAVE AlIASES
+# GIT MUST-HAVE ALIASES
 
 ## Common aliases
 
@@ -81,6 +81,12 @@ alias get='git '
 ```
 
 # GIT Popular commands
+#### git rerere («reuse recorded resolution»)
+Allows reusing recorded resolution of conflicted merges. We can automate the conflict resolution. 
+`git config --global rerere.enabled true` to activate globally.
+`git config --global rerere.autoupdate true` if we need automatically index corrected files.
+
+[Details](https://git-scm.com/docs/git-rerere)
 
 #### git config
 
@@ -290,7 +296,7 @@ And when you want to re-apply the changes you “stash”ed , use the command be
 
 - [Using branches](https://www.atlassian.com/git/tutorials/using-branches)
 
-### Standart workflow
+### Standard workflow
 
 - create a new local branch 'feature' via command `git checkout -b feature`
 
