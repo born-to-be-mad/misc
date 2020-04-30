@@ -44,6 +44,9 @@
 
 ## [Angular Interview Questions & Answers](https://github.com/sudheerj/angular-interview-questions)
 
+## [Node.js Best Practices](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.md)
+## [Node.js Лучшие практики](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.russian.md)
+
 # Github repositories with demos
 
 ## [20+ Web Projects With Vanilla JavaScript](https://github.com/bradtraversy/vanillawebprojects)

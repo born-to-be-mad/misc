@@ -29,4 +29,6 @@ Follow me [@DzmitryMarudau](https://twitter.com/DzmitryMarudau) for technical re
 
 ## [Quotes of the great persons](quotes_of_great_programmers_and_more.md)
 
+## [Github reading](github_reading.md)
+
 ## [How to pass 1Z0-816 OCP JAVA 11 PART 2 exam](1z0-816.md)
