@@ -90,11 +90,19 @@ Allows reusing recorded resolution of conflicted merges. We can automate the con
 
 #### git config
 
+Better to configure all properties by editing config file `git config --global -e`. 
+
 It configures user data which will be used with your commits.
 
 Configure user name: `git config –global user.name “[name]”`
 
 Configure user e-mail: `git config –global user.email “[email address]”`
+
+Configure git editor for Windows:
+```batch
+git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+```
+Configure git editor on Linux/Mac:`git config --global core.editor "atom --wait"`
 
 #### git init
 
