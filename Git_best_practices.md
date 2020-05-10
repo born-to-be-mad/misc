@@ -27,21 +27,42 @@
 
 ## Common aliases
 
-#### For Windows users:
+`git config alias.ALIAS_SHORT_NAME "ALIAS CONTENT`- add locally
+`git config --global alias.ALIAS_SHORT_NAME "ALIAS CONTENT`- add globally
+F.e. `git config --global alias.st status` - gits st -> git status
 
+`git config alias.qm "!git checkout $1; git merge @{-1}"` alias with parameters
+
+Section '[alias]'
+```batch
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	hist1 = log --all --decorate --oneline --graph
+	hist2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    stat = shortlog -nse
+	cfgg = config -e --global
+	cfgl = config -e --local
+	lg = log --pretty='%Cred%h%Creset | %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)[%an]%Creset' --graph
+	so = show --pretty='parent %Cred%h%Creset commit %Cred%h%Creset%C(yellow)%d%Creset %n%n%w(72,2,2)%s%n%n%w(72,0,0)%C(cyan)%an%Creset %Cgreen%ar%Creset'
+
+    hide = update-index –-skip-worktree
+    unhide = update-index –-no-skip-worktree
+    unhide-all = ls-files -v | grep -i ^S | cut -c 3- | xargs git update-index –-no-skip-worktree
+    hidden = ! git ls-files -v | grep ‘^S’ | cut -c3-
 ```
-git config --global alias.co checkout
-git config --global alias.ci commit
-git config --global alias.st status
-git config --global alias.br branch
-git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+#### For Windows users:
+ 
+```
 git config --global alias.type 'cat-file -t'
 git config --global alias.dump 'cat-file -p'
 ```
 
 #### For Unix/Mac users:
 
-`git status`, `git add`, `git commit`, and `git checkout` are common commands so it is a good idea to have abbreviations for them.
+`git status`, `git add`, `git commit`, and `git checkout` are common commands, so it is a good idea to have abbreviations for them.
 
 Add the following to the `.gitconfig` file in your \$HOME directory.
 
@@ -55,10 +76,7 @@ Add the following to the `.gitconfig` file in your \$HOME directory.
   type = cat-file -t
   dump = cat-file -p
 
-  hide = update-index –-skip-worktree
-  unhide = update-index –-no-skip-worktree
-  unhide-all = ls-files -v | grep -i ^S | cut -c 3- | xargs git update-index –-no-skip-worktree
-  hidden = ! git ls-files -v | grep ‘^S’ | cut -c3-
+
 ```
 
 #### Profile aliases
@@ -321,3 +339,7 @@ And when you want to re-apply the changes you “stash”ed , use the command be
 - delete the 'feature` branch via 'git branch -d feature'
 
 - push changes to remote master via `git push origin master`
+
+
+# Materials
+- [Как склеить коммиты и зачем это нужно](https://htmlacademy.ru/blog/boost/tools/how-to-squash-commits-and-why-it-is-needed)
