@@ -57,6 +57,25 @@ In `-XX:HeapDumpPath` we specify the file path where heap dump should be stored.
 When you pass these two JVM arguments, heap dumps will be automatically captured and written to a defined file path, when OutOfMemoryError is thrown. 
  
 ## -Xss
+* Each application will have a lot of threads. 
+* Each thread will have its own stack. 
+* In each thread’s stack following information are stored:
+  * Methods/functions that are currently executed
+  * Primitive datatypes
+  * Variables
+  * Object pointers
+  * Return values
+
+Each one of them consumes memory. 
+If their consumption goes beyond a certain limit, then a _StackOverflowError_ is thrown. 
+
+We can increase the thread’s stack size limit by passing the `-Xss` argument. 
+```java
+-Xss256k
+```
+If you set this `-Xss` value to a huge number, then memory will be blocked and wasted. 
+(!) Threads are created outside of the heap (i.e. -Xmx), thus this value configured by `-Xss` * amount_of threads will be in addition to the -Xmx value you have already assigned. 
+The best practice  is to start from a low value (say 256kb).
 
 ## -Dsun.net.client.defaultConnectTimeout and -Dsun.net.client.defaultReadTimeout
 
