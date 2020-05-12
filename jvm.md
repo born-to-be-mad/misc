@@ -18,7 +18,7 @@ There are 7 different GC algorithms in OpenJDK(March 2020):
 * G1 GC
 * Shenandoah GC
 * Z GC (JVM 11+)
-* Epsilon GC
+* Epsilon GC (JVM 11+)
 
 If you don’t specify the GC algorithm explicitly, then JVM will choose the DEFAULT algorithm:
 * Parallel GC - until Java 8
