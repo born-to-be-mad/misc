@@ -78,8 +78,28 @@ If you set this `-Xss` value to a huge number, then memory will be blocked and w
 The best practice  is to start from a low value (say 256kb).
 
 ## -Dsun.net.client.defaultConnectTimeout and -Dsun.net.client.defaultReadTimeout
+* Modern applications use numerous protocols (i.e. SOAP, REST, HTTP, HTTPS, JDBC, RMI, etc.) to connect with remote applications.
+  Sometimes remote applications might take a long time to respond(even not respond at all).
+If you don’t have proper timeout settings, and if remote applications don’t respond fast enough, then your application threads/resources will get stuck.
 
+* You can pass these two powerful timeout networking properties at the JVM level that can be globally applicable to all protocol handlers that uses java.net.URLConnection:
+  * `sun.net.client.defaultConnectTimeout` specifies the timeout (in milliseconds) to establish the connection to the host, f.e. HTTP connections, it is the timeout when establishing the connection to the HTTP server.
+  * `sun.net.client.defaultReadTimeout` specifies the timeout (in milliseconds) when reading from the input stream when a connection is established to a resource.
+
+(!) By default, values for these two properties are -1, which means no timeout is set. 
+
+Example when both timeouts are set to 2 seconds:
+```java
+-Dsun.net.client.defaultConnectTimeout=2000 -Dsun.net.client.defaultReadTimeout=2000
+```  
+
+ 
 ## -Duser.timeZone
+* We can face with a problem if your application is running in a distributed environment.
+  * application running across multiple data center and JVMs in each data center would exhibit different behaviors;
+  * deploying application in cloud environment and etc.
+
+It’s highly recommended to set the time zone at the JVM using the  `Duser.timezone` system property.   
 ```java
 -Duser.timezone=US/Eastern
 ```
