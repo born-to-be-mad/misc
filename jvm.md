@@ -17,10 +17,10 @@ There are 7 different GC algorithms in OpenJDK(March 2020):
 * Concurrent Mark and Sweep GC
 * G1 GC
 * Shenandoah GC
-* Z GC
+* Z GC (JVM 11+)
 * Epsilon GC
 
-If you don’t specify the GC algorithm explicitly, then JVM will choose the default algorithm:
+If you don’t specify the GC algorithm explicitly, then JVM will choose the DEFAULT algorithm:
 * Parallel GC - until Java 8
 * G1 GC - since Java 9.
 
@@ -35,6 +35,7 @@ If you don’t specify the GC algorithm explicitly, then JVM will choose the def
 | Epsilon GC | 	-XX:+UseEpsilonGC |
 
 ## Enable GC Logging
+Garbage Collection logs contain information about Garbage Collection events, memory reclaimed, pause time duration, etc. 
 Typically, GC logs are used for tuning garbage collection performance. 
 * From JDK 1 to JDK 8 `-XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:{file-path}`
 ```java
@@ -46,7 +47,15 @@ Typically, GC logs are used for tuning garbage collection performance.
 ```
 
 ## -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath
+The best practice is to capture the heap dump right at the moment or few moments before the application starts to experience OutOfMemoryError.
+Capturing heap dumps can be automated by passing following JVM arguments:
+```java
+-XX:+HeapDumpOnOutOfMemoryError and -XX:HeapDumpPath={HEAP-DUMP-FILE-PATH}
+```
 
+In `-XX:HeapDumpPath` we specify the file path where heap dump should be stored. 
+When you pass these two JVM arguments, heap dumps will be automatically captured and written to a defined file path, when OutOfMemoryError is thrown. 
+ 
 ## -Xss
 
 ## -Dsun.net.client.defaultConnectTimeout and -Dsun.net.client.defaultReadTimeout
