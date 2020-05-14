@@ -56,3 +56,28 @@
 ## Links to learn markdown
 
 - https://www.markdownguide.org/extended-syntax/
+
+## Github Tricks
+* Fuzzy file finder 🔎
+GitHub has a fuzzy file finder. 
+Press <kbd>t</kbd> in any repository to access it and start typing the name of the file you want to find. 
+
+* Keyboard tags
+You can use `<kbd>` tags to make text appear like a button, which is slightly different from regular backticked text. 
+It’s perfect for documenting things like keyboard shortcuts or game controls in your README(s)/wiki(s).
+  
+* Visualizing hex codes
+Placing hex colors in backticks renders a tile in that color. It’s totally hexcellent!
+GitHub contribution graph colors: `#C6E48B` `#7AC96F` `#249A3C` `#196127`
+
+* Visualizing diffs 🧡💚
+You can visualize a diff using backticks and diff which highlights lines red or green as appropriate.
+
+```diff
+10 PRINT “BASIC IS COOL”
+- 20 GOTO 11
++ 20 GOTO 10
+```  
+
+if you add the language after the opening three backticks, the code is syntax highlighted accordingly.
+
