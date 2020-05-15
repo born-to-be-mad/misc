@@ -12,6 +12,8 @@
 * Code formatting is about communication, and communication is the professional developer’s first order of business(Robert C. Martin)
 * Форматирование кода — это общение, а общение  —  первостепенная задача профессионального разработчика(Робер Мартин)
 
+* if you want to go fast, if you want to get done quickly, if you want your code to be easy to write, make it easy to read( Robert C. Martin)
+
 * When debugging, novices insert corrective code; experts remove defective code.(Richard Pattis)
 * При отладке новички добавляют код для исправления положения, а профессионалы удаляют неисправный код.(Ричард Паттис)
 
