@@ -7,6 +7,19 @@ Levels:
 * L3(C1:client, advanced profiling)
 * L4(C2:server, profile-based optimization)
 
+## Performance optimization
+* Call receiver profiling: every type matters . F.e. "double brace initialization" is a however often introducing new(obsolete) types at call sites. Often this results in vtable/itable lookups.
+* Micro-optimizing method dispatch: avoid dynamic dispatch but emulated at the call site("call by id"), but do not do it UNLESS you must! The improvement is minimal.
+  * General idea: static/private > class virtual(null check) > interface virtual (null + type check)
+* Call site specialization 
+  * Thanks to inlining(and loop unrolling), additional call sites are introduced. And this way formerly megamorphic call sites can become monomorphic after duplication.
+* All programs are types
+  * Types(which do not equal to classes) allow us to identify "things" in our programs that are similar.
+* Branch prediction
+  * A conditional control flow is referred to as a branch
+* Escape analysis      
+  * By avoiding long scopes, i.e. writing short methods, an object's scope is easier tio determine.
+  
 #JVM tuning
 
 ## -Xmx and -XX:MaxMetaspaceSize
