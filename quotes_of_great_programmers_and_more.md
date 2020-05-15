@@ -1,3 +1,5 @@
+* I think it would be a tragic statemenet of the universe if Java was the last language that swept through. (James Gosling)
+
 * Maintainable code is more important than clever code.(Van Rossum)
 * Поддерживаемый код важнее, чем умный код.(Ван Россум)
 
