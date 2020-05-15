@@ -1,3 +1,11 @@
+# HotSpot: interpretation and tiered compilation
+_HotSpot_ is a method-based JIT
+* L0(interpreter machine code templating)
+* L1(C1:client, no profiling)
+* L2(C1:client, simple profiling)
+* L3(C1:client, advanced profiling)
+* L4(C2:server, profile-based optimization)
+
 #JVM tuning
 
 ## -Xmx and -XX:MaxMetaspaceSize
