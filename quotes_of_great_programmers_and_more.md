@@ -54,3 +54,9 @@
 
 * To err is human; to persist in error is diabolical.(Georges Canguilhem)
 * Человеку свойственно ошибаться, упорствовать в ошибке  —  дело дьявола.(Жорж Кангилем)
+
+* One who makes no mistakes makes nothing at all — Giacomo Casanova
+
+* God is in the details (Architect: Ludwig mies van der Rohe)
+
+* Object oriented programs are offered as alternatives to correct ones… - Edsger W. Dijkstra
