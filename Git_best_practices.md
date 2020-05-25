@@ -352,6 +352,9 @@ And when you want to re-apply the changes you “stash”ed , use the command be
 ## Fetching
 * `git fetch` to download all the remote changes to local without affecting your flow.
 * 'git fetch --all' to fetch all remotes
+* `git diff <branch_name> origin/<branch_name>` - to know the remote changes. 
+  Remember that all the changes from the second branch are shown and the changes from the first branch are omitted. 
+  So that you can see the difference between the two branches.
 * `git diff develop origin/develop —stat` -  to show only the files changed in the local and remote branches.
 * `git log develop..origin/develop` - to see all the commits from origin/develop but that are not present in the develop branch. 
 * In this way, you can know that how many new commits are added to the remote develop branch that is not present in the local branch.
