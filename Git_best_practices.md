@@ -341,6 +341,7 @@ And when you want to re-apply the changes you “stash”ed , use the command be
 - push changes to remote master via `git push origin master`
 
 ## Cherry-picking
+
 * `git cherry-pick <commit-hash>` to cherry-pick a commit from another branch.
 * `git cherry-pick -n <commit-hash>` to cherry-pick the commit but it won’t commit the changes. It will only stage all the changes.
 * `git cherry-pick -continue` or `git cherry-pick -abort` when you face conflicts while cherry-picking.
