@@ -349,5 +349,18 @@ And when you want to re-apply the changes you “stash”ed , use the command be
 * `git cherry-pick A..B` to cherry-pick a series of commits from A(not included) to B.
 * `git cherry-pick A^..B` to cherry-pick a series of commits from A(included) to B.
 
+## Fetching
+* `git fetch` to download all the remote changes to local without affecting your flow.
+* 'git fetch --all' to fetch all remotes
+* `git diff develop origin/develop —stat` -  to show only the files changed in the local and remote branches.
+* `git log develop..origin/develop` - to see all the commits from origin/develop but that are not present in the develop branch. 
+* In this way, you can know that how many new commits are added to the remote develop branch that is not present in the local branch.
+* `git log origin/develop..develop` - to see all commits from develop (local) but commits that are not present in origin/develop (remote).
+* `git pull` = `git fetch` + `git merge`
+* `git pull origin develop` - only fetches the remote changes of develop branch and not other branches. And it also merges the remote changes to the branch.
+* `git pull —rebase` if we want to rebase after fetching,cause by default, `git pull` will execute `git merge`.
+
+
+
 # Materials
 - [Как склеить коммиты и зачем это нужно](https://htmlacademy.ru/blog/boost/tools/how-to-squash-commits-and-why-it-is-needed)
