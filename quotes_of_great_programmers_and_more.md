@@ -60,3 +60,7 @@
 * God is in the details (Architect: Ludwig mies van der Rohe)
 
 * Object oriented programs are offered as alternatives to correct ones… - Edsger W. Dijkstra
+
+* We change our tools and then our tools change us. — Jeff Bezos
+
+* The day you stop learning is the day you begin decaying. - Isaac Asimov

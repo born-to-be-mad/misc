@@ -364,6 +364,5 @@ And when you want to re-apply the changes you “stash”ed , use the command be
 * `git pull —rebase` if we want to rebase after fetching,cause by default, `git pull` will execute `git merge`.
 
 
-
 # Materials
 - [Как склеить коммиты и зачем это нужно](https://htmlacademy.ru/blog/boost/tools/how-to-squash-commits-and-why-it-is-needed)
