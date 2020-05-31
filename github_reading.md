@@ -51,6 +51,18 @@
 
 ## [20+ Web Projects With Vanilla JavaScript](https://github.com/bradtraversy/vanillawebprojects)
 
+## [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate) - professional frontend templates.
+
+## [RealWorld](https://github.com/gothinkster/realworld) - learn easy any framework or library
+
+## [You Don't Know JS Yet](https://github.com/getify/You-Dont-Know-JS)- books for deep Javascript diving
+
+## [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) - JavaScript styleguide form Airnb
+
+## [Storybook](https://github.com/storybookjs/storybook)
+
+## [Front-End Checklist](https://github.com/thedaviddias/Front-End-Checklist) - a cheklist to be ready for production
+
 - every project has description, implementation and demo
 
 ## Links to learn markdown
