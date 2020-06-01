@@ -1,5 +1,7 @@
 * I think it would be a tragic statemenet of the universe if Java was the last language that swept through. (James Gosling)
 
+* The best smells are something that’s easy to spot and most of the time leads you to really interesting problems — Martin Fowler
+
 * Maintainable code is more important than clever code.(Van Rossum)
 * Поддерживаемый код важнее, чем умный код.(Ван Россум)
 
