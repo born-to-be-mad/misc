@@ -66,3 +66,5 @@
 * We change our tools and then our tools change us. — Jeff Bezos
 
 * The day you stop learning is the day you begin decaying. - Isaac Asimov
+
+* Sometimes it’s better to leave something alone, to pause, and that’s very true of programming. — Joyce Wheeler
