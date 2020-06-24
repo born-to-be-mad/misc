@@ -147,3 +147,11 @@ create table Docker (id int,name varchar2(20));
 ```
 select value from v$parameter where name='service_names';
 ```
+
+## Docker commands
+
+### Clean the system
+- `docker image prune` to clean up just "dangling" images
+- `docker image prune -a` which will remove all images you're not using. 
+- `docker system prune` will clean up everything
+- `docker system df` to see space usage.
