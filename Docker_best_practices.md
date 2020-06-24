@@ -106,11 +106,20 @@ $ docker exec dev-postgres psql -U postgres -c "create database dailyqa" postgre
 ```
 
 ## Run Oracle as docker container
+[Building Oracle Database Docker Install Images](https://github.com/oracle/docker-images/tree/master/OracleDatabase/SingleInstance#building-oracle-database-docker-install-images)
 * login to Docker hub with your Docker account information with the below command
 ```
 $ docker login
 ```
 
+### Run Oracle
+We  can build an image one time from Oracle's Docker GitHub repo and Docker will take care of the rest.
+```batch
+docker run -name oracle -p 1521:1521 oracle/database:19.3.0-ee
+docker start oracle
+```
+
+### Run Oracle with detailed configuration 
 * Use the below command to install Oracle 12c image from Docker Hub.
 ```
 $ docker run -d -p 1521:1521 --name OracleDB store/oracle/database-enterprise:12.2.0.1-slim

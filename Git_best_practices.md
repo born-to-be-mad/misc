@@ -23,25 +23,46 @@
 - [Как это отменить?! Git-команды для исправления своих ошибок](https://tproger.ru/translations/problems-with-git/)
 - [Полезные команды Git: безопасная отмена коммитов, добавление файла из другой ветки и другие](https://tproger.ru/translations/git-tips-and-tricks/)
 
-# GIT MUST-HAVE AlIASES
+# GIT MUST-HAVE ALIASES
 
 ## Common aliases
 
-#### For Windows users:
+`git config alias.ALIAS_SHORT_NAME "ALIAS CONTENT`- add locally
+`git config --global alias.ALIAS_SHORT_NAME "ALIAS CONTENT`- add globally
+F.e. `git config --global alias.st status` - gits st -> git status
 
+`git config alias.qm "!git checkout $1; git merge @{-1}"` alias with parameters
+
+Section '[alias]'
+```batch
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	hist1 = log --all --decorate --oneline --graph
+	hist2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    stat = shortlog -nse
+	cfgg = config -e --global
+	cfgl = config -e --local
+	lg = log --pretty='%Cred%h%Creset | %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)[%an]%Creset' --graph
+	so = show --pretty='parent %Cred%h%Creset commit %Cred%h%Creset%C(yellow)%d%Creset %n%n%w(72,2,2)%s%n%n%w(72,0,0)%C(cyan)%an%Creset %Cgreen%ar%Creset'
+
+    hide = update-index –-skip-worktree
+    unhide = update-index –-no-skip-worktree
+    unhide-all = ls-files -v | grep -i ^S | cut -c 3- | xargs git update-index –-no-skip-worktree
+    hidden = ! git ls-files -v | grep ‘^S’ | cut -c3-
 ```
-git config --global alias.co checkout
-git config --global alias.ci commit
-git config --global alias.st status
-git config --global alias.br branch
-git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+#### For Windows users:
+ 
+```
 git config --global alias.type 'cat-file -t'
 git config --global alias.dump 'cat-file -p'
 ```
 
 #### For Unix/Mac users:
 
-`git status`, `git add`, `git commit`, and `git checkout` are common commands so it is a good idea to have abbreviations for them.
+`git status`, `git add`, `git commit`, and `git checkout` are common commands, so it is a good idea to have abbreviations for them.
 
 Add the following to the `.gitconfig` file in your \$HOME directory.
 
@@ -55,10 +76,7 @@ Add the following to the `.gitconfig` file in your \$HOME directory.
   type = cat-file -t
   dump = cat-file -p
 
-  hide = update-index –-skip-worktree
-  unhide = update-index –-no-skip-worktree
-  unhide-all = ls-files -v | grep -i ^S | cut -c 3- | xargs git update-index –-no-skip-worktree
-  hidden = ! git ls-files -v | grep ‘^S’ | cut -c3-
+
 ```
 
 #### Profile aliases
@@ -81,14 +99,28 @@ alias get='git '
 ```
 
 # GIT Popular commands
+#### git rerere («reuse recorded resolution»)
+Allows reusing recorded resolution of conflicted merges. We can automate the conflict resolution. 
+`git config --global rerere.enabled true` to activate globally.
+`git config --global rerere.autoupdate true` if we need automatically index corrected files.
+
+[Details](https://git-scm.com/docs/git-rerere)
 
 #### git config
+
+Better to configure all properties by editing config file `git config --global -e`. 
 
 It configures user data which will be used with your commits.
 
 Configure user name: `git config –global user.name “[name]”`
 
 Configure user e-mail: `git config –global user.email “[email address]”`
+
+Configure git editor for Windows:
+```batch
+git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+```
+Configure git editor on Linux/Mac:`git config --global core.editor "atom --wait"`
 
 #### git init
 
@@ -290,7 +322,7 @@ And when you want to re-apply the changes you “stash”ed , use the command be
 
 - [Using branches](https://www.atlassian.com/git/tutorials/using-branches)
 
-### Standart workflow
+### Standard workflow
 
 - create a new local branch 'feature' via command `git checkout -b feature`
 
@@ -307,3 +339,30 @@ And when you want to re-apply the changes you “stash”ed , use the command be
 - delete the 'feature` branch via 'git branch -d feature'
 
 - push changes to remote master via `git push origin master`
+
+## Cherry-picking
+
+* `git cherry-pick <commit-hash>` to cherry-pick a commit from another branch.
+* `git cherry-pick -n <commit-hash>` to cherry-pick the commit but it won’t commit the changes. It will only stage all the changes.
+* `git cherry-pick -continue` or `git cherry-pick -abort` when you face conflicts while cherry-picking.
+* `git cherry-pick -m` to mention the parent branch number when you are cherry-picking a merge commit.
+* `git cherry-pick A..B` to cherry-pick a series of commits from A(not included) to B.
+* `git cherry-pick A^..B` to cherry-pick a series of commits from A(included) to B.
+
+## Fetching
+* `git fetch` to download all the remote changes to local without affecting your flow.
+* 'git fetch --all' to fetch all remotes
+* `git diff <branch_name> origin/<branch_name>` - to know the remote changes. 
+  Remember that all the changes from the second branch are shown and the changes from the first branch are omitted. 
+  So that you can see the difference between the two branches.
+* `git diff develop origin/develop —stat` -  to show only the files changed in the local and remote branches.
+* `git log develop..origin/develop` - to see all the commits from origin/develop but that are not present in the develop branch. 
+* In this way, you can know that how many new commits are added to the remote develop branch that is not present in the local branch.
+* `git log origin/develop..develop` - to see all commits from develop (local) but commits that are not present in origin/develop (remote).
+* `git pull` = `git fetch` + `git merge`
+* `git pull origin develop` - only fetches the remote changes of develop branch and not other branches. And it also merges the remote changes to the branch.
+* `git pull —rebase` if we want to rebase after fetching,cause by default, `git pull` will execute `git merge`.
+
+
+# Materials
+- [Как склеить коммиты и зачем это нужно](https://htmlacademy.ru/blog/boost/tools/how-to-squash-commits-and-why-it-is-needed)

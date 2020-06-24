@@ -5,9 +5,9 @@ Follow me [@DzmitryMarudau](https://twitter.com/DzmitryMarudau) for technical re
 
 ### Table of Contents
 
-## [RegExp - hints](regexp%20-%20hints.md)
+## [RegExp - hints](regexp-hints.md)
 
-## [Intellij Idea - optimized settings, plugins, best practices ](Intellij%20Idea%20-%20tips%20and%20tricks.md)
+## [Intellij Idea - optimized settings, plugins, best practices ](Intellij_Idea-tips_and_tricks.md)
 
 ## [Git - best practices, must-know commands and etc.](Git_best_practices.md)
 
@@ -19,4 +19,16 @@ Follow me [@DzmitryMarudau](https://twitter.com/DzmitryMarudau) for technical re
 
 ## [Code Review Checklist](Code_Review_checklist.md)
 
-## [HOW TO PASS 1Z0-816 OCP JAVA 11 PART 2 EXAM](1z0-816.md)
+## [Spring: must-know](Spring-usefull.md)
+
+## [SQl: best practices](SQL-best_practices.md)
+
+## [JVM tuning](jvm.md)
+
+## [JDK tools](monitoring-and-troubleshooting-jdk-tools.md)
+
+## [Quotes of the great persons](quotes_of_great_programmers_and_more.md)
+
+## [Github reading](github_reading.md)
+
+## [How to pass 1Z0-816 OCP JAVA 11 PART 2 exam](1z0-816.md)

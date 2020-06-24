@@ -46,6 +46,11 @@ console.log(document.getElementById('root'));
 
 * Large Objects in the Console
 To see the full structure of the object, use `JSON.stringify()`
+The `JSON.stringify()` function is the canonical way to convert a JavaScript object to JSON.
+Parameters:
+* The first parameter to JSON.stringify() is the object to serialize to JSON.
+* The 2nd parameter to JSON.stringify() is the replacer function. The replacer function is useful for omitting sensitive data.
+* The 3rd parameter is called spaces. The spaces parameter is used for formatting JSON output in a human readable way. 
 ```javascript
 const myObject = {
   propA: {
@@ -58,6 +63,17 @@ const myObject = {
 };
 
 console.log(JSON.stringify(myObject, null, 4));
+console.log(JSON.stringify(myObject, null, '    '));
+
+const obj = {
+  name: 'James Bond',
+  nested: {
+    test: 'not in output',
+    toJSON: () => 'test'
+  }
+};
+
+JSON.stringify(obj); // '{"name":"James Bond","nested":"test"}'
 ```
 
 ### Fat Arrow

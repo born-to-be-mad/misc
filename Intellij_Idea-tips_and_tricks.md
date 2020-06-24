@@ -1,3 +1,37 @@
+# Live Templates
+
+* Logs a value to LOGGER.info
+  * Template text 
+    ```batch
+    $LOGGER$.info("$EXPR_COPY$ = {}", $EXPR$); 
+    ```
+* Slf4j Logger
+  * Template text 
+    ```batch
+    private static final org.slf4j.Logger LOGGER = org.slf4j.LoggerFactory.getLogger($CLASS$.class);
+    ```
+* Log4j Logger
+  * Template text 
+    ```batch
+    private static final org.apache.logging.log4j.Logger LOG = org.apache.logging.log4j.LogManager.getLogger($CLASS$.class);
+    ```
+* Surround XML with region marker
+  * Template text 
+    ```batch
+    <!--region $DESCRIPTION$-->
+    $SELECTION$
+    <!--endregion-->
+    ```
+* Variables:
+
+| Name | Expression | Default Value | Skip if defined |
+| --- | --- | --- | --- |
+| LOGGER | variableOfType(“Logger”) | LOGGER | [] |
+| EXPR | variableOfType(“”) | “expr” | [] |
+| EXPR_COPY | escapeString(EXPR) | | [x] |
+| CLASS | className() | | [] |
+| DESCRIPTION |  | “Description” | [] |
+
 # Optimized setting for Intellij Idea:
 
 ## Clean the view
