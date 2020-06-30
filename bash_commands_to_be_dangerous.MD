@@ -101,3 +101,22 @@ cd !-2:h
 touch !$!-3:$ !! !$.txt
 cat !:1-$
 ```
+
+# Delete node modules
+* This will spit out a list of all of the node_modules that it finds, and how much disk space they’re taking up (individually and in total).
+```
+# Mac/Linux
+find . -name "node_modules" -type d -prune -print | xargs du -chs
+
+# Windows
+FOR /d /r . %d in (node_modules) DO @IF EXIST "%d" echo %d"
+```
+
+* Actually deleting files
+```
+# Mac/Linux
+find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \;
+
+# Windows
+FOR /d /r . %d in (node_modules) DO @IF EXIST "%d" rm -rf "%d"
+```
