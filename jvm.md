@@ -21,6 +21,23 @@ Levels:
   * By avoiding long scopes, i.e. writing short methods, an object's scope is easier tio determine.
   
 #JVM tuning
+## Possible tuning options
+* standard options: `–classpath`, `-cp`, `–version`, and so on
+* extra options -  start with `-X`  and thay are not supported by all JVM implementations and are usually subject to change
+* advanced options - begin with `-XX`. 
+  * `-XX:+PrintFlagsFinal` lists the global JVM tuning flags. 
+    * Each flag has a specific type!
+    * Boolean options are used to either enable or disable a feature. 
+      To enable them, we just have to put a plus sign `+` before the option name.
+      To disable them, we have to add a minus sign `-` before their name.
+    * Other flag types need an argument value. 
+      It's possible to separate the value from the option name by a space, a colon, an equal sign, 
+      or the argument may directly follow the option name (the exact syntax differs for each option)      
+  * `-XX:+UnlockDiagnosticVMOptions` lists all diagnostic tuning flags
+  * `-XX:+UnlockExperimentalVMOptions` lists all experimental options
+These combinations of options can help us to find a tuning flag, especially when we don't remember the exact name. 
+For instance, to find the tuning flag related to soft references in Java: 
+`java -XX:+UnlockDiagnosticVMOptions -XX:+UnlockExperimentalVMOptions -XX:+PrintFlagsFinal  -version`
 
 ## -Xmx and -XX:MaxMetaspaceSize
 * `-Xmx` defines the maximum amount of heap size you are allocating to your application.
