@@ -25,7 +25,7 @@
 
 # GIT MUST-HAVE ALIASES
 
-## Common aliases
+## How to configure aliases
 
 `git config alias.ALIAS_SHORT_NAME "ALIAS CONTENT`- add locally
 `git config --global alias.ALIAS_SHORT_NAME "ALIAS CONTENT`- add globally
@@ -97,6 +97,36 @@ alias gx='gitx --all'
 alias got='git '
 alias get='git '
 ```
+
+## Top aliases
+* The `git undo` alias is probably my most-used one, as it “undoes” the last commit and gives you a bit of a do-over to make changes, 
+  unstage files, and fix a recently screwed up commit.
+```
+undo = reset --soft HEAD~1
+```  
+
+* The `git amend` alias allows to add any staged changes to the previous commit without having to update the commit message.
+```
+amend = !git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend
+```  
+
+* The `git tree` alias allows to see what has been merged into the current branch, and when, 
+which can make it significantly easier to get a larger view of the activity within a given project.
+```
+tree = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+```  
+
+* The `git review` alias allows to checkout a pull request by its ID, which I can then run through the ringer and validate without having to jump through any hoops..
+```
+review= "!f() { git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
+```  
+
+* The `git trim` alias gets a list of all of the branches that have been merged into the current branch, and deletes them from your local repository. 
+This is super useful when pulling down a large number of feature branches, as you can clean them up as they get merged without much overhead.
+```
+trim = !git branch --merged | grep -v '*' | xargs -n 1 git branch -d
+```  
+
 
 # GIT Popular commands
 #### git rerere («reuse recorded resolution»)
