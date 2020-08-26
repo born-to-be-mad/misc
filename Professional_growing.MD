@@ -27,7 +27,7 @@
 # Reading
 
 - [ ] OCP Java SE 8 Programmer II Exam Guide (Exam 1Z0-809), 7th Edition(by Elisabeth Robson, Bert Bates, Kathy Sierra, 2018)
-- [ ] Spring Boot 2 Recipes: A Problem-Solution Approach(by Marten Deinum, 2018). :blue_book: 2020.XX
+- [x] Spring Boot 2 Recipes: A Problem-Solution Approach(by Marten Deinum, 2018). :blue_book: 2020.07
 - [x] Grokking Algorithms. An illustrated guide for programmers and other curious people(Aditya Y. Bhargava, 2016) - :blue_book: 2018.12
 - [x] Java by Comparison. Become a Java Craftsman in 70 Examples(by Simon Harrer, Jörg Lenhard, Linus Dietz, 2018) - :blue_book: 2020.03.
 - [x] Modern Java Recipes. Simple Solutions to Difficult Problems in Java 8 and 9(by Ken Kousen, 2017). :blue_book: 2019.10
@@ -52,4 +52,4 @@
 - [x] [JPoint 2019: the best](https://www.youtube.com/playlist?list=PLVe-2wcL84b_fBL9xJTxkEBtvCKfRGEV1&disable_polymer=true)
 - [x] [Voxxed Days Minsk 2019](https://www.youtube.com/playlist?list=PLRsbF2sD7JVq3tPa0jQjCtI1_xeLiPu-Z)
 - [x] LiveLessons - OCA Java SE 8 Programmer I(on December 2018)
-- [ ] [Java Programming by Tagir Valeev](https://compscicenter.ru/courses/java/nsk/2017-autumn/classes/)
+- [x] [Java Programming by Tagir Valeev](https://compscicenter.ru/courses/java/nsk/2020-spring/)
