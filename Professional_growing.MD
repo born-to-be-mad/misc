@@ -27,9 +27,14 @@
 # Reading
 
 - [ ] OCP Java SE 8 Programmer II Exam Guide (Exam 1Z0-809), 7th Edition(by Elisabeth Robson, Bert Bates, Kathy Sierra, 2018)
+- [ ] Spring in Action, 5th Edition(Craig Walls, 2018)
+- [ ] Pro Git by. 2nd Edition Scott Chacon & Ben Straub(2020)
+- [ ] Программист-фанатик (Чед Фаулер, 2018) :blue_book: 2020.XX
+- [ ] Clean Coder by Robert C. Martin / Идеальный программист. Как стать профессионалом разработки ПО (2019) :blue_book: 2020.XX
+- [x] Clean Code by Robert C. Martin / Чистый код: создание, анализ и рефакторинг. Библиотека программиста(2018) :blue_book: 2020.08
 - [x] Spring Boot 2 Recipes: A Problem-Solution Approach(by Marten Deinum, 2018). :blue_book: 2020.07
-- [x] Grokking Algorithms. An illustrated guide for programmers and other curious people(Aditya Y. Bhargava, 2016) - :blue_book: 2018.12
 - [x] Java by Comparison. Become a Java Craftsman in 70 Examples(by Simon Harrer, Jörg Lenhard, Linus Dietz, 2018) - :blue_book: 2020.03.
+- [x] Grokking Algorithms. An illustrated guide for programmers and other curious people(Aditya Y. Bhargava, 2016) - :blue_book: 2019.12
 - [x] Modern Java Recipes. Simple Solutions to Difficult Problems in Java 8 and 9(by Ken Kousen, 2017). :blue_book: 2019.10
 - [x] Java SE 8 for the Really Impatient(by Cay S. Horstmann, 2014) - :blue_book: 2018.12
 - [ ] The Java Module System (by Nicolai Parlog, 2019)
@@ -41,11 +46,7 @@
 - [ ] The Complete Software Developer's Career Guide: How to Learn Your Next ...(by John Sonmez, 2017)
 - [ ] OCP: Oracle Certified Professional Java SE 8 Programmer II Study Guide: Exam 1Z0-809 1st Edition(by Jeanne Boyarsky (Author), Scott Selikoff, 2015)
 - [ ] Hibernate Tips: More Than 70 Solutions to Common Hibernate Problems(by Thorben Janssen, 2017)
-- [ ] Clean Code by Robert C. Martin / Чистый код: создание, анализ и рефакторинг. Библиотека программиста(2018)
-- [ ] Clean Coder by Robert C. Martin / Идеальный программист. Как стать профессионалом разработки ПО (2019)
 - [ ] Clean Agile: Back to Basics (Robert C. Martin Series) Sep 12, 2019
-- [ ] Программист-фанатик (Чед Фаулер, 2018)
-- [ ] Spring in Action, 5th Edition(Craig Walls, 2018)
 
 # Watching
 
