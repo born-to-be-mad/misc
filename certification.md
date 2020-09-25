@@ -90,8 +90,45 @@ Annotations
 Describing the purpose of typical usage patterns and annotations
 Applying the annotations to methods and classes
 Declaring custom annotations
-Exception Handling and Assertations
+Exception Handling and Assertions
 
 Using the try-with-resources construct
 Creating and using custom exception classes
-Testing invariants by using assertations  
+Testing invariants by using assertions  
+
+#OCP JAVA 11 CERTIFICATION 1Z0-819 EXAM EXPERIENCE
+* Since the number of questions were so less (only 50), some topics were completely left out. Obviously, this doesn't mean that the exam doesn't have questions on those topics.
+Specifically, the following things stood out in the exam:
+  * Modules:
+    * Only a couple of very basic conceptual questions.
+    * No question on advanced topic such as services, migration strategies, command line options, module tools such as jdeps.
+  * Security: Two code based questions on doPriviledged. No question on other topics. 
+  * JDBC:
+    * Only a couple of basic questions involving PreparedStatement.
+    * No ResultSetMetaData
+    * No DriverManager, transactions, savepoint questions.
+  * Multithreading/Locking:
+    * No question on Atomic classes
+    * No question on locks
+    * Couple of tough questions on ExecutorService
+  * File I/O:
+    * Simple question on methods of Files class involving options such as REPLACE_EXISTING.
+    * Question on seriaization
+    * No question on Paths or Path relativize
+    * No question on Console
+  * Arrays/Collection/Stream: Several questions
+    * Lot of questions used the boxed() method.
+    * Heavy focus on autoboxing of elements of a stream.
+    * Heavy focus on List.of and List.copyOf methods
+    * No question on Deque but TreeSet was used
+   * Overloading: No complicated question on method resolution.
+   * Advanced question on Enum
+   * Advanced question on Annotation
+   * Simple question on exceptions.
+
+* One question had 10, yes, 10, options! A couple of them had 7 or 8 options as well. Most had 4-5 though. 
+
+* Only a few questions were very lengthy to read (they had a long problem statement). Most were not so much.
+
+* Time was enough.
+Overall the test did not seem too hard in terms of mind tricks but was hard in terms of depth of understanding required. You can't just read a topic cursorily and expect to answer exam questions on it. For example, the questions on enums and annotations requried that you know the complete ins and outs of how they work.

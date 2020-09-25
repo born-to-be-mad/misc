@@ -44,7 +44,7 @@
 * There are no shortcuts to true excellence.(Angela Duckwort)
 * Лёгкий путь не приведёт к истинному успеху.(психолог Анжела Дакворт)
 
-* Mistakes are always forgivable, if one has the courage to admit them.Bruce Le)
+* Mistakes are always forgivable, if one has the courage to admit them. (Bruce Lee)
 * Ошибки всегда прощаются, если есть смелость признать их.(Брюс Ли)
 
 * It isn’t what you have, or who you are, or where you are, or what you are doing that makes you happy or unhappy. It is what you think about.”(Dale Carnegie)
