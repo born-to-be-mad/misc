@@ -171,7 +171,7 @@ select value from v$parameter where name='service_names';
 ## Docker commands
 
 - [Official docker images](https://github.com/docker-library/official-images/tree/master/library)
--
+
 
 ### Clean the system
 
@@ -195,6 +195,7 @@ select value from v$parameter where name='service_names';
 
 - `docker container ls` list running containers
 - `docker container ls -a` list all containers
+- `docker container ls -q/ --quiet ` list only container IDs
 - `docker container run`
 - `docker container run --publish 80:80 nginx`
 - `docker container run --publish 80:80 --detach nginx`
@@ -209,13 +210,16 @@ select value from v$parameter where name='service_names';
 - `docker container run --rm -p 80:3000 dma1979/testing-node` - run own dma1979 image from repo
 - `docker container start CONAINER_ID`
 - `docker container start -ai CONAINER_ID`
-- `docker container stop CONAINER_ID`
+- `docker container stop CONAINER_ID` or `docker stop CONAINER_ID` stop the container
+- `docker stop $(docker ps -a -q)` remove all RUNNING containers
+- `docker kill $(docker ps -q)` kill all RUNNING containers
 - `docker container stop TAB COMPLETION`
-- `docker container top CONTAINER_ID` info about runnign container(time, pid an etc.)
+- `docker container top CONTAINER_ID` info about running container(time, pid an etc.)
 - `docker container top CONTAINER_NAME`
-- `docker container rm C_ID C_ID2 C_ID3...` remove containers
+- `docker container rm C_ID C_ID2 C_ID3...` or `docker rm C_ID C_ID2 C_ID3...` remove containers
 - `docker container rm -f C_ID C_ID2 C_ID3...` remove containers with 'FORCE'
 - `docker container rm -f TAB COMPLETION`
+- `docker rm $(docker ps -a -q)` remove all stopped containers
 - `docker container logs CONTAINER_NAME`
 - `docker container inspect CONTAINER_NAME`
 - `docker container inspect --format '{{ .NetworkSettings.IPAddress }}' bridge`
@@ -227,13 +231,14 @@ select value from v$parameter where name='service_names';
 ### docker image
 
 - `docker image ls` list image
+- `docker rmi IMAGE_ID` remove image
+- `docker rmi $(docker images -q)` remove all images
 - `docker pull IMAGE_NAME`
 - `docker pull alpine`
 - `docker pull nginx`
 - `docker pull nginx:1.11.9`
 - `docker pull mongo`
 - `docker image inspect nginx`
-
 - `docker image push dma1979/nginx`
 - `docker image push dma1979/nginx bretfisher/nginx:testing`
 - `docker image push dma1979/nginx:testing`
@@ -263,3 +268,6 @@ select value from v$parameter where name='service_names';
 
 - `docker history nginx:latest`
 - `docker history mysql`
+
+### volumes
+- `docker volume ls` list volumes
