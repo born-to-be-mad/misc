@@ -142,3 +142,27 @@ It’s highly recommended to set the time zone at the JVM using the  `Duser.time
 ```java
 -Duser.timezone=US/Eastern
 ```
+
+#JVM Tuning Using `jcmd`
+`jcmd` is a utility which sends diagnostic command requests to a running Java Virtual Machine i.e. JVM.
+* It gets various runtime information from a JVM. 
+* It must be used on the same machine on which JVM is running! (!)
+
+`jcmd` possibilities:
+* get pid - running `jcmd` will list all applicable java processes
+* list all usages  - `jcmd PROCESS_ID help`
+* `jcmd P_ID VM.version` shows basic JVM details
+* `jcmd P_ID VM.flags` prints all VM arguments used by application, either configured by us or taken default by jvm.
+   * other commands `VM.system_properties`, `VM.command_line`, `VM.uptime`, `VM.dynlibs` provide other details about various other properties
+* `jcmd P_ID Thread.print` gets the thread dump i.e. it will print the stack trace of all threads currently running.
+* `jcmd P_ID GC.class_histogram` provides important information regarding heap usage and it lists all the classes (either external or application specific) with a number of instances and their heap usage sorted by heap usage.
+   * `jcmd P_ID GC.class_histogram | grep -i jvmtuning` f.e. an advanced usage
+* `jcmd P_ID GC.heap_dump FILE_NAME` to get the jvm heap dump instantly
+* use JFR command options to provide relevant JFR(Java Flight Recorder) files for analysis on the fly
+   * `jcmd P_ID JFR.start VM.unlock_commercial_features` to unlock commercial features cause JFR is a part of it
+   * `jcmd P_ID JFR.start` to enable JFR features
+   * `jcmd P_ID JFR.start name=RECORDING_NAME settings=profile delay=10s duration=20s ` to do JFR recording of 30 sec after a delay of 10sec.
+* Native Memory Tracking via `jcmd P_ID  VM.native_memory` to tune memory usage and detect any memory leak by collecting details about heap and non-heap memory.
+   *  it is necessary to run JVM with flags `-XX:NativeMemoryTracking=summary` or`-XX:NativeMemoryTracking=detail` to track 
+   * `jcmd P_ID  VM.native_memory baseline` to baseline the memory stats  
+   * `jcmd P_ID  VM.native_memory summary.diff` to observe the change, where exactly memory is being used
