@@ -166,3 +166,15 @@ It’s highly recommended to set the time zone at the JVM using the  `Duser.time
    *  it is necessary to run JVM with flags `-XX:NativeMemoryTracking=summary` or`-XX:NativeMemoryTracking=detail` to track 
    * `jcmd P_ID  VM.native_memory baseline` to baseline the memory stats  
    * `jcmd P_ID  VM.native_memory summary.diff` to observe the change, where exactly memory is being used
+
+#Tips for Writing GC-Efficient Code
+* Predict Collection Capacities
+  * the best results can be achieved by providing the collection with its expected size upon construction.
+* Process Streams Directly
+  * use the appropriate InputStream (FileInputStream and etc.) and feed it directly into the parser, 
+    without first reading the whole thing into a byte array. 
+  * all major libraries expose APIs to parse streams directly
+* Use Immutable Objects
+  * An immutable object is an object whose fields (and specifically non-primitive fields in our case) cannot be modified after the object has been constructed.
+  * Immutability implies that all objects referenced by an immutable container have been created before the construction of the container completes. In GC terms: The container is at least as young as the youngest reference it holds.
+    This means that when performing garbage collection cycles on young generations, the GC can skip immutable objects that lie in older generations, since it knows for sure they cannot reference anything in the generation that’s being collected. 
