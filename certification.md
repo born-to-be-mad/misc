@@ -1,134 +1,93 @@
-# HOW TO PASS 1Z0-816 OCP JAVA 11 PART 2 EXAM
+# Exam objectives for 1Z0-819(Java SE 11 Developer, Oracle Certified Professional)
+Since Sept. 2020 it includes both 1Z0-815 and 1Z0-816 (!)
+* Working with Java data types
+  * Use primitives and wrapper classes, including, operators, parentheses, type promotion and casting
+  * Handle text using String and StringBuilder classes
+  * Use local variable type inference, including as lambda parameters
+* Java Object-Oriented Approach
+  * Declare and instantiate Java objects including nested class objects, and explain objects' lifecycles (including creation, dereferencing by reassignment, and garbage collection)
+  * Define and use fields and methods, including instance, static and overloaded methods
+  * Initialize objects and their members using instance and static initialiser statements and constructors
+  * Understand variable scopes, apply encapsulation and make objects immutable
+  * Create and use subclasses and superclasses, including abstract classes
+  * Utilize polymorphism and casting to call methods, differentiate object type versus reference type
+  * Create and use interfaces, identify functional interfaces, and utilize private, static, and default methods
+  * Create and use enumerations
+* Working with Arrays and Collections
+  * Use generics, including wildcards
+  * Use a Java array and List, Set, Map and Deque collections, including convenience methods
+  * Sort collections and arrays using Comparator and Comparable interfaces
+* Java Platform Module System
+  * Deploy and execute modular applications, including automatic modules
+  * Declare, use, and expose modules, including the use of services
+* Java I/O API
+  * Read and write console and file data using I/O Streams
+  * Implement serialization and deserialization techniques on Java objects
+  * Handle file system objects using java.nio.file API
+* Database Applications with JDBC
+  * Connect to and perform database SQL operations, process query results using JDBC API
+* Annotations
+  * Create, apply, and process annotations
+* Controlling Program Flow
+  * Create and use loops, if/else, and switch statements
+* Exception Handling
+  * Handle exceptions using try/catch/finally clauses, try-with-resource, and multi-catch statements
+  * Create and use custom exceptions
+* Working with Streams and Lambda expressions
+  * Implement functional interfaces using lambda expressions, including interfaces from the java.util.function package
+  * Use Java Streams to filter, transform and process data
+  * Perform decomposition and reduction, including grouping and partitioning on sequential and parallel streams
+* Concurrency
+  * Create worker threads using Runnable and Callable, and manage concurrency using an ExecutorService and java.util.concurrent API
+  * Develop thread-safe code, using different locking mechanisms and java.util.concurrent API
+* Secure Coding in Java SE Application
+  * Develop code that mitigates security threats such as denial of service, code injection, input validation and ensure data integrity
+  * Secure resource access including filesystems, manage policies and execute privileged code
+* Localization
+  * Implement Localization using Locale, resource bundles, and Java APIs to parse and format messages, dates, and numbers
 
-## Mock Exams
- - [ ] OCP Java 11 - 1Z0-816 Mock Exams Practice Tests/Questions Part 2
- 
-## Books for OCP Java 11 Certification 1Z0-816
-There are no books specifically geared towards OCP Java 11 Part 2 1Z0-816 exam.
- 
-##  Collection of books and resources for Oracle Certified Professional Java SE 11 Programmer Part 2 exam 1Z0-816
-Following books, articles, and links will cover all that is required for this exam. 
-If you are preparing to take the 1Z0-816 exam, this path should help you pass 1Z0-816 exam:
-- [ ] Start with any OCP JP 8 (1Z0-809) book such as 
-  - [ ] [Boyarksy/Selikoff](https://www.amazon.com/gp/product/1119067901/ref=as_li_tl?ie=UTF8&tag=ewhome-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1119067901&linkId=394d2034df2322c936e73206cc997d2f) 
-  - [ ]  [Sierra/Bates](https://www.amazon.com/gp/product/1119067901/ref=as_li_tl?ie=UTF8&tag=ewhome-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1119067901&linkId=d35ee432659d13ce49388919aab4ff7d).
-  
-(!)Ignore the following topics in these books:
- * Singleton/Immutability
- * static initializers/blocks
- * Date/Time related topics<BR/>
 
-Following topics from the above books are mandatory to learn:
-- [ ] Lambda Expressions (including functional interfaces)
-- [ ] Parallel Streams
-- [ ] Lambda Operations on Streams
-- [ ] Language Enhancements - try with resources, multi catch, Java File I/O (NIO.2)
-- [ ] If you have time, go through these topics also (these are not explicitly mentioned in the objectives but are part of Concurrency):
-  - [ ] java.util.concurrent.atomic package 
-  - [ ] parallel Fork/Join Framework
-- [ ] Study the following new topics from any Java 11 book such as [Core Java Vol 2](https://www.amazon.com/gp/product/0135166314/ref=as_li_tl?ie=UTF8&tag=ewhome-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0135166314&linkId=3a9e15ad39246637aa07466b16c67293) or [Herbert Schildt](https://www.amazon.com/gp/product/1260440230/ref=as_li_tl?ie=UTF8&tag=ewhome-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1260440230&linkId=36bafe62c000a21fd49de29474044dc5)
-  - [ ] Create and use private, default, and static methods of interfaces
-  - [ ] Create functional interfaces 
-  - [ ] Use lambda expressions with type inferencing ( See [this](https://www.baeldung.com/java-10-local-variable-type-inference) and (this)[https://www.baeldung.com/java-var-lambda-params] article. )
-  - [ ] Migration to Modular Application - Section 3 of [The State of Module System](http://openjdk.java.net/projects/jigsaw/spec/sotms/#compatibility--migration) (Read carefully)
-  - [ ] Modular services - Section 4 of [The State of Module System](http://openjdk.java.net/projects/jigsaw/spec/sotms/#services) (Read carefully)
-  - [ ] Serialization - Read Chapters 1, 2, and 3 of [Serialization Spec](https://docs.oracle.com/javase/8/docs/platform/serialization/spec/serialTOC.html).
-  - [ ] Security - Read Full [Secure Coding Guidelines](https://www.oracle.com/technetwork/java/seccodeguide-139067.html).
-  - [ ] JDBC - Any book will do. Focus on PreparedStatement. Ignore RowSets etc. 
-  - [ ] Formatting - Date formatting has two different methods. 
-  Using the old java.text package and using the new java.time.DateTimeFormatter package.  
-  Not clear which one they are focussing on but there are questions on java.time.DateTimeFormatter for sure. 
-  Either way, go through the Predefined Formatters and Pattern strings given in [DateTimeFormatter API JavaDoc](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html).
-  - [ ] Annotations - Sufficient to go through this [trail](https://docs.oracle.com/javase/tutorial/java/annotations/).
-  
-  
-## Java SE 11 Programmer II [1Z0-816] Exam Objectives
-To optimally prepare for the examination, it is crucial that you create your schedule around the objective guidelines provided by Oracle. The following enlists the primary examination objectives that you need to focus on to pass the examination.
+# How to prepare for 1Z0-819 exam
+* Books: As of now there is no book specifically for this exam. However, since this exam combines almost all of the topics of 1Z0-815 and 1Z0-816 exams, 
+you may use the 1Z0-815 book and 1Z0-816 book.
+* Additionally, you should also go through the updated [Java Secure Coding Guidelines](https://education.oracle.com/product/pexam_1Z0-819).
+* Mock Exams: Finally, use [1Z0-819 mock exams](https://enthuware.com/java-certification-mock-exams/oracle-certified-professional/ocp-java-11-exam-1z0-819) to practice answering certification style questions. Since this exam covers a very broad range of topics, you will need to practice with a large number of questions so that you don't miss any topic.
 
-Fundamentals of Java
 
-Creating and using final classes
-Creating and using nested, inner, and anonymous classes
-Creating and using enumerations
-Interfaces of Java
+# OCP JAVA 11 CERTIFICATION 1Z0-819 EXAM EXPERIENCE
+Our content experts got questions on the following topics, and as explained above, since the number of questions were so less (only 50), some topics were completely left out. Of course, this doesn't mean that the exam doesn't have questions on these topics. Another candidate may get a different set of questions, which may include questions on these topics.
 
-Creating and using interfaces with the default methods
-Creating and using interfaces with private methods
-Lambda Expressions and Functional Interfaces
+* Modules:
+  * Only a few of basic conceptual questions.
+  * No question on advanced topic such as services, migration strategies, command line options,
+  * Question on jdeps output.
+* Security: Two code based questions on doPriviledged. No question on other topics. 
+* JDBC:
+  * Only a couple of basic questions involving PreparedStatement.
+  * Code uses DataSource.getConnection instead of DriverManager.getConnection.
+  * No ResultSetMetaData
+  * No DriverManager, transactions, savepoint questions.
+* Multithreading/Locking:
+  * No question on Atomic classes
+  * No question on locks
+  * Couple of tough questions on ExecutorService
+* File I/O:
+  * Simple question on methods of Files.copy method involving options such as REPLACE_EXISTING and symbolic links.
+  * Question on seriaization
+  * No question on Paths or Path relativize
+  * No question on Console
+* Arrays/Collection/Stream: Several questions
+  * Lot of questions used the boxed() method.
+  * Heavy focus on autoboxing of elements of a stream.
+  * Heavy focus on List.of and List.copyOf methods
+  * No question on Deque but TreeSet was used
+* Overloading: No complicated question on method resolution.
+* Advanced question on Enum
+* Advanced question on Annotation
+* Simple question on exceptions.
 
-Defining and writing functional interfaces
-Creating and using lambda expressions with statement lambdas and lambda parameters
-Built-in Functional Interfaces
-
-Using interfaces from the java.util.function package
-Using the core functional interfaces including Consumer, Predicate, Supplier, and Function
-Using binary and primitive variations of the base interfaces of the java.util.function package.
-Migrating to Modular Applications
-
-Running modular applications on the modulepath and classpath
-Using jdeps for identifying ways to address the cyclic dependencies and for determining dependencies
-Migrating a Java-developed application with bottom-up and top-down migration approach
-Concurrency
-
-Writing a thread-safe code
-Identifying threading-related problems such as livelocks and deadlocks.
-I/O (NIO2 and Fundamentals)
-
-Writing the console and file data using the I/O streams
-Using the I/O streams to write and read files
-Using the path interface for operating on the directory and file paths
-Using the Stream APIs with the files
-Using the Files class for copying, checking, and deleting a directory or file
-Writing and reading objects using serialization
-Database Applications with JDBC
-
-Connecting to the databases using the DriverManager and JDBC URLs.
-Using PreparedStatement for performing CRUD operations
-Using CallableStatement and PreparedStatement APIs for performing database operations.
-Annotations
-
-Describing the purpose of typical usage patterns and annotations
-Applying the annotations to methods and classes
-Declaring custom annotations
-Exception Handling and Assertions
-
-Using the try-with-resources construct
-Creating and using custom exception classes
-Testing invariants by using assertions  
-
-#OCP JAVA 11 CERTIFICATION 1Z0-819 EXAM EXPERIENCE
-* Since the number of questions were so less (only 50), some topics were completely left out. Obviously, this doesn't mean that the exam doesn't have questions on those topics.
-Specifically, the following things stood out in the exam:
-  * Modules:
-    * Only a couple of very basic conceptual questions.
-    * No question on advanced topic such as services, migration strategies, command line options, module tools such as jdeps.
-  * Security: Two code based questions on doPriviledged. No question on other topics. 
-  * JDBC:
-    * Only a couple of basic questions involving PreparedStatement.
-    * No ResultSetMetaData
-    * No DriverManager, transactions, savepoint questions.
-  * Multithreading/Locking:
-    * No question on Atomic classes
-    * No question on locks
-    * Couple of tough questions on ExecutorService
-  * File I/O:
-    * Simple question on methods of Files class involving options such as REPLACE_EXISTING.
-    * Question on seriaization
-    * No question on Paths or Path relativize
-    * No question on Console
-  * Arrays/Collection/Stream: Several questions
-    * Lot of questions used the boxed() method.
-    * Heavy focus on autoboxing of elements of a stream.
-    * Heavy focus on List.of and List.copyOf methods
-    * No question on Deque but TreeSet was used
-   * Overloading: No complicated question on method resolution.
-   * Advanced question on Enum
-   * Advanced question on Annotation
-   * Simple question on exceptions.
-
+###Remarks:
 * One question had 10, yes, 10, options! A couple of them had 7 or 8 options as well. Most had 4-5 though. 
-
 * Only a few questions were very lengthy to read (they had a long problem statement). Most were not so much.
-
 * Time was enough.
-Overall the test did not seem too hard in terms of mind tricks but was hard in terms of depth of understanding required. You can't just read a topic cursorily and expect to answer exam questions on it. For example, the questions on enums and annotations requried that you know the complete ins and outs of how they work.
+* Overall the test did not seem too hard in terms of mind tricks but was hard in terms of depth of understanding required. You can't just read a topic cursorily and expect to answer exam questions on it. For example, the questions on enums and annotations requried that you know the complete ins and outs of how they work.
