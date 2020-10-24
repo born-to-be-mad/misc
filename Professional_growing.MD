@@ -17,15 +17,15 @@
 - [ ] [Docker Mastery: with Kubernetes +Swarm from a Docker Captain](https://www.udemy.com/course/docker-mastery/)
 
 # Conferences
-- [ ] JFuture 2020 online(Oct 16-17, 2019)
-- [x] Voxxed Days Minsk 2019(May 24-25, 2019)
-- [x] JFuture 2019 Java Conference(November 16, 2019)
+- [x] JFuture 2020 Online Edition (Oct 23-24, 2020)
+- [x] Voxxed Days Minsk 2019 (May 24-25, 2019)
+- [x] JFuture 2019 Java Conference (November 16, 2019)
 
 # Reading
 - [ ] Effective Java. Third Edition(by Joshua Bloch, 2018) - :blue_book: 2020/XX
 - [ ] OCP: Oracle Certified Professional, Java SE 11 Programmer I, Study Guide, Exam 1Z0-815(by Jeanne Boyarsky, Scott Selikoff, 2020) - :blue_book: 2020/XX
 - [ ] Программист-фанатик (Чед Фаулер, 2018) - :blue_book: 2020/XX
-- [ ] Рефакторинг. Улучшение проекта существующего кода(Фаулер Мартин, Бек Кент, 2017) - :blue_book: 2020/XX
+- [ ] Рефакторинг. Улучшение проекта существующего кода (Фаулер Мартин, Бек Кент, 2017) - :blue_book: 2020/XX
 - [ ] Clean Agile: Back to Basics (Robert C. Martin Series, Sep 12, 2019)
 - [ ] Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series, 2017)
 - [x] Clean Coder by Robert C. Martin / Идеальный программист. Как стать профессионалом разработки ПО (2019) - :blue_book: 2020/09
