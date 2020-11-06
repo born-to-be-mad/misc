@@ -17,6 +17,7 @@
 - [ ] [Docker Mastery: with Kubernetes +Swarm from a Docker Captain](https://www.udemy.com/course/docker-mastery/)
 
 # Conferences
+- [x] Devoxx Ukraine 2020 Online Edition (Nov 6-7, 2020)
 - [x] JFuture 2020 Online Edition (Oct 23-24, 2020)
 - [x] Voxxed Days Minsk 2019 (May 24-25, 2019)
 - [x] JFuture 2019 Java Conference (November 16, 2019)
