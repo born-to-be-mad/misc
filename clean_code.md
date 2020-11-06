@@ -8,9 +8,9 @@
 - A variable should represent the value it was created for. (avoid var x, instead use var customersIndex)
 
 ## Naming conventions
-- [✓]DO choose easily readable identifier names.
-- [✓] DO favor readability over brevity.
-- [✓] DO use semantically interesting names rather than language-specific keywords for type names. For example, GetLength is a better name than GetInt.
+- [X]DO choose easily readable identifier names.
+- [X] DO favor readability over brevity.
+- [X] DO use semantically interesting names rather than language-specific keywords for type names. For example, GetLength is a better name than GetInt.
 - [X] DO NOT use abbreviations or contractions as part of identifier names. For example, use GetWindow rather than GetWin.
 - [X] AVOID using identifiers that conflict with keywords of widely used programming languages.
 - [X] DO NOT use any acronyms that are not widely accepted, and even if they are, only when necessary.
@@ -35,9 +35,9 @@ Side effects (e.g., modifying an input argument) are evil. Make sure not to have
 * _*Later equals never*_. You are writing //TODO but you know deep in your heart that you’ll never do that. A good practice is to add a work item in the backlog every time you write a TODO.
 * _*4 Code reviews rule*_. In order to be completely sure you are following all standards, best practices, etc, 
 you should always request code reviews to 4 persons: 
-  * Any dev around, 
-  * another dev around, 
-  * your tech lead, 
+  * any dev around
+  * another dev around 
+  * your tech lea 
   * and most important YOU. 
 
 You should always do a code review to your code the same way you will review someone else’s code.
