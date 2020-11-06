@@ -6,6 +6,7 @@
 *Feedback*:
 Team code, constant learning, experiments, automation - must have activities for every developer.
 
+
 ### The Future is Now: Web Apps Productivity without Frameworks(Adam Bien).
 *Rate*: 🌟 :star2: 💪 :muscle:
 
@@ -13,11 +14,13 @@ Team code, constant learning, experiments, automation - must have activities for
 A good talk for all Full-stack or Back-end developers to get your hands clean dealing with JS code. ;) 
 Some libraries `snowpack`, `lit-html`, `github\time-elements` were used in the presentation for showing web components in action.
 
+
 ### Effective JavaSE 9 to 15 APis/Lang features, makes your life easier(Mohamed Taman)
 *Rate*: :star:
 
 *Feedback*:
 Evolution of JDK itself and language features from Java 9 to 15.
+
 
 ### Do you use the Optional class as it should be(Mohamed Taman)
 *Rate*: :star:
@@ -25,13 +28,29 @@ Evolution of JDK itself and language features from Java 9 to 15.
 *Feedback*:
 Optional patterns and anti-patterns with a lot of examples.
 
+
+### Know the neighbours: dependency management done right(Brian Vermeer).
+*Rate*: 🌟 :star2: 💪 :muscle:
+
+*Feedback*: 
+The hell of dependencies is relevant for Spring fans as well. 
+It has sense checking for dependency updates in package management system from time-to-time to have it UP-TO-DATE.
+The whole power of package manager system should be used to keep the dependency health - maven/gradle/npm.
+F.e. in maven `mvn versions:display-depedency-updates`, `mvn dependency:analyse`, `mvn dependency:analyse -DignoreNonCompile ` and etc.
+The rule: `PICK/UPDATE/REMOVE`.     
+
+
 ### Local Variable Type Inference: Friend or Foe и Java at Speed: Building a Better JVM.
+
 
 ### Java at Speed: Building a Better JVM.
 
+
 ### Architecting for rapid, frequent, reliable and sustainable delivery of software.
 
+
 ### Be a better developer, learn faster and get more results: it’s all about the skills.
+
 
 ### Why You Should Migrate to Java 11 Right Now.
 
