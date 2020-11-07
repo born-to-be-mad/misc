@@ -16,14 +16,14 @@ Some libraries `snowpack`, `lit-html`, `github\time-elements` were used in the p
 
 
 ### Effective JavaSE 9 to 15 APis/Lang features, makes your life easier(Mohamed Taman)
-*Rate*: :star: 🔁 :repeat:
+*Rate*: ⭐ :star: 🔁 :repeat:
 
 *Feedback*:
 Evolution of JDK itself and language features from Java 9 to 15.
 
 
 ### Do you use the Optional class as it should be(Mohamed Taman)
-*Rate*: :star:
+*Rate*: ⭐ :star:
 
 *Feedback*:
 Optional patterns and anti-patterns with a lot of examples.
@@ -48,18 +48,35 @@ Everything you need to know about 'var' in Java.
 
 
 ### Java at Speed: Building a Better JVM. (by Simon Ritter)
-*Rate*: 🌟 :star:
+*Rate*: 👎 :-1:
+
+*Feedback*: 
+Too specific to concrete JVm
 
 ### Extreme Professionalism - Software Craftsmanship (by Victor Rentea)
-*Rate*:
+*Rate*: 🌟 :star2: 💪 :muscle: 🔁 :repeat:
+
+*Feedback*: 
+Never stop learning anf professional growing!
 
 
 ### Thread Safety with Phaser, StampedLock and VarHandle (by Heinz Kabutz)
 *Rate*: 🔁 :repeat:
 
 
+### Transaction is a monad (by Jarek Ratajski)
+*Rate*: ⭐ :star:
+
+*Feedback*:
+Use More functional approaches when it is possible, use `map/flatMap` instead of null checks and etc. 
+'Function that return a function' can do the lazy transacional job  
+
 ### Why You Should Migrate to Java 11 Right Now (by Ben Evans)
 *Rate*:
+
+
+### ###Having fun with Java and JavaFX on the Raspberry Pi (by Frank Delporte)
+*Rate*: 🔁 :repeat:
 
 
 ### Be a better developer, learn faster and get more results: it’s all about the skills! (by Bruno Souza)
