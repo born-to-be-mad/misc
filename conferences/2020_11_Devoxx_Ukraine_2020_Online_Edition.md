@@ -72,8 +72,10 @@ Use More functional approaches when it is possible, use `map/flatMap` instead of
 'Function that return a function' can do the lazy transacional job  
 
 ### Why You Should Migrate to Java 11 Right Now (by Ben Evans)
-*Rate*:
+*Rate*: 🔁 :repeat:
 
+### Cloud Native Spring - Migrating Traditional Apps (by Thomas Vitale)
+*Rate*: 🔁 :repeat:
 
 ### ###Having fun with Java and JavaFX on the Raspberry Pi (by Frank Delporte)
 *Rate*: 🔁 :repeat:
@@ -82,10 +84,14 @@ Use More functional approaches when it is possible, use `map/flatMap` instead of
 ### Be a better developer, learn faster and get more results: it’s all about the skills! (by Bruno Souza)
 *Rate*:
 
+*Feedback*:
+Continuously practice your brain as a habit and everything else is a part of it - motivation, mentoring, catas, pet projects ane etc.  
+
 
 ### Architecting for rapid, frequent, reliable and sustainable delivery of software (by Chris Richardson)
 *Rate*:
 
+*Feedback*:
 
 ##Legend
 
