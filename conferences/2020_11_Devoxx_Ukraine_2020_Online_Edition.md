@@ -1,14 +1,14 @@
 # Talks on Devoxx Ukraine 2020(online)
 
 ### The Effective Developer - Work Smarter, Not Harder (Stev Peters)
-*Rate*: 🌟 :star2:
+*Rate*: 🌟 :star2: 🔁 :repeat:
 
 *Feedback*:
 Team code, constant learning, experiments, automation - must have activities for every developer.
 
 
 ### The Future is Now: Web Apps Productivity without Frameworks(Adam Bien).
-*Rate*: 🌟 :star2: 💪 :muscle:
+*Rate*: 🌟 :star2: 💪 :muscle: 🔁 :repeat:
 
 *Feedback*:
 A good talk for all Full-stack or Back-end developers to get your hands clean dealing with JS code. ;) 
@@ -16,7 +16,7 @@ Some libraries `snowpack`, `lit-html`, `github\time-elements` were used in the p
 
 
 ### Effective JavaSE 9 to 15 APis/Lang features, makes your life easier(Mohamed Taman)
-*Rate*: :star:
+*Rate*: :star: 🔁 :repeat:
 
 *Feedback*:
 Evolution of JDK itself and language features from Java 9 to 15.
@@ -29,7 +29,7 @@ Evolution of JDK itself and language features from Java 9 to 15.
 Optional patterns and anti-patterns with a lot of examples.
 
 
-### Know the neighbours: dependency management done right(Brian Vermeer).
+### Know the neighbours: dependency management done right (by Brian Vermeer)
 *Rate*: 🌟 :star2: 💪 :muscle:
 
 *Feedback*: 
@@ -40,20 +40,34 @@ F.e. in maven `mvn versions:display-depedency-updates`, `mvn dependency:analyse`
 The rule: `PICK/UPDATE/REMOVE`.     
 
 
-### Local Variable Type Inference: Friend or Foe и Java at Speed: Building a Better JVM.
+### Local Variable Type Inference: Friend or Foe (by Simon Ritter)
+*Rate*: 🌟 :star2: 
+
+*Feedback*: 
+Everything you need to know about 'var' in Java.
 
 
-### Java at Speed: Building a Better JVM.
+### Java at Speed: Building a Better JVM. (by Simon Ritter)
+*Rate*: 🌟 :star:
+
+### Extreme Professionalism - Software Craftsmanship (by Victor Rentea)
+*Rate*:
 
 
-### Architecting for rapid, frequent, reliable and sustainable delivery of software.
+### Thread Safety with Phaser, StampedLock and VarHandle (by Heinz Kabutz)
+*Rate*: 🔁 :repeat:
 
 
-### Be a better developer, learn faster and get more results: it’s all about the skills.
+### Why You Should Migrate to Java 11 Right Now (by Ben Evans)
+*Rate*:
 
 
-### Why You Should Migrate to Java 11 Right Now.
+### Be a better developer, learn faster and get more results: it’s all about the skills! (by Bruno Souza)
+*Rate*:
 
+
+### Architecting for rapid, frequent, reliable and sustainable delivery of software (by Chris Richardson)
+*Rate*:
 
 
 ##Legend
