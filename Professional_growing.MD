@@ -2,7 +2,7 @@
 
 # Achievements
 - [x] Oracle Certified Associate, Java SE 8 Programmer | 1Z0-808(on 4 June 2019)
-- [ ] Java SE 11 Programmer II | 1Z0-816
+- [ ] Java SE 11 Programmer II | 1Z0-817
 
 # Master classes/workshops
 - [x] From zero to reactive hero(Java Champion Oleh Dokuka, Sam-Solutions, on 14-15 June 2019)
@@ -26,7 +26,7 @@
 - [ ] Effective Java. Third Edition(by Joshua Bloch, 2018) - :blue_book: 2020/XX
 - [ ] OCP: Oracle Certified Professional, Java SE 11 Programmer I, Study Guide, Exam 1Z0-815(by Jeanne Boyarsky, Scott Selikoff, 2020) - :blue_book: 2020/XX
 - [ ] Программист-фанатик (Чед Фаулер, 2018) - :blue_book: 2020/XX
-- [ ] Рефакторинг. Улучшение проекта существующего кода (Фаулер Мартин, Бек Кент, 2017) - :blue_book: 2020/XX
+- [x] Рефакторинг. Улучшение проекта существующего кода (Фаулер Мартин, Бек Кент, 2017) - :blue_book: 2020/10
 - [ ] Clean Agile: Back to Basics (Robert C. Martin Series, Sep 12, 2019)
 - [ ] Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series, 2017)
 - [x] Clean Coder by Robert C. Martin / Идеальный программист. Как стать профессионалом разработки ПО (2019) - :blue_book: 2020/09
