@@ -192,7 +192,8 @@ select value from v$parameter where name='service_names';
 - `docker-compose version`
 
 ### docker container
-
+- `set FORMAT="table {{.ID}}\t{{.Repository}}\t{{.Tag}}\t{{.Size}}"` to define variable with format
+- `docker image list --format %FORMAT%`  to list the images with format
 - `docker container ls` list running containers
 - `docker container ls -a` list all containers
 - `docker container ls -q/ --quiet ` list only container IDs
