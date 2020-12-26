@@ -17,6 +17,7 @@
 - [ ] [Docker Mastery: with Kubernetes +Swarm from a Docker Captain](https://www.udemy.com/course/docker-mastery/)
 
 # Conferences
+- [x] Joker 2020 Online (Nov 25-28, 2020)
 - [x] Devoxx Ukraine 2020 Online Edition (Nov 6-7, 2020)
 - [x] JFuture 2020 Online Edition (Oct 23-24, 2020)
 - [x] Voxxed Days Minsk 2019 (May 24-25, 2019)
@@ -25,7 +26,8 @@
 # Reading
 - [ ] Effective Java. Third Edition(by Joshua Bloch, 2018) - :blue_book: 2020/XX
 - [ ] OCP: Oracle Certified Professional, Java SE 11 Programmer I, Study Guide, Exam 1Z0-815(by Jeanne Boyarsky, Scott Selikoff, 2020) - :blue_book: 2020/XX
-- [ ] Программист-фанатик (Чед Фаулер, 2018) - :blue_book: 2020/XX
+- [ ] Microservice Patterns with examples in Java(y Chris Richardson, 2019) - :blue_book: 2021/XX
+- [x] Программист-фанатик (Чед Фаулер, 2018) - :blue_book: 2020/11
 - [x] Рефакторинг. Улучшение проекта существующего кода (Фаулер Мартин, Бек Кент, 2017) - :blue_book: 2020/10
 - [ ] Clean Agile: Back to Basics (Robert C. Martin Series, Sep 12, 2019)
 - [ ] Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series, 2017)
@@ -36,8 +38,7 @@
 - [x] Grokking Algorithms. An illustrated guide for programmers and other curious people(Aditya Y. Bhargava, 2016) - :blue_book: 2019/12
 - [x] Modern Java Recipes. Simple Solutions to Difficult Problems in Java 8 and 9(by Ken Kousen, 2017). :blue_book: 2019/10
 - [x] Java SE 8 for the Really Impatient(by Cay S. Horstmann, 2014) - :blue_book: 2018/12
-- [ ] Spring in Action, 5th Edition(Craig Walls, 2018)
-- [ ] Pro Git by. 2nd Edition Scott Chacon & Ben Straub(2020)
+- [ ] Spring in Action, 5th Edition(Craig Walls, 2018) - [ ] Pro Git by. 2nd Edition Scott Chacon & Ben Straub(2020)
 - [ ] The Java Module System (by Nicolai Parlog, 2019)
 - [ ] Functional Interfaces in Java: Fundamentals and Examples(by Ralph Lecessi, 2019)
 - [ ] Modern Java in Action. LAMBDAS , STREAMS , FUNCTIONAL AND REACTIVE PROGRAMMING. 2nd Edition.(by Raoul-Gabriel Urma, Mario Fusco, and Alan Mycroft, 2019)
