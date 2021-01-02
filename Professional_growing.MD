@@ -2,6 +2,7 @@
 
 # Achievements
 - [x] Oracle Certified Associate, Java SE 8 Programmer | 1Z0-808(on 4 June 2019)
+  ![View certificate](../master/certificates/Marudau_Dzmitry_1Z0-808_eCertificate.png)
 - [ ] Java SE 11 Programmer II | 1Z0-817
 
 # Master classes/workshops
