@@ -154,6 +154,7 @@ for (var {id: id, person: {name: name}} of people) {
 * Use the array map method constantly!. 
 * Master it. 
 * This works like a forEach loop.
+* Use it when you want to modify the contents of an existing array and store the result as a new variable.
 
 ```javascript
 myArray = [1,2,3,4];
@@ -163,6 +164,9 @@ console.log(myArray.map(element => element * element));
 console.log(myArray.map(element => "My number is " + element)); 
 
 console.log(myArray.map((element, index) => `At index ${index} the number is ${element} `));
+
+const cars = ["Porsche", "Audi", "BMW", "Volkswagen", "Opel"];
+const coolCars = cars.map(car => `${car} is a cool German car brand!`);
 ```
 
 ### Filter
@@ -175,20 +179,92 @@ console.log (myArray.filter(element => element > 3));
 ### Find
 * Find is similar to filter but does not return an array. 
 * It will only return the first element that meets the condition and then exits.
+* Use it whenyou want to remove items from an array that don’t fit a certain condition/criteria.
 ```javascript
 myArray = [1,2,3,4];
-console.log(myArray.find(element => element === 3)); 
+console.log(myArray.find(element => element === 3));
+
+const cars = [
+    {brand: "Porsche", price: 100000},
+    {brand: "Audi", price: 80000},
+    {brand: "Opel", price: 25000},
+    {brand: "Toyota", price: 30000}
+];
+const expensiveCars = cars.filter(car => car.price >= 30000);
+const cheapCars = cars.filter(car => car.price < 30000);
 ```
 
 ### Reduce
 * It works like a loop that has an outside global variable that keeps the contents of a mathematical operation applied to each element of the array.
 * The classic example is to add all the elements of an array together and return a single number.
 * You can start the total or accumulator at any value
+* Use it when you want to convert an array down to a single value by manipulating its values.
 ```javascript
 myArray = [1,2,3,4];
 console.log("use reduce to sum array and produce single result");
 console.log(myArray.reduce((total, current) => total + current));
-console.log(myArray.reduce((total, current) => total + current, 100)); 
+console.log(myArray.reduce((total, current) => total + current, 100));
+
+const total = myArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+const flattened = [[0, 1], [2, 3], [4, 5]].reduce(
+    ( accumulator, currentValue ) => accumulator.concat(currentValue),
+    []
+);
+```
+
+### Array.forEach
+* It loops over an array and executes a function on each item.
+* Use it when you want to simply loop over each item of any array without constructing a new array
+```javascript
+const cars = [
+    {brand: "Porsche", price: 100000},
+    {brand: "Audi", price: 80000},
+    {brand: "Toyota", price: 30000},
+    {brand: "Opel", price: 25000}
+];
+cars.forEach(car => {
+    console.log(`The ${car.brand} will cost you ${car.price} before taxes`);
+});
+```
+
+### Array.find
+* Use it when you need to get the first item of an array that passes an explicitly defined test.
+* Comparing  to `.filter`, `.find` will only return the first element that matches the condition you provided.
+```javascript
+const cars = [
+    {brand: "Porsche", price: 100000},
+    {brand: "Audi", price: 80000},
+    {brand: "Toyota", price: 30000},
+    {brand: "Opel", price: 25000}
+];
+const expensiveCar = cars.find(car => car.price >= 30000);
+```
+
+### Array.every
+* It checks if every element in the array passes the provided condition.
+* Use it when you want to confirm that every item of an array passes an explicitly defined condition.
+```javascript
+const cars = [
+    {brand: "Porsche", price: 90000},
+    {brand: "Audi", price: 80000},
+    {brand: "Toyota", price: 30000},
+    {brand: "Opel", price: 25000}
+];
+const allCarsAreExpensive = cars.every(car => car.price >= 100000);
+```
+
+### Array.some
+* `.some` method is similar to the `.every` method, but instead of returning true if all elements of an array pass the test, it returns true if at least one element passes the test.
+* Use it when you need to get the first item of an array that passes an explicitly defined test
+```javascript
+const cars = [
+    {brand: "Porsche", price: 100000},
+    {brand: "Audi", price: 80000},
+    {brand: "Toyota", price: 30000},
+    {brand: "Opel", price: 25000}
+];
+const someCarsAreExpensive = cars.some(car => car.price >= 100000);
 ```
 
 ### Ternary Operator
