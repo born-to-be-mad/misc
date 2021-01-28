@@ -57,13 +57,17 @@ Supports run configurations, syntax highlighting, rename refactoring, documentat
 * *Grazie* - provides intelligent spelling and grammar checks for text that you write in the IDE.
 * *RegexpTester* - Regular Expression Tester for IntelliJ IDEA. Allows you to experiment with Java regular expressions in a dynamic environment.
 * *Intend RainBow* - a simple extension to make indentation more readable. This extension colorizes the indentation in front of your text alternating four different colors on each step.
-* *Rainbow Brackets* - a simple extension to make the usage of brakets more readable.
+* *Rainbow Brackets* - a simple extension to make the usage of brackets more readable.
 * *IDEA Mind Map* - brain storming and task decomposition
 * *Power Mode II* - for epic coding.
 * *Code Screenshot* - selects a code and press a hot-key (Ctrl+Alt+Shift+A by default) to copy it as the image (make a screenshot).
 Default hot-key can be changed in Settings|Keymap (search for "Copy as image" action)
 * *TweetCode* - share code fragments in twitter
 * *IdeaTweet* - share code fragments in twitter
+* *JPA Buddy* - JPA Buddy is an advanced plugin for IntelliJ IDEA intended to simplify and accelerate everything related to JPA and surrounding mainstream Java technology, such as Hibernate, Spring Data JPA, Liquibase and others. See details https://www.jpa-buddy.com/blog/JPA-goes-even-easier-with-its-Buddy/
+* *Diffblue's* - Community Edition IntelliJ IDEA plugin interactively writes unit tests for Java applications, increasing test coverage and helping you find regressions in future code changes.
+* *AsciiDoc* - AsciiDoc is a text document format, similar to formats like Markdown, for writing notes, documentation, articles, books, ebooks, slideshows, web pages, man pages and blogs. AsciiDoc files can be translated to many formats including HTML, PDF, EPUB, man page. AsciiDoc is, in contrast to Markdown, highly configurable: both the AsciiDoc source file syntax and the backend output markups (which can be almost any type of SGML/XML markup) can be customized and extended by the user.
+  This plugin includes support for Antora and Spring REST Docs.
 
 ## Good talks
 - [x] [Be More Productive With IntelliJ IDEA by Trisha Gee](https://www.youtube.com/watch?v=CmPJzEqFS4s)
