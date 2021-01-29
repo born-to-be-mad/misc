@@ -18,6 +18,7 @@
 - [ ] [Docker Mastery: with Kubernetes +Swarm from a Docker Captain](https://www.udemy.com/course/docker-mastery/)
 
 # Conferences
+- [ ] SnowOne 2021 Community-Driven Java Conference from Siberia (February 26-27, 2021, online)
 - [x] Joker 2020 Online (Nov 25-28, 2020)
 - [x] Devoxx Ukraine 2020 Online Edition (Nov 6-7, 2020)
 - [x] JFuture 2020 Online Edition (Oct 23-24, 2020)
@@ -27,9 +28,12 @@
 # Reading
 ### 2021
 - [ ] Effective Java. Third Edition(by Joshua Bloch, 2018) - :blue_book: 2021/XX
-- [ ] OCP: Oracle Certified Professional, Java SE 11 Programmer I, Study Guide, Exam 1Z0-815(by Jeanne Boyarsky, Scott Selikoff, 2020) - :blue_book: 2021/XX
-- [ ] Microservice Patterns with examples in Java(y Chris Richardson, 2019) - :blue_book: 2021/XX
-- [ ] Clean Agile: Back to Basics (Robert C. Martin Series, Sep 12, 2019)
+- [ ] Dynamic Proxies in Java(by Dr Heinz M. Kabutz, 2020) - :blue_book: 2021/XX
+- [x] OCP: Oracle Certified Professional, Java SE 11 Programmer I, Study Guide, Exam 1Z0-815(by Jeanne Boyarsky, Scott Selikoff, 2020) - :blue_book: 2021/01
+- [ ] OCP: Oracle Certified Professional, Java SE 11 Programmer II, Study Guide, Exam 1Z0-816 and Exam 1Z0-817(by Jeanne Boyarsky, Scott Selikoff, 2020) - :blue_book: 2021/XX
+- [ ] Microservice Patterns with examples in Java(by Chris Richardson, 2019) - :blue_book: 2021/XX
+- [ ] Monolith to Microservices Evolutionary Patterns to Transform Your Monolith(by Sam Newman, 2020) - :blue_book: 2021/XX
+- [ ] Clean Agile: Back to Basics (Robert C. Martin Series, Sep 12, 2019) - :blue_book: 2021/XX
 - [ ] Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series, 2017)
 - [ ] Spring in Action, 5th Edition(Craig Walls, 2018) 
 - [ ] Pro Git by. 2nd Edition Scott Chacon & Ben Straub(2020)
