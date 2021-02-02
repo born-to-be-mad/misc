@@ -1,3 +1,63 @@
+#Glossary
+* LGTM - Looks Good To Me
+* ACK — acknowledgement, i.e. agreed/accepted change
+* NACK/NAK —negative acknowledgement, i.e. disagree with change and/or concept  
+* IMHO - In My Humble Opinion
+* RFC — request for comments, i.e. I think this is a good idea, lets discuss
+* WIP — work in progress, do not merge yet
+* AFAIK/AFAICT — as far as I know / can tell
+* IIRC — if I recall correctly
+  
+# Code review hints for reviewer
+* Treat code reviews as a high priority
+* Start high level and work your way down
+* Be generous with code examples
+* NEVER use the word “you” in a code review:
+  * Replace ‘you’ with ‘we’
+  * Remove the subject from the sentence
+* Frame feedback as requests, not commands
+* Tie notes to principles, not opinions
+* Limit feedback on repeated patterns
+* Respect the scope of the review
+  * The rule of thumb is: if the changelist doesn’t touch the line, it’s out of scope!
+* Look for opportunities to split up large reviews
+* Offer sincere praise
+* Grant approval when remaining fixes are trivialю
+  Grant approval when any of the following are true:
+  * You have no more notes.
+  * Your remaining notes are for trivial issues.
+  * Your remaining notes are optional suggestions.
+* Handle stalemates proactively.
+  Some indicators that you’re headed for a stalemate:
+  * The tone of the discussion is growing tense or hostile.
+  * Your notes per review round are not trending downward.
+  * You’re getting pushback on an unusually high number of your notes.
+* Talk it out
+* Consider a design review
+* Concede or Escalate
+* Recovering from a stalemate
+  * Discuss the situation with your manager
+  * Take a break from each othe
+  * Study conflict resolution
+
+# Code review hints to make your Code Reviewer fall in love with you
+* The golden rule: value your reviewer’s time
+* Review your own code first
+* Write a clear changelist description. A good changelist description explains what the change achieves, at a high level, and why you’re making this change.
+  * [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit)
+  * [My favourite Git commit](https://dhwthompson.com/2019/my-favourite-git-commit)  
+* Automate the easy stuff
+* Answer questions with the code itself
+* Narrowly scope changes
+* Separate functional and non-functional changes
+* Break up large changelists
+* Respond graciously to critiques
+* Be patient when your reviewer is wrong
+* Communicate your responses explicitly
+* Artfully solicit missing information
+* Award all ties to your reviewer
+* Minimize lag between rounds of review
+
 # CODE REVIEW CHECKLIST
 *The main purpose of code reviews is to improve your codebase, improve your team's development skills, share knowledge, 
 communicate, and — finally — write good code.*
