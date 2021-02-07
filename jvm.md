@@ -177,4 +177,10 @@ It’s highly recommended to set the time zone at the JVM using the  `Duser.time
 * Use Immutable Objects
   * An immutable object is an object whose fields (and specifically non-primitive fields in our case) cannot be modified after the object has been constructed.
   * Immutability implies that all objects referenced by an immutable container have been created before the construction of the container completes. In GC terms: The container is at least as young as the youngest reference it holds.
-    This means that when performing garbage collection cycles on young generations, the GC can skip immutable objects that lie in older generations, since it knows for sure they cannot reference anything in the generation that’s being collected. 
+    This means that when performing garbage collection cycles on young generations, the GC can skip immutable objects that lie in older generations, since it knows for sure they cannot reference anything in the generation that’s being collected.
+    
+#Tracking native memory
+* activate Native Memory Tracking (NMT) by adding the following parameters to JVM options `-XX:NativeMemoryTracking=detail-XX:+UnlockDiagnosticVMOptions -XX:+PrintNMTStatistics`
+* identify jvm process by using `jcmd` utility calling it without parameters
+* set baseline `jcmd JVM_PROCESS_ID VM.native_memory baseline`
+* track memory changes  `jcmd JVM_PROCESS_ID VM.native_memory detail.diff`
