@@ -33,7 +33,7 @@
 - [ ] OCP: Oracle Certified Professional, Java SE 11 Programmer II, Study Guide, Exam 1Z0-816 and Exam 1Z0-817(by Jeanne Boyarsky, Scott Selikoff, 2020) - :blue_book: 2021/XX
 - [ ] Microservice Patterns with examples in Java(by Chris Richardson, 2019) - :blue_book: 2021/XX
 - [ ] Monolith to Microservices Evolutionary Patterns to Transform Your Monolith(by Sam Newman, 2020) - :blue_book: 2021/XX
-- [ ] Clean Agile: Back to Basics (Robert C. Martin Series, Sep 12, 2019) - :blue_book: 2021/XX
+- [x] Clean Agile: Back to Basics (Robert C. Martin Series, Sep 12, 2019) - :blue_book: 2021/02
 - [ ] Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series, 2017)
 - [ ] Spring in Action, 5th Edition(Craig Walls, 2018) 
 - [ ] Pro Git by. 2nd Edition Scott Chacon & Ben Straub(2020)
