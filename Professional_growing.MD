@@ -18,7 +18,7 @@
 - [ ] [Docker Mastery: with Kubernetes +Swarm from a Docker Captain](https://www.udemy.com/course/docker-mastery/)
 
 # Conferences
-- [ ] SnowOne 2021 Community-Driven Java Conference from Siberia (February 26-27, 2021, online)
+- [x] SnowOne 2021 Community-Driven Java Conference from Siberia (February 26-27, 2021, online)
 - [x] Joker 2020 Online (Nov 25-28, 2020)
 - [x] Devoxx Ukraine 2020 Online Edition (Nov 6-7, 2020)
 - [x] JFuture 2020 Online Edition (Oct 23-24, 2020)
