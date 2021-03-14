@@ -22,7 +22,7 @@ Links:
 
 ### Юрий Бадальянц – Production-ready functional programming
 *Rate*: 🌟 :star2: 🔥 :fire: 💪 :muscle:
-*Feedback:* пример имллементации пула с полной мощью функционального программирования на Scala
+*Feedback:* пример имплементации пула с полной мощью функционального программирования на Scala
 
 ### Алексей Игнатенко – Почему Java Enterprise бенчмарки врут, и что с этим делать
 *Links*: some benchmarks for JVM 11 
@@ -147,16 +147,56 @@ source.joinWith(ratings, source.col("movieId") === ratings.col("movieId"), "left
 
 ```
 
+### Victor Rentea – Integration Testing with Spring
+
+*Rate*: 🌟 :star2: 🔥 :fire: 💪 :muscle: 🔁 :repeat:
+
+*Links*:
+* https://github.com/victorrentea/integration-testing-spring
+
+
+### Алексей Нестеров - Spring Cloud в эру Kubernetes
+
+*Rate*: 🌟 :star2: 🔥 :fire: 💪 :muscle: 🔁 :repeat:
+
+*Feedback:* жизнь до и после кубернетис, `Spring Cloud` в помощь
+* use `Kubernetes` для независимых от языка и стека базовых функций
+* use `Spring Cloud` для тонкой настройки и контроля микросервисов
+
+| Goal | Tools | Netflix | Spring Cloud | Kubernetes(K8s + Istio) |
+| --- | --- | --- | --- | --- |
+| Discovery | Service Discovery | Eureka | Eureka(or Consul/etcd/zookeeper) + Spring Cloud Discovery Client | K8S DNS |
+| Fault tolerance | Circuit Breakers | Hystrix| Spring Cloud Circuit Breaker(Resilence4j, Hystrix ) | services + liveness / readiness |
+| Resilience | Load Balancing | Ribbon(client-side load balancing) | Spring Cloud Load Balancer | Istio 'service mesh' |
+| Configuration | Configuration | Archaius | Spring Cloud Config Server/Client | ConfigMap +  Secrets  |
+| API management  | API gateways  | Zuul | Spring Cloud Gateway | Istio 'service mesh' |
+
+Spring Cloud extra features:
+* Tracing: Sleuth
+* Event-based microservice: Spring CLud Stream
+* Consumer Driven Contracts: Spring Cloud Contract
+* FaaS:Spring Cloud Function
+* REST clients: OpenFeign
+
+Spring Cloud Integrations: 
+* AWS
+* Azure
+* Google CLoud
+* CloudFoundry
+* Kubernetes
+
+
+*Links*:
+* https://github.com/alek-sys/spring-cloud-k8s-talk
 
 # WATCH LATER
+
 * Митя Александров – Helidon — Ласточка в мире микросервисов
-* What I Wish I Knew About Maven Years Ago  
+* What I Wish I Knew About Maven Years Ago
 * Константин Воливач: Обновление сложных сущностей без транзакций в распределенной системе
 * Running Java Everywhere with GraalVM Native Image
 * Олег Плисс – Преобразование приложений в нативно исполняемый образ в проекте GraalVM
 * Grace Jansen – Reacting to an event-driven world
 * Евгений Мандриков – Scala, Kotlin, Java и Code Coverage: показать все, что скрыто
-* Victor Rentea – Integration Testing with Spring
-* Алексей Нестеров - Spring Cloud в эру Kubernetes
 * GraalVM: The one to rule them all
 
