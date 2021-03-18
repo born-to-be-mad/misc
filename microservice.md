@@ -49,3 +49,28 @@ Microservice:
       Requirements: consistent tooling, consistent naming, protect secrets, err on the side of externalization
       How: read, config, act
     * Service Discovery: central location of all services; advertise what they offer; find what is needed; consume the URI from the discovery engine, not config.
+
+
+# Spring Cloud
+
+| Goal | Tools | Netflix | Spring Cloud | Kubernetes(K8s + Istio) |
+| --- | --- | --- | --- | --- |
+| Discovery | Service Discovery | Eureka | Eureka(or Consul/etcd/zookeeper) + Spring Cloud Discovery Client | K8S DNS |
+| Fault tolerance | Circuit Breakers | Hystrix| Spring Cloud Circuit Breaker(Resilence4j, Hystrix ) | services + liveness / readiness |
+| Resilience | Load Balancing | Ribbon(client-side load balancing) | Spring Cloud Load Balancer | Istio 'service mesh' |
+| Configuration | Configuration | Archaius | Spring Cloud Config Server/Client | ConfigMap +  Secrets  |
+| API management  | API gateways  | Zuul | Spring Cloud Gateway | Istio 'service mesh' |
+
+Spring Cloud extra features:
+* Tracing: Sleuth
+* Event-based microservice: Spring CLud Stream
+* Consumer Driven Contracts: Spring Cloud Contract
+* FaaS:Spring Cloud Function
+* REST clients: OpenFeign
+
+Spring Cloud Integrations:
+* AWS
+* Azure
+* Google CLoud
+* CloudFoundry
+* Kubernetes
