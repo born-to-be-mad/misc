@@ -1,3 +1,10 @@
+#3Linux commands
+* `killall -I notes`  kills the matching process by name(case insensitive.
+* `Ctrl + x + e` will open an editor where you can type your command. And upon saving the editor, the command will run on the terminal.
+* `touch a` to create an empty file 'a'.
+* `touch -r file_name2 file_name1`  to copy the timestamp from another file.
+* `tee` is  command in UNIX is a command-line utility for copying standard input to standard output
+
 ## Must-know commands
 
 - `grep` - search by template
