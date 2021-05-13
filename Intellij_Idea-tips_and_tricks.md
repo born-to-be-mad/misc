@@ -85,6 +85,9 @@ Default hot-key can be changed in Settings|Keymap (search for "Copy as image" ac
   This plugin includes support for Antora and Spring REST Docs.
 
 ## Good talks
+- [x] [Victor Rentea — IntelliJ productivity tips — The secrets of the fastest developers on Earth](https://www.youtube.com/watch?v=ZiOMQRujfMM)
+- [x] [IntelliJ IDEA Spring Tips & Tricks From The Trenches. By Marco Behler (2021)](https://www.youtube.com/watch?v=m7PpvTRzlmY)
+- [x] [IntelliJ IDEA Tips and Tricks 2021. By Hadi Hariri (2021)](https://www.youtube.com/watch?v=41CC-F6KRP8)
 - [x] [Be More Productive With IntelliJ IDEA by Trisha Gee](https://www.youtube.com/watch?v=CmPJzEqFS4s)
 - [x] [Trisha Gee - IntelliJ IDEA 2019.1. Structural Search and Replace](https://www.youtube.com/watch?v=fIPr_ANBpFk)
 - [x] [Тагир Валеев — Атомарный рефакторинг в IntelliJ IDEA: прогибаем IDE под себя](https://www.youtube.com/watch?v=C5eD-K8AO3o&list=PLVe-2wcL84b_fBL9xJTxkEBtvCKfRGEV1&index=5)
