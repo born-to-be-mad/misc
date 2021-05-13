@@ -32,7 +32,22 @@
 | CLASS | className() | | [] |
 | DESCRIPTION |  | “Description” | [] |
 
-# Optimized setting for Intellij Idea:
+# Optimized setting for Intellij Idea
+
+## Change Terminal
+
+* F.e. it might be usefull to change default terminal to bash on Windows system. Go to `Tools > Terminal` and change it
+to `C:\bin\git\bin\sh.exe --login -i`
+* It has sense additionally to have docker available in Windows bash:
+  * Create `c:\Users\{PC_USER}\.bashrc` file and put the following content: 
+  ```
+  export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+  export PATH="$PATH:/mnt/c/Program\ Files/Docker/Docker/resources/bin"
+  alias docker=docker.exe
+  alias docker-compose=docker-compose.exe
+  ```  
+  * Open Idea Terminal `Alt+F12` and run `docker -v`
+
 
 ## Clean the view
 * *Navigation Bar* - OFF. This is really useful option to save space. You can always view navigation bar by 'Alt+home'.
