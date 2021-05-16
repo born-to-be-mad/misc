@@ -1,5 +1,19 @@
 # Github repositories to learn and read
 
+## [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line) - a good understanding of the command line is absolutely essential to becoming a skilled and productive developer who can use the ‘computer magic’ tools at their disposal.
+
+## [The Book of Secret Knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) - A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools, and more.
+
+## [The Algorithms in Java](https://github.com/TheAlgorithms/Java) - All Algorithms implemented in Java.
+
+## [Awesome Cheatsheets](https://github.com/LeCoupa/awesome-cheatsheets) - The cheatsheet of cheatsheets.
+
+## [On Interviewing]
+   * [On Interviewing: University](https://github.com/jwasham/coding-interview-university)
+   * [On Interviewing: System Design Primer](https://github.com/donnemartin/system-design-primer)
+   * [On Interviewing: Handbook](https://github.com/yangshun/tech-interview-handbook)
+   * [On Interviewing: System Design](https://github.com/checkcheckzz/system-design-interview)
+
 ## [Awesome](https://github.com/sindresorhus/awesome) - different topics from software development to hardware and business
 
 ## [Awesome for beginners](https://github.com/MunGell/awesome-for-beginners)
