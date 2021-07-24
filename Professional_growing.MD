@@ -6,8 +6,9 @@
 - [ ] Java SE 11 Programmer II | 1Z0-817
 
 # Master classes/workshops
-- [x] From zero to reactive hero(Java Champion Oleh Dokuka, Sam-Solutions, on 14-15 June 2019)
-- [x] Microservices with Spring Cloud(Orhan Kasimov, Sam-Solutions, on 8-9 June 2018)
+- [ ] Master class Course [Testing Spring Boot Applications Primer](https://rieckpil.de/course/tsbap-inspecting-the-spring-boot-starter-test)
+- [x] Workshop 'From zero to reactive hero'(Java Champion Oleh Dokuka, Sam-Solutions, on 14-15 June 2019)
+- [x] Workshop 'Microservices with Spring Cloud'(Orhan Kasimov, Sam-Solutions, on 8-9 June 2018)
 
 # Courses
 - [x] [Learn and Understand AngularJS](https://www.udemy.com/course/learn-angularjs/) (Udemy, on 14/04/2015)
@@ -26,16 +27,9 @@
 - [x] JFuture 2019 Java Conference (November 16, 2019)
 
 # Reading
-### 2021
-- [ ] Effective Java. Third Edition(by Joshua Bloch, 2018) - :blue_book: 2021/XX
-- [ ] Dynamic Proxies in Java(by Dr Heinz M. Kabutz, 2020) - :blue_book: 2021/XX
-- [x] OCP: Oracle Certified Professional, Java SE 11 Programmer I, Study Guide, Exam 1Z0-815(by Jeanne Boyarsky, Scott Selikoff, 2020) - :blue_book: 2021/01
-- [ ] OCP: Oracle Certified Professional, Java SE 11 Programmer II, Study Guide, Exam 1Z0-816 and Exam 1Z0-817(by Jeanne Boyarsky, Scott Selikoff, 2020) - :blue_book: 2021/XX
-- [ ] Microservice Patterns with examples in Java(by Chris Richardson, 2019) - :blue_book: 2021/XX
-- [ ] Monolith to Microservices Evolutionary Patterns to Transform Your Monolith(by Sam Newman, 2020) - :blue_book: 2021/XX
-- [x] Clean Agile: Back to Basics (Robert C. Martin Series, Sep 12, 2019) - :blue_book: 2021/02
-- [ ] Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series, 2017)
-- [ ] Spring in Action, 5th Edition(Craig Walls, 2018) 
+
+### Planned
+- [ ] Spring in Action, 5th Edition(Craig Walls, 2018)
 - [ ] Pro Git by. 2nd Edition Scott Chacon & Ben Straub(2020)
 - [ ] The Java Module System (by Nicolai Parlog, 2019)
 - [ ] Functional Interfaces in Java: Fundamentals and Examples(by Ralph Lecessi, 2019)
@@ -43,6 +37,17 @@
 - [ ] Soft Skills: The Software Developer's Life Manual(by John Sonmez, 2014)
 - [ ] The Complete Software Developer's Career Guide: How to Learn Your Next ...(by John Sonmez, 2017)
 - [ ] Hibernate Tips: More Than 70 Solutions to Common Hibernate Problems(by Thorben Janssen, 2017)
+
+### 2021
+- [ ] Effective Java. Third Edition(by Joshua Bloch, 2018) - :blue_book: 2021/XX
+- [ ] Dynamic Proxies in Java(by Dr Heinz M. Kabutz, 2020) - :blue_book: 2021/XX
+- [ ] OCP: Oracle Certified Professional, Java SE 11 Programmer II, Study Guide, Exam 1Z0-816 and Exam 1Z0-817(by Jeanne Boyarsky, Scott Selikoff, 2020) - :blue_book: 2021/XX
+- [ ] Microservice Patterns with examples in Java(by Chris Richardson, 2019) - :blue_book: 2021/XX
+- [ ] Monolith to Microservices Evolutionary Patterns to Transform Your Monolith(by Sam Newman, 2020) - :blue_book: 2021/XX
+- [ ] Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series, 2017)
+- [x] Как читать книги(С.И. Поварнин, 1971) - :blue_book: 2021/07
+- [x] Clean Agile: Back to Basics (Robert C. Martin Series, Sep 12, 2019) - :blue_book: 2021/02
+- [x] OCP: Oracle Certified Professional, Java SE 11 Programmer I, Study Guide, Exam 1Z0-815(by Jeanne Boyarsky, Scott Selikoff, 2020) - :blue_book: 2021/01
 
 ### 2020
 - [x] Программист-фанатик (Чед Фаулер, 2018) - :blue_book: 2020/11
