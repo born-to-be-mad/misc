@@ -27,62 +27,47 @@
 
 ## How to configure aliases
 
-`git config alias.ALIAS_SHORT_NAME "ALIAS CONTENT`- add locally
-`git config --global alias.ALIAS_SHORT_NAME "ALIAS CONTENT`- add globally
-F.e. `git config --global alias.st status` - gits st -> git status
+`git config alias.ALIAS_SHORT_NAME ALIAS_CONTENT`- add locally
+`git config --global alias.ALIAS_SHORT_NAME ALIAS_CONTENT`- add globally
+F.e. `git config --global alias.st status` -> `git st` = `git status`
 
-`git config alias.qm "!git checkout $1; git merge @{-1}"` alias with parameters
-
-Section '[alias]'
-```batch
-	co = checkout
-	ci = commit
-	st = status
-	br = branch
-	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-	hist1 = log --all --decorate --oneline --graph
-	hist2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-    stat = shortlog -nse
-	cfgg = config -e --global
-	cfgl = config -e --local
-	lg = log --pretty='%Cred%h%Creset | %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)[%an]%Creset' --graph
-	so = show --pretty='parent %Cred%h%Creset commit %Cred%h%Creset%C(yellow)%d%Creset %n%n%w(72,2,2)%s%n%n%w(72,0,0)%C(cyan)%an%Creset %Cgreen%ar%Creset'
-
-    hide = update-index –-skip-worktree
-    unhide = update-index –-no-skip-worktree
-    unhide-all = ls-files -v | grep -i ^S | cut -c 3- | xargs git update-index –-no-skip-worktree
-    hidden = ! git ls-files -v | grep ‘^S’ | cut -c3-
-```
-#### For Windows users:
- 
-```
-git config --global alias.type 'cat-file -t'
-git config --global alias.dump 'cat-file -p'
-```
-
-#### For Unix/Mac users:
+`git config alias.qm "!git checkout $1; git merge @{-1}"` alias with parameters.
 
 `git status`, `git add`, `git commit`, and `git checkout` are common commands, so it is a good idea to have abbreviations for them.
 
-Add the following to the `.gitconfig` file in your \$HOME directory.
 
-```
+Git aliases can be configured via section '[alias]'.
+Add the following to the `.gitconfig` file in your \$HOME directory.
+```batch
 [alias]
   co = checkout
   ci = commit
   st = status
   br = branch
+  cfgg = config -e --global
+  cfgl = config -e --local
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  hist1 = log --all --decorate --oneline --graph
+  hist2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
   type = cat-file -t
   dump = cat-file -p
-
-
+  stat = shortlog -nse
+  lg = log --pretty='%Cred%h%Creset | %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)[%an]%Creset' --graph
+  so = show --pretty='parent %Cred%h%Creset commit %Cred%h%Creset%C(yellow)%d%Creset %n%n%w(72,2,2)%s%n%n%w(72,0,0)%C(cyan)%an%Creset %Cgreen%ar%Creset'
+  undo = reset --soft HEAD~1
+  amend = !git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend
+  hide = update-index –-skip-worktree
+  unhide = update-index –-no-skip-worktree
+  unhide-all = ls-files -v | grep -i ^S | cut -c 3- | xargs git update-index –-no-skip-worktree
+  hidden = ! git ls-files -v | grep ‘^S’ | cut -c3-
+  tree = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+  review= "!f() { git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
+  trim = !git branch --merged | grep -v '*' | xargs -n 1 git branch -d
 ```
 
 #### Profile aliases
 
-If your shell supports aliases, or shortcuts, you can add aliases on this level, too. :
-FILE: .profile
+If your shell supports aliases, or shortcuts, you can add aliases on this level too(FILE.profile):
 
 ```
 alias gs='git status '
