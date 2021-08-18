@@ -57,9 +57,9 @@ to `C:\bin\git\bin\sh.exe --login -i`
 * *Editor > Color scheme > Language Defaults, property 'Semantic highlighting'* - activate the checkbox 'Semantic highlighting'
  
 ## Must-have plugins
+* *Presentation Assistance* - shows name and Win/Mac shortcuts of any action you invoke (View | Appearance | Descriptions of Actions)
 * *Findbugs-IDEA* - provides static byte code analysis to look for bugs in Java code from within IntelliJ IDEA.
 * *Checkstyle-IDEA* - provides both real-time and on-demand scanning of Java files with CheckStyle from within IDEA.
-* *Lombok* - a plugin that adds first-class support for Project Lombok
 * *JMH Plugin* - a plugin for generating and running JMH benchmarks from your IDE
 * *.ignore* - is a plugin for .gitignore (Git), .hgignore (Mercurial), .npmignore (NPM), .dockerignore (Docker), .chefignore (Chef), .cvsignore (CVS), .bzrignore (Bazaar), .boringignore (Darcs), .mtn-ignore (Monotone), ignore-glob (Fossil), .jshintignore (JSHint), .tfignore (Team Foundation), .p4ignore (Perforce), .prettierignore (Prettier), .flooignore (Floobits), .eslintignore (ESLint), .cfignore (Cloud Foundry), .jpmignore (Jetpack), .stylelintignore (StyleLint), .stylintignore (Stylint), .swagger-codegen-ignore (Swagger Codegen), .helmignore (Kubernetes Helm), .upignore (Up), .prettierignore (Prettier), .ebignore (ElasticBeanstalk) files in your project. 
 * *Grep Console* - grep, tail, filter, highlight... everything you need for a console. Also can highlight the editor - nice for analyzing logs.
@@ -67,14 +67,15 @@ to `C:\bin\git\bin\sh.exe --login -i`
 * *Maven helper* -a must have plugin for working with Maven.
 * *BashSupport* - it adds Bash language support for the IntelliJ platform.
 * *InnerBuilder* - adds a Builder action to the Generate menu (Alt+Insert) which generates an inner builder class as described in Effective JavaProvideProvides intelligent spelling and grammar checks for text that you write in the IDE.s intelligent spelling and grammar checks for text that you write in the IDE.
-Supports run configurations, syntax highlighting, rename refactoring, documentation lookup, inspections, quickfixes and much more.
+  Supports run configurations, syntax highlighting, rename refactoring, documentation lookup, inspections, quickfixes and much more.
 * *Database Navigator* - database development, scripting and navigation tool. It adds extensive database development and maintenance capabilities to the IntelliJ IDEA development environment and related products
 * *Grazie* - provides intelligent spelling and grammar checks for text that you write in the IDE.
 * *RegexpTester* - Regular Expression Tester for IntelliJ IDEA. Allows you to experiment with Java regular expressions in a dynamic environment.
 * *Intend RainBow* - a simple extension to make indentation more readable. This extension colorizes the indentation in front of your text alternating four different colors on each step.
 * *Rainbow Brackets* - a simple extension to make the usage of brackets more readable.
-* *IDEA Mind Map* - brain storming and task decomposition
+* *IDEA Mind Map* - brain storming and task decomposition.
 * *Power Mode II* - for epic coding.
+* *Extra Icons* - icons for files like Travis YML, Appveyor YML, Git sub-modules, etc. See Settings > Appearance & Behavior > Extra Icons to select extra icons to (de)activate.
 * *Code Screenshot* - selects a code and press a hot-key (Ctrl+Alt+Shift+A by default) to copy it as the image (make a screenshot).
 Default hot-key can be changed in Settings|Keymap (search for "Copy as image" action)
 * *TweetCode* - share code fragments in twitter
