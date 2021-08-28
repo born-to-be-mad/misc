@@ -1,20 +1,25 @@
 # The road to become Java Craftsman
 
 # Achievements
+- [ ] AWS Certified Cloud Practitioner (CLF-C01)
 - [x] Oracle Certified Associate, Java SE 8 Programmer | 1Z0-808(on 4 June 2019)
   ![View certificate](../master/certificates/Marudau_Dzmitry_1Z0-808_eCertificate.png)
 - [ ] Java SE 11 Programmer II | 1Z0-817
 
-# Master classes/workshops
+# Master classes/workshops/trainings
 - [ ] Master class Course [Testing Spring Boot Applications Primer](https://rieckpil.de/course/tsbap-inspecting-the-spring-boot-starter-test)
+- [x] AWS Basics Training Program #8 (Epam, Mar 29, 2021 - Jun 03, 2021)
 - [x] Workshop 'From zero to reactive hero'(Java Champion Oleh Dokuka, Sam-Solutions, on 14-15 June 2019)
 - [x] Workshop 'Microservices with Spring Cloud'(Orhan Kasimov, Sam-Solutions, on 8-9 June 2018)
 
 # Courses
-- [x] [Learn and Understand AngularJS](https://www.udemy.com/course/learn-angularjs/) (Udemy, on 14/04/2015)
-      ![View certificate](../master/certificates/Marudau_Dzmitry_Learn%20and%20Understand%20AngularJS.jpg)
+- [ ] [E-LEARNING AWS Cloud Practitioner Essentials](https://www.aws.training/Details/eLearning?id=60697) (6h, AWS)
+- [x] [AWS Certified Cloud Practitioner by Richard A. Jones](https://learning.oreilly.com/learning-paths/learning-path-aws/9780135940037/) (7h, O'Reily, on 28/08/2021)
+      
 - [x] [Complete React Developer in 2020 (w/ Redux, Hooks, GraphQL)](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/) (Udemy, on 03/06/2020)
       ![View certificate](../master/certificates/Marudau_Dzmitry_Complete%20React%20Developer%20in%202020.jpg)
+- [x] [Learn and Understand AngularJS](https://www.udemy.com/course/learn-angularjs/) (Udemy, on 14/04/2015)
+      ![View certificate](../master/certificates/Marudau_Dzmitry_Learn%20and%20Understand%20AngularJS.jpg)
 - [ ] [Complete Machine Learning and Data Science: Zero to Mastery](https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/)
 - [ ] [Docker Mastery: with Kubernetes +Swarm from a Docker Captain](https://www.udemy.com/course/docker-mastery/)
 
