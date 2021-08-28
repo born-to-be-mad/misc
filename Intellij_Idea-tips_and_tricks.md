@@ -84,6 +84,7 @@ Default hot-key can be changed in Settings|Keymap (search for "Copy as image" ac
 * *Diffblue's* - Community Edition IntelliJ IDEA plugin interactively writes unit tests for Java applications, increasing test coverage and helping you find regressions in future code changes.
 * *AsciiDoc* - AsciiDoc is a text document format, similar to formats like Markdown, for writing notes, documentation, articles, books, ebooks, slideshows, web pages, man pages and blogs. AsciiDoc files can be translated to many formats including HTML, PDF, EPUB, man page. AsciiDoc is, in contrast to Markdown, highly configurable: both the AsciiDoc source file syntax and the backend output markups (which can be almost any type of SGML/XML markup) can be customized and extended by the user.
   This plugin includes support for Antora and Spring REST Docs.
+* *PlantUML Integration* is diagramming tool integration. Now better and faster, with code navigation and highlighting.
 
 ## Good talks
 - [x] [Victor Rentea — IntelliJ productivity tips — The secrets of the fastest developers on Earth](https://www.youtube.com/watch?v=ZiOMQRujfMM)
