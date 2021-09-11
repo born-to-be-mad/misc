@@ -1,0 +1,112 @@
+=== TOOLS/TECHNOLOGIES
+== General
+* APIs
+* Cost Explorer
+* AWS Cost and Usage Report
+* AWS Command Line Interface (CLI)
+* Elastic Load Balancers
+* Amazon EC2 instance types (for example, Reserved, On-Demand, Spot)
+* AWS global infrastructure (for example, AWS Regions, Availability Zones)
+* Infrastructure as Code (IaC)
+* Amazon Machine Images (AMIs)
+* AWS Management Console
+* AWS Marketplace
+* AWS Professional Services
+* AWS Personal Health Dashboard
+* Security groups
+* AWS Service Catalog
+* AWS Service Health Dashboard
+* Service quotas
+* AWS software development kits (SDKs)
+* AWS Support Center
+* AWS Support tiers
+* Virtual private networks (VPNs)
+
+== AWS services and features
+=== Analytics
+
+* Amazon Athena
+* Amazon Kinesis
+* Amazon QuickSight
+
+=== Application Integration
+* Amazon Simple Notification Service (Amazon SNS)
+* Amazon Simple Queue Service (Amazon SQS)
+
+=== Compute and Serverless
+
+*AWS Batch*:: Run software jobs in Docker containers on EC2 machines
+*Amazon EC2*:: Virtual Private Servers
+*AWS Elastic Beanstalk*:: Run software on managed virtual machines
+*AWS Lambda*:: A serverless compute service that lets you run code without provisioning or managing servers, creating workload-aware cluster scaling logic, maintaining event integrations, or managing runtimes.
+*Amazon Lightsail*:: Lightsail(Amazon’s hosting provider) is an easy-to-use virtual private server (VPS) provider that offers you everything needed to build an application or website for a cost-effective, monthly plan.
+* Amazon WorkSpaces
+
+=== Containers
+* Amazon Elastic Container Service (Amazon ECS)
+* Amazon Elastic Kubernetes Service (Amazon EKS)
+* AWS Fargate
+
+=== Database
+* Amazon Aurora
+*Amazon DynamoDB*:: Large & scalable non-relational database
+*Amazon ElastiCache*:: Managed memcache and redis machines
+* Amazon RDS
+*Amazon Redshift*:: Warehousing. Store lots of data that can be processed through streams.
+
+=== Developer Tools
+*AWS CodeBuild*:: CI service
+*AWS CodeCommit*:: Amazon source repositories (git repo’s etc)
+*AWS CodeDeploy*:: Deployment service
+*AWS CodePipeline*:: Code delivery with workflows
+*AWS CodeStar*:: Quickly develop applications by using template code and `CodeCommit`, `CodeBuild` etc
+
+=== Customer Engagement
+* Amazon Connect
+
+=== Management, Monitoring, and Governance
+* AWS Auto Scaling
+* AWS Budgets
+* AWS CloudFormation
+* AWS CloudTrail
+* Amazon CloudWatch
+* AWS Config
+* AWS Cost and Usage Report
+* Amazon EventBridge (Amazon CloudWatch Events)
+* AWS License Manager
+* AWS Managed Services
+*AWS Organizations*:: Configure (sub)organisations and accounts
+* AWS Secrets Manager
+* AWS Systems Manager
+* AWS Systems Manager Parameter Store
+* AWS Trusted Advisor
+
+=== Networking and Content Delivery
+*Amazon API Gateway*:: Create HTTP APIs and let them connect to different backends.
+*Amazon CloudFront*:: Content Delivery Network.
+*AWS Direct Connect*:: Create a (physical) connection between you (or DC) to AWS.
+*Amazon Route 53*:: Manage domain names and records.
+*Amazon VPC*:: Create your own virtual private network within AWS.
+
+=== Security, Identity, and Compliance
+* AWS Artifact
+* AWS Certificate Manager (ACM)
+* AWS CloudHSM
+* Amazon Cognito
+* Amazon Detective
+* Amazon GuardDuty
+* AWS Identity and Access Management (IAM)
+* Amazon Inspector
+* AWS License Manager
+* Amazon Macie
+* AWS Shield
+* AWS WAF
+
+=== Storage
+* AWS Backup
+* Amazon Elastic Block Store (Amazon EBS)
+* Amazon Elastic File System (Amazon EFS)
+* Amazon S3
+* Amazon S3 Glacier
+* AWS Snowball Edge
+* AWS Storage Gateway
