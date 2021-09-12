@@ -1,19 +1,20 @@
 === TOOLS/TECHNOLOGIES
 == General
 * APIs
-* Cost Explorer
+*Cost Explorer*:: Cost Explorer can help you in budgeting and planning for your AWS expenditures.
 * AWS Cost and Usage Report
 * AWS Command Line Interface (CLI)
-* Elastic Load Balancers
-* Amazon EC2 instance types (for example, Reserved, On-Demand, Spot)
+*Elastic Load Balancers(ELB)*:: Round robin (RR) is the default algorithm for load balancing. You can specify the port or ports for health check monitoring with Elastic Load Balancing (ELB).
+*Amazon EC2 instance types*:: Examples: Reserved, On-Demand, Spot. EC2 instances can be purchased in the default on-demand manner, they can be reserved, or you can bid on capacity with spot instances.
 * AWS global infrastructure (for example, AWS Regions, Availability Zones)
 * Infrastructure as Code (IaC)
-* Amazon Machine Images (AMIs)
+*Amazon Machine Images (AMIs)*:: The Amazon Machine Image (AMI) contains the basic configuration for the operating system (OS) and the root volume.
 * AWS Management Console
-* AWS Marketplace
+
+*AWS Marketplace*:: The AWS Marketplace allows you to purchase a wide range of products for use with AWS, including operating systems, security products, and networking technologies. The AWS Marketplace is an online software store that helps AWS customers find, buy, and immediately start using the software and services that run on AWS.
 * AWS Professional Services
 * AWS Personal Health Dashboard
-* Security groups
+*Security groups*:: The maximum number of security groups that can be applied to any one EC2 instance is 5, although this is a soft limit that can be raised.
 * AWS Service Catalog
 * AWS Service Health Dashboard
 * Service quotas
@@ -31,13 +32,13 @@
 
 === Application Integration
 * Amazon Simple Notification Service (Amazon SNS)
-* Amazon Simple Queue Service (Amazon SQS)
+*Amazon Simple Queue Service (Amazon SQS)*:: SQS offers a reliable, highly scalable hosted queue service for storing messages as they travel between applications or microservices. It moves data between distributed application components and helps you decouple these components.
 
 === Compute and Serverless
 
 *AWS Batch*:: Run software jobs in Docker containers on EC2 machines
 *Amazon EC2*:: Virtual Private Servers
-*AWS Elastic Beanstalk*:: Run software on managed virtual machines
+*AWS Elastic Beanstalk*:: The job of Elastic Beanstalk is to build the underlying AWS infrastructure for the developer in order to make deployment of applications simple.
 *AWS Lambda*:: A serverless compute service that lets you run code without provisioning or managing servers, creating workload-aware cluster scaling logic, maintaining event integrations, or managing runtimes.
 *Amazon Lightsail*:: Lightsail(Amazon’s hosting provider) is an easy-to-use virtual private server (VPS) provider that offers you everything needed to build an application or website for a cost-effective, monthly plan.
 * Amazon WorkSpaces
@@ -49,10 +50,10 @@
 
 === Database
 * Amazon Aurora
-*Amazon DynamoDB*:: Large & scalable non-relational database
+*Amazon DynamoDB*:: AWS NoSQL option for high-performance database work. DynamoDB is often used with large online gaming and IoT solutions.
 *Amazon ElastiCache*:: Managed memcache and redis machines
 * Amazon RDS
-*Amazon Redshift*:: Warehousing. Store lots of data that can be processed through streams.
+*Amazon Redshift*:: A fast, scalable data warehouse that allows you to easily and cost-effectively analyze all your data across your data warehouse and data lake. Redshift delivers 10 times faster performance than other data warehouses by using machine learning, massively parallel query execution, and columnar storage on high-performance disks.
 
 === Developer Tools
 *AWS CodeBuild*:: CI service
@@ -65,11 +66,12 @@
 * Amazon Connect
 
 === Management, Monitoring, and Governance
-* AWS Auto Scaling
+*AWS Auto Scaling*::  *100 launch configurations* per region and *20 Auto Scaling groups* per region.
 * AWS Budgets
 * AWS CloudFormation
-* AWS CloudTrail
-* Amazon CloudWatch
+*AWS CloudTrail*:: A tool that allows you to closely monitor the API calls that permit clients to configure and interact with AWS.
+It is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account. With CloudTrail, you can log, continuously monitor, and retain account activity related to actions across your AWS infrastructure.
+*Amazon CloudWatch*:: CloudWatch is the primary monitoring tool in AWS.
 * AWS Config
 * AWS Cost and Usage Report
 * Amazon EventBridge (Amazon CloudWatch Events)
@@ -79,34 +81,100 @@
 * AWS Secrets Manager
 * AWS Systems Manager
 * AWS Systems Manager Parameter Store
-* AWS Trusted Advisor
+*AWS Trusted Advisor*:: AWS Trusted Advisor inspects the AWS environment and makes recommendations for saving money, improving system performance and reliability, and closing security gaps. The Trusted Advisor service, which aids in management and operation of AWS, is available with all support plans.
+*AWS OpsWorks*:: A fully managed configuration service that provides managed instances of Chef and Puppet. Chef and Puppet are automation platforms that allow you to use code to automate the configurations of your servers. OpsWorks lets you use Chef and Puppet to automate how servers are configured, deployed, and managed across your Amazon EC2 instances or on-premises compute environments.
 
 === Networking and Content Delivery
 *Amazon API Gateway*:: Create HTTP APIs and let them connect to different backends.
-*Amazon CloudFront*:: Content Delivery Network.
-*AWS Direct Connect*:: Create a (physical) connection between you (or DC) to AWS.
-*Amazon Route 53*:: Manage domain names and records.
+*Amazon CloudFront*:: Content Delivery Network. CloudFront uses Edge Locations for low-latency, efficient delivery of cached content. CloudFront delivers static and streaming content using a global network of AWS Edge Locations.
+*AWS Direct Connect*:: A cloud service solution that makes it easy to establish a dedicated network connection from your premises to AWS. Using AWS Direct Connect, you can establish private connectivity between AWS and your data center, office, or colocation environment, which in many cases can reduce your network costs, increase bandwidth throughput, and provide a more consistent network experience than Internet-based connections.
+*Amazon Route 53*:: AWS DNS service. It got its name from the TCP and UDP port number, 53, that it relies on. Manage domain names and records.
 *Amazon VPC*:: Create your own virtual private network within AWS.
 
 === Security, Identity, and Compliance
-* AWS Artifact
+*AWS Artifact*:: It is your go-to central resource for compliance-related information that matters to you. It provides on-demand access to AWS’s security and compliance reports and select online agreements. Reports available in AWS Artifact include our Service Organization Control (SOC) reports, Payment Card Industry (PCI) reports, and certifications from accreditation bodies across geographies and compliance verticals that validate the implementation and operating effectiveness of AWS security controls.
 * AWS Certificate Manager (ACM)
 * AWS CloudHSM
-* Amazon Cognito
+*Amazon Cognito*:: Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily.
 * Amazon Detective
 * Amazon GuardDuty
-* AWS Identity and Access Management (IAM)
+*AWS Identity and Access Management (IAM)*:: Identity and Access Management (IAM) policies are an AWS customer responsibility.
 * Amazon Inspector
 * AWS License Manager
 * Amazon Macie
 * AWS Shield
-* AWS WAF
+*AWS WAF*:: AWS Web Application Firewall (WAF) can help protect your web applications from SQL injection attacks and other vulnerabilities in your application code.
 
 === Storage
 * AWS Backup
-* Amazon Elastic Block Store (Amazon EBS)
+*Amazon Elastic Block Store (Amazon EBS)*:: EBS is an easy-to-use, scalable, high-performance block-storage service designed for Amazon Elastic Compute Cloud (EC2).
 * Amazon Elastic File System (Amazon EFS)
 * Amazon S3
-* Amazon S3 Glacier
+*Amazon S3 Glacier*:: Glacier is the least expensive of the S3 storage classes, but keep in mind that it can take up to a couple hours to restore.
 * AWS Snowball Edge
-* AWS Storage Gateway
+*AWS Storage Gateway*:: Storage Gateway is an easy-to-implement tool to assist you in using a hybrid storage solution of local storage combined with cloud-based storage. The cached volume type permits the caching of frequently accessed data on site, with the bulk of data residing in the cloud.
+
+
+= GLOSSARY & TERMINOLOGY
+
+*VPC peering*:: A VPC peering connection is a networking connection between two VPCs that enables you to route traffic between them using private IPv4 addresses or IPv6 addresses. Instances in either VPC can communicate with each other as if they were within the same network. You can create a VPC peering connection between your own VPCs or with a VPC in another AWS account. The VPCs can be in different regions (also known as an inter-region VPC peering connection).
+
+*VPC endpoint*:: A VPC endpoint enables you to privately connect your VPC to supported AWS services and VPC endpoint services powered by PrivateLink without requiring an Internet gateway, a NAT device, a VPN connection, or an AWS Direct Connect connection. Instances in your VPC do not require public IP addresses to communicate with resources in the service. Traffic between your VPC and the other service does not leave the Amazon network.
+
+*PILLARS of Well-Architected Framework*:: Security, cost optimization, and operational excellence are all pillars of the Well-Architected Framework.
+
+*Traceability*:: The traceability characteristic falls under the *security* pillar.
+
+*Role*:: A role is a powerful alternative to a specific user account. A role is often perfect for use in a scenario where one service must access another service.
+
+*Federation*:: Federation is becoming more and more popular. You might access an AWS resource after being successfully authenticated by a social media domain, for example.
+
+*Physical host security playbooks*:: Amazon DOES not typically provide to AWS customers in the area of compliance.
+
+*Orchestration*:: Orchestration is often the result of sophisticated workflows and processes of many automated tasks and processes.
+
+*Availability Zone (AZ)*::
+* Each Availability Zone (AZ) is designed to be an independent failure domain.
+* There is at least one discrete data center in an Availability Zone (AZ). Some AZs have more than one.
+* The Availability Zone (AZ) location does not impact the cost of your EC2 resources.
+
+*Security group*::
+* Security groups permit you to control traffic to and from your EC2 instances. Remember that security groups are actually attached to the Elastic Network Interfaces (ENIs) that the EC2 instances use.
+* Security groups are not instance specific. Therefore, one security group can be shared among many instances.
+
+*AWS cost calculators*:: Two very popular cost calculators for AWS are TCO Calculator and AWS Simply Monthly Calculator.
+
+*AWS fundamental costs*:: Compute, storage, and data transfer out are all fundamental costs in AWS.
+
+*Spot instance*::
+* Bidding on instances with spot pricing offers the largest potential savings.
+* Spot allows AWS users to auction off unused reserved and scheduled instance hours to the highest bidder as a way to cut down on unnecessary expense.
+
+*Technical account manager(TAM)*:: Consultative partnerships support specific use cases and applications and include design reviews and architectural guidance. The support team of an Enterprise-level customer includes a designated technical account manager and access to an AWS solutions architect. Only the Enterprise level of support provides TAM access.
+
+*Free Tier*:: Iti 12 months. While SNS, Glacier, and CloudWatch can all remain free after the expiration of a Free Tier account, EC2 does not.
+
+*AWS Forums*:: Forum access requires an AWS account—even a Free Tier account.
+
+*Software as a Service(SaaS)*:: Gmail is an excellent example of Software as a Service.
+
+*S3 Bucket*::
+* The storage options for uploading objects to an S3 bucket are Standard, Standard—Infrequent Access, and Reduced Redundancy.
+* AWS requires that all S3 bucket names be globally unique across all regions; in addition, bucket names must not include spaces between words.
+* You can store an unlimited number of objects in an S3 bucket, and the maximum size is 5 TB each.
+
+*Auto Scaling*:: Three main components make up Auto Scaling: scaling plans, launch configurations, and groups.
+
+*Bastion*:: A bastion server acts as a gateway and allows only privileged access to the servers. Using this gateway allows AWS to monitor, log, and control access.
+
+*Elasticity*:: Elasticity (scalability) is cost-effective because you can spin up and pay for additional services as you need them (on demand), and it allows “on-ramping,” which means moving your services to the cloud over time gradually.
+
+*Foundation services*:: Foundation services—the foundational services that AWS offers—include compute (EC2, Lambda, Auto Scaling), networking (Load-Balancing, Route53, VPC), and storage (S3, Block Storage, Glacier, EFS) services.
+
+*NACL*:: Network Access Control Lists. NACLs, which are associated with subnets, give you a powerful security capability to control traffic between your AWS resources.
+
+*Penetration testing*::  It may be performed by customers against their own instances with prior authorization from AWS. Currently, the permitted resources are EC2, RDS, Aurora, CloudFront, API Gateway, Lambda, Lightsail, and DNS Zone Walking.
+
+*Provisioned IOPS*::
+* Provisioned IOPS are a new Elastic Block Store (EBS) volume type designed to deliver predictable high performance for I/O-intensive workloads, such as database applications, that rely on consistent and fast response times.
+* It is not a part of a Free Tier account.
