@@ -44,7 +44,9 @@
 * Amazon WorkSpaces
 
 === Containers
-* Amazon Elastic Container Service (Amazon ECS)
+*Amazon Elastic Container Service (Amazon ECS)*::
+* Amazon Elastic Container Service (ECS) is a highly scalable, high-performance container orchestration service that supports Docker containers and allows you to easily run and scale containerized applications on AWS.
+* Amazon ECS eliminates the need for you to install and operate your own container orchestration software, manage and scale a cluster of virtual machines, or schedule containers on those virtual machines.
 * Amazon Elastic Kubernetes Service (Amazon EKS)
 * AWS Fargate
 
@@ -87,9 +89,18 @@ It is a service that enables governance, compliance, operational auditing, and r
 === Networking and Content Delivery
 *Amazon API Gateway*:: Create HTTP APIs and let them connect to different backends.
 *Amazon CloudFront*:: Content Delivery Network. CloudFront uses Edge Locations for low-latency, efficient delivery of cached content. CloudFront delivers static and streaming content using a global network of AWS Edge Locations.
-*AWS Direct Connect*:: A cloud service solution that makes it easy to establish a dedicated network connection from your premises to AWS. Using AWS Direct Connect, you can establish private connectivity between AWS and your data center, office, or colocation environment, which in many cases can reduce your network costs, increase bandwidth throughput, and provide a more consistent network experience than Internet-based connections.
-*Amazon Route 53*:: AWS DNS service. It got its name from the TCP and UDP port number, 53, that it relies on. Manage domain names and records.
-*Amazon VPC*:: Create your own virtual private network within AWS.
+*AWS Direct Connect*::
+* A cloud service solution that makes it easy to establish a dedicated network connection from your premises to AWS.
+* Using AWS Direct Connect, you can establish private connectivity between AWS and your data center, office, or colocation environment, which in many cases can reduce your network costs, increase bandwidth throughput, and provide a more consistent network experience than Internet-based connections.
+*Amazon Route 53*::
+* AWS DNS service. It got its name from the TCP and UDP port number, 53, that it relies on. Manage domain names and records.
+* Amazon Route 53 does not support DNSSEC for DNS at this time. But Amazon Route 53 allows DNSSEC on domain registration.
+*Amazon VPC*::
+* Creates your own virtual private network within AWS.
+* A default VPC is created by AWS for your new account. Your initial EC2 instances are automatically placed there.
+* When you create a default subnet, it is created with a size /20 IPv4 CIDR block in the next available contiguous space in your default VPC.
+* The allowed CIDR block size is between a /16 netmask (65,536 IP addresses) and a /28 netmask (16 IP addresses).
+* Your subnets are part of your Virtual Private Clouds.
 
 === Security, Identity, and Compliance
 *AWS Artifact*:: It is your go-to central resource for compliance-related information that matters to you. It provides on-demand access to AWS’s security and compliance reports and select online agreements. Reports available in AWS Artifact include our Service Organization Control (SOC) reports, Payment Card Industry (PCI) reports, and certifications from accreditation bodies across geographies and compliance verticals that validate the implementation and operating effectiveness of AWS security controls.
@@ -98,22 +109,34 @@ It is a service that enables governance, compliance, operational auditing, and r
 *Amazon Cognito*:: Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily.
 * Amazon Detective
 * Amazon GuardDuty
-*AWS Identity and Access Management (IAM)*:: Identity and Access Management (IAM) policies are an AWS customer responsibility.
-* Amazon Inspector
-* AWS License Manager
-* Amazon Macie
-* AWS Shield
-*AWS WAF*:: AWS Web Application Firewall (WAF) can help protect your web applications from SQL injection attacks and other vulnerabilities in your application code.
+*AWS Identity and Access Management (IAM)*::
+* AWS Identity and Access Management (IAM) is a web service for securely controlling access to AWS services. With IAM, you can centrally manage users, security credentials such as access keys, and permissions that control which AWS resources users and applications can access.
+* Identity and Access Management (IAM) policies are an AWS customer responsibility.
+*Amazon Inspector*:: TODO
+*AWS License Manager*:: TODO
+*Amazon Macie*:: TODO
+*AWS Shield*:: TODO
+*AWS WAF*::
+* AWS Web Application Firewall (WAF) can help protect your web applications from SQL injection attacks and other vulnerabilities in your application code.
+* AWS Web Application Firewall (WAF) can be deployed on Amazon CloudFront and the Application Load Balancer (ALB). As part of Amazon CloudFront, it can be part of your content distribution network (CDN), protecting your resources and content at the Edge Locations, and as part of the Application Load Balancer, it can protect your origin web servers running behind the ALBs.
 
 === Storage
-* AWS Backup
-*Amazon Elastic Block Store (Amazon EBS)*:: EBS is an easy-to-use, scalable, high-performance block-storage service designed for Amazon Elastic Compute Cloud (EC2).
-* Amazon Elastic File System (Amazon EFS)
-* Amazon S3
-*Amazon S3 Glacier*:: Glacier is the least expensive of the S3 storage classes, but keep in mind that it can take up to a couple hours to restore.
-* AWS Snowball Edge
+*AWS Backup*:: TODO
+*Amazon Elastic Block Store (Amazon EBS)*::
+* EBS is an easy-to-use, scalable, high-performance block-storage service designed for Amazon Elastic Compute Cloud (EC2).
+* EBS volumes are the new default for root volumes in EC2.
+*Amazon Elastic File System (Amazon EFS)*:: Elastic File System (EFS) permits the mounting of many different clients simultaneously. The volume grows as needed.
+*Amazon S3*::
+* The storage options for uploading objects to an S3 bucket are Standard, Standard—Infrequent Access, and Reduced Redundancy.
+* AWS requires that all S3 bucket names be globally unique across all regions; in addition, bucket names must not include spaces between words.
+* You can store an unlimited number of objects in an S3 bucket, and the maximum size is 5 TB each.
+*  Infrequent access (IA) offers slightly reduced availability, which saves money for data that you access less frequently.
+* There is a limit on the number of buckets you can create, and there is a limit to the size of an object, but when taken as a whole - there is no limit to the amount of data you can store in S3.
+*Amazon S3 Glacier*::
+* Glacier is the least expensive of the S3 storage classes, but keep in mind that it can take up to a couple hours to restore.
+* Glacier is for data archiving and is not designed for frequent access.
+*AWS Snowball Edge*:: TODO
 *AWS Storage Gateway*:: Storage Gateway is an easy-to-implement tool to assist you in using a hybrid storage solution of local storage combined with cloud-based storage. The cached volume type permits the caching of frequently accessed data on site, with the bulk of data residing in the cloud.
-
 
 = GLOSSARY & TERMINOLOGY
 
@@ -158,11 +181,6 @@ It is a service that enables governance, compliance, operational auditing, and r
 
 *Software as a Service(SaaS)*:: Gmail is an excellent example of Software as a Service.
 
-*S3 Bucket*::
-* The storage options for uploading objects to an S3 bucket are Standard, Standard—Infrequent Access, and Reduced Redundancy.
-* AWS requires that all S3 bucket names be globally unique across all regions; in addition, bucket names must not include spaces between words.
-* You can store an unlimited number of objects in an S3 bucket, and the maximum size is 5 TB each.
-
 *Auto Scaling*:: Three main components make up Auto Scaling: scaling plans, launch configurations, and groups.
 
 *Bastion*:: A bastion server acts as a gateway and allows only privileged access to the servers. Using this gateway allows AWS to monitor, log, and control access.
@@ -178,3 +196,15 @@ It is a service that enables governance, compliance, operational auditing, and r
 *Provisioned IOPS*::
 * Provisioned IOPS are a new Elastic Block Store (EBS) volume type designed to deliver predictable high performance for I/O-intensive workloads, such as database applications, that rely on consistent and fast response times.
 * It is not a part of a Free Tier account.
+* The supported volume size for a provisioned IOPS volume is 4 GB to 16 TB.
+* The maximum IOPS per volume is 20,000 with this volume type.
+
+*Snapshot*:: Snapshots allow you to create copies of volumes in other Availability Zones.
+
+*Striping*:: RAID 0 (striping) can be used to increase performance in your data storage.
+
+*Mirroring*:: RAID 1, or mirroring, makes a complete mirror of the source volume.
+
+*Tags*::
+* Tags enable you to categorize your AWS resources in different ways, such as by purpose, owner, or environment.
+* Each tag consists of a key and an optional value, both of which you define.
