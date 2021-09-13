@@ -31,7 +31,7 @@
 *Amazon QuickSight*:: TODO
 
 === Application Integration
-* Amazon Simple Notification Service (Amazon SNS)
+* Amazon Simple Notification Service (Amazon SNS)*:: Amazon Simple Notification Service (SNS) is a flexible, fully managed pub/sub messaging and mobile notifications service for coordinating the delivery of messages to subscribing endpoints and clients.
 *Amazon Simple Queue Service (Amazon SQS)*:: SQS offers a reliable, highly scalable hosted queue service for storing messages as they travel between applications or microservices. It moves data between distributed application components and helps you decouple these components.
 
 === Compute and Serverless
@@ -126,6 +126,7 @@ It is a service that enables governance, compliance, operational auditing, and r
 *Amazon Elastic Block Store (Amazon EBS)*::
 * EBS is an easy-to-use, scalable, high-performance block-storage service designed for Amazon Elastic Compute Cloud (EC2).
 * EBS volumes are the new default for root volumes in EC2.
+* EBS often serves as the boot volume in EC2 for operating systems.
 *Amazon Elastic File System (Amazon EFS)*:: Elastic File System (EFS) permits the mounting of many different clients simultaneously. The volume grows as needed.
 *Amazon S3*::
 * The storage options for uploading objects to an S3 bucket are Standard, Standard—Infrequent Access, and Reduced Redundancy.
@@ -189,6 +190,10 @@ It is a service that enables governance, compliance, operational auditing, and r
 
 *Bastion*:: A bastion server acts as a gateway and allows only privileged access to the servers. Using this gateway allows AWS to monitor, log, and control access.
 
+*Scalability*:: Scalability is the ability of your infrastructure to grow on demand.
+
+*Elasticity*:: Elasticity refers to the cloud’s ability to automatically scale as needed, based on demand.
+
 *Elasticity*:: Elasticity (scalability) is cost-effective because you can spin up and pay for additional services as you need them (on demand), and it allows “on-ramping,” which means moving your services to the cloud over time gradually.
 
 *Foundation services*:: Foundation services—the foundational services that AWS offers—include compute (EC2, Lambda, Auto Scaling), networking (Load-Balancing, Route53, VPC), and storage (S3, Block Storage, Glacier, EFS) services.
@@ -212,3 +217,5 @@ It is a service that enables governance, compliance, operational auditing, and r
 *Tags*::
 * Tags enable you to categorize your AWS resources in different ways, such as by purpose, owner, or environment.
 * Each tag consists of a key and an optional value, both of which you define.
+
+*CapEx vs OpExp*:: Cloud technology typically means you have lower `capital expenditures`(CapExp) and higher `operational expenditures`(OpExp).
