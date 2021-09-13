@@ -26,9 +26,9 @@
 == AWS services and features
 === Analytics
 
-* Amazon Athena
-* Amazon Kinesis
-* Amazon QuickSight
+*Amazon Athena*:: TODO
+*Amazon Kinesis*:: TODO
+*Amazon QuickSight*:: TODO
 
 === Application Integration
 * Amazon Simple Notification Service (Amazon SNS)
@@ -47,15 +47,15 @@
 *Amazon Elastic Container Service (Amazon ECS)*::
 * Amazon Elastic Container Service (ECS) is a highly scalable, high-performance container orchestration service that supports Docker containers and allows you to easily run and scale containerized applications on AWS.
 * Amazon ECS eliminates the need for you to install and operate your own container orchestration software, manage and scale a cluster of virtual machines, or schedule containers on those virtual machines.
-* Amazon Elastic Kubernetes Service (Amazon EKS)
-* AWS Fargate
+*Amazon Elastic Kubernetes Service (Amazon EKS)*:: TODO
+*AWS Fargate*:: TODO
 
 === Database
-* Amazon Aurora
+*Amazon Aurora*:: Amazon Aurora is a MySQL and PostgreSQL-compatible relational database built for the cloud that combines the performance and availability of traditional enterprise databases with the simplicity and cost-effectiveness of open source databases.
 *Amazon DynamoDB*:: AWS NoSQL option for high-performance database work. DynamoDB is often used with large online gaming and IoT solutions.
 *Amazon ElastiCache*:: Managed memcache and redis machines
-* Amazon RDS
-*Amazon Redshift*:: A fast, scalable data warehouse that allows you to easily and cost-effectively analyze all your data across your data warehouse and data lake. Redshift delivers 10 times faster performance than other data warehouses by using machine learning, massively parallel query execution, and columnar storage on high-performance disks.
+*Amazon RDS*:: TODO
+*Amazon Redshift*:: A fast, scalable data warehouse that allows you to easily and cost-effectively analyze all your data across your data warehouse and data lake. Redshift delivers 10 times faster performance than other data warehouses by using machine learning, massively parallel query execution and columnar storage on high-performance disks.
 
 === Developer Tools
 *AWS CodeBuild*:: CI service
@@ -101,6 +101,7 @@ It is a service that enables governance, compliance, operational auditing, and r
 * When you create a default subnet, it is created with a size /20 IPv4 CIDR block in the next available contiguous space in your default VPC.
 * The allowed CIDR block size is between a /16 netmask (65,536 IP addresses) and a /28 netmask (16 IP addresses).
 * Your subnets are part of your Virtual Private Clouds.
+* The default limit placed on the number of subnets in a VPC is `200`.
 
 === Security, Identity, and Compliance
 *AWS Artifact*:: It is your go-to central resource for compliance-related information that matters to you. It provides on-demand access to AWS’s security and compliance reports and select online agreements. Reports available in AWS Artifact include our Service Organization Control (SOC) reports, Payment Card Industry (PCI) reports, and certifications from accreditation bodies across geographies and compliance verticals that validate the implementation and operating effectiveness of AWS security controls.
@@ -136,7 +137,10 @@ It is a service that enables governance, compliance, operational auditing, and r
 * Glacier is the least expensive of the S3 storage classes, but keep in mind that it can take up to a couple hours to restore.
 * Glacier is for data archiving and is not designed for frequent access.
 *AWS Snowball Edge*:: TODO
-*AWS Storage Gateway*:: Storage Gateway is an easy-to-implement tool to assist you in using a hybrid storage solution of local storage combined with cloud-based storage. The cached volume type permits the caching of frequently accessed data on site, with the bulk of data residing in the cloud.
+*AWS Storage Gateway*::
+* Storage Gateway is an easy-to-implement tool to assist you in using a hybrid storage solution of local storage combined with cloud-based storage.
+* The cached volume type permits the caching of frequently accessed data on site, with the bulk of data residing in the cloud.
+* The storage gateway feature seeks to share data access and storage between on-premises and cloud locations. Some models cover caching, shared storage, and virtual tape.
 
 = GLOSSARY & TERMINOLOGY
 
@@ -144,7 +148,7 @@ It is a service that enables governance, compliance, operational auditing, and r
 
 *VPC endpoint*:: A VPC endpoint enables you to privately connect your VPC to supported AWS services and VPC endpoint services powered by PrivateLink without requiring an Internet gateway, a NAT device, a VPN connection, or an AWS Direct Connect connection. Instances in your VPC do not require public IP addresses to communicate with resources in the service. Traffic between your VPC and the other service does not leave the Amazon network.
 
-*PILLARS of Well-Architected Framework*:: Security, cost optimization, and operational excellence are all pillars of the Well-Architected Framework.
+*PILLARS of Well-Architected Framework*:: The five pillars of the AWS Well-Architected Framework are (1) operational excellence, (2) security, (3) reliability, (4) performance efficiency, and (5) cost optimization.
 
 *Traceability*:: The traceability characteristic falls under the *security* pillar.
 
