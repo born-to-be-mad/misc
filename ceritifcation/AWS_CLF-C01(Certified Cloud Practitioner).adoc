@@ -1,27 +1,27 @@
 === TOOLS/TECHNOLOGIES
 == General
-* APIs
 *Cost Explorer*:: Cost Explorer can help you in budgeting and planning for your AWS expenditures.
-* AWS Cost and Usage Report
-* AWS Command Line Interface (CLI)
+*AWS Cost and Usage Report*:: AWS CUR contains the most comprehensive set of cost and usage data available. Ittracks your AWS usage and provides estimated charges associated with your account.
+*AWS Command Line Interface (CLI)*:: A unified tool to manage your AWS services.
 *Elastic Load Balancers(ELB)*:: Round robin (RR) is the default algorithm for load balancing. You can specify the port or ports for health check monitoring with Elastic Load Balancing (ELB).
-*Amazon EC2 instance types*:: Examples: Reserved, On-Demand, Spot. EC2 instances can be purchased in the default on-demand manner, they can be reserved, or you can bid on capacity with spot instances.
-* AWS global infrastructure (for example, AWS Regions, Availability Zones)
-* Infrastructure as Code (IaC)
+*Amazon EC2 instance types*:: Examples: `Reserved`, `On-Demand`, `Spot`. EC2 instances can be purchased in the default on-demand manner, they can be reserved, or you can bid on capacity with spot instances.
+*AWS global infrastructure*:: The AWS Global Cloud Infrastructure is the most secure, extensive, and reliable cloud platform, offering over 200 fully featured services from data centers globally. It is built around Regions and Availability Zones. Components: Availability Zones (AZs); Regions; Edge Locations; Regional Edge Caches.
+*Infrastructure as Code (IaC)*:: Infrastructure as code is the process of provisioning and managing your cloud resources by writing a template file that is both human readable, and machine consumable. For AWS cloud development the built-in choice for infrastructure as code is AWS CloudFormation.
 *Amazon Machine Images (AMIs)*:: The Amazon Machine Image (AMI) contains the basic configuration for the operating system (OS) and the root volume.
-* AWS Management Console
+*AWS Management Console*:: The AWS Management Console brings the unmatched breadth and depth of AWS right to your computer or mobile phone with a secure, easy-to-access, web-based portal.
 
 *AWS Marketplace*:: The AWS Marketplace allows you to purchase a wide range of products for use with AWS, including operating systems, security products, and networking technologies. The AWS Marketplace is an online software store that helps AWS customers find, buy, and immediately start using the software and services that run on AWS.
-* AWS Professional Services
-* AWS Personal Health Dashboard
+*AWS Professional Services*:: The AWS Professional Services organization is a global team of experts that can help you realize your desired business outcomes when using the AWS Cloud. We work together with your team and your chosen member of the AWS Partner Network (APN) to execute your enterprise cloud computing initiatives.
+*AWS Personal Health Dashboard*:: AWS Personal Health Dashboard provides alerts and guidance for AWS events that might affect your environment. it provides proactive and transparent notifications about your specific AWS environment.
 *Security groups*:: The maximum number of security groups that can be applied to any one EC2 instance is 5, although this is a soft limit that can be raised.
-* AWS Service Catalog
-* AWS Service Health Dashboard
-* Service quotas
-* AWS software development kits (SDKs)
-* AWS Support Center
-* AWS Support tiers
-* Virtual private networks (VPNs)
+*AWS Service Catalog*:: AWS Service Catalog allows organizations to create and manage catalogs of IT services that are approved for use on AWS. These IT services can include everything from virtual machine images, servers, software, and databases to complete multi-tier application architectures. AWS Service Catalog allows you to centrally manage deployed IT services and your applications, resources, and metadata.
+*AWS Service Health Dashboard*:: It shows the general status of AWS service.
+*Service quotas*:: Service Quotas enables you to view and manage your quotas for AWS services from a central location. Quotas, also referred to as limits in AWS, are the maximum values for the resources, actions, and items in your AWS account. Each AWS service defines its quotas and establishes default values for those quotas.
+*AWS software development kits (SDKs)*:: AWS offers a number of SDKs for use by programmers.
+*AWS Support Center*::
+*AWS Support tiers*::
+*Virtual private networks (VPNs)*::ssss
+
 
 == AWS services and features
 === Analytics
