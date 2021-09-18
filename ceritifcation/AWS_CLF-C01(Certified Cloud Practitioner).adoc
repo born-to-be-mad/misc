@@ -1,3 +1,11 @@
+== Numbers to remember
+
+* `5` is the maximum number of security groups that can be applied to any EC2 instance, although this is a soft limit that can be raised.
+* `100` is maximum amount of launch configurations per region.
+* `20` is maximum amount of auto scaling groups per region.
+* `200` is the default limit placed on the number of subnets in a VPC.
+* The allowed CIDR block size is between a `/16` netmask (65,536 IP addresses) and a `/28` netmask (16 IP addresses).
+
 === TOOLS/TECHNOLOGIES
 == General
 *Cost Explorer*:: Cost Explorer can help you in budgeting and planning for your AWS expenditures.
@@ -13,22 +21,21 @@
 *AWS Marketplace*:: The AWS Marketplace allows you to purchase a wide range of products for use with AWS, including operating systems, security products, and networking technologies. The AWS Marketplace is an online software store that helps AWS customers find, buy, and immediately start using the software and services that run on AWS.
 *AWS Professional Services*:: The AWS Professional Services organization is a global team of experts that can help you realize your desired business outcomes when using the AWS Cloud. We work together with your team and your chosen member of the AWS Partner Network (APN) to execute your enterprise cloud computing initiatives.
 *AWS Personal Health Dashboard*:: AWS Personal Health Dashboard provides alerts and guidance for AWS events that might affect your environment. it provides proactive and transparent notifications about your specific AWS environment.
-*Security groups*:: The maximum number of security groups that can be applied to any one EC2 instance is 5, although this is a soft limit that can be raised.
+*Security groups*:: The maximum number of security groups that can be applied to any EC2 instance is 5, although this is a soft limit that can be raised.
 *AWS Service Catalog*:: AWS Service Catalog allows organizations to create and manage catalogs of IT services that are approved for use on AWS. These IT services can include everything from virtual machine images, servers, software, and databases to complete multi-tier application architectures. AWS Service Catalog allows you to centrally manage deployed IT services and your applications, resources, and metadata.
 *AWS Service Health Dashboard*:: It shows the general status of AWS service.
 *Service quotas*:: Service Quotas enables you to view and manage your quotas for AWS services from a central location. Quotas, also referred to as limits in AWS, are the maximum values for the resources, actions, and items in your AWS account. Each AWS service defines its quotas and establishes default values for those quotas.
 *AWS software development kits (SDKs)*:: AWS offers a number of SDKs for use by programmers.
-*AWS Support Center*::
-*AWS Support tiers*::
-*Virtual private networks (VPNs)*::ssss
-
+*AWS Support Center*:: AWS Support offers a range of plans that provide access to tools and expertise that support the success and operational health of your AWS solutions.
+*AWS Support tiers*:: AWS Support offers four support plans: Basic, Developer, Business, and Enterprise.
+*Virtual private networks (VPNs)*:: AWS Virtual Private Network (AWS VPN) establishes encrypted connections between your network or device and AWS.
 
 == AWS services and features
 === Analytics
 
-*Amazon Athena*:: TODO
-*Amazon Kinesis*:: TODO
-*Amazon QuickSight*:: TODO
+*Amazon Athena*:: Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Athena is serverless, so there is no infrastructure to manage, and you pay only for the queries that you run.
+*Amazon Kinesis*:: Amazon Kinesis makes it easy to collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information.With Amazon Kinesis, you can ingest real-time data such as video, audio, application logs, website clickstreams, and IoT telemetry data for machine learning, analytics, and other applications.
+*Amazon QuickSight*:: Amazon QuickSight is a scalable, serverless, embeddable, machine learning-powered business intelligence (BI) service built for the cloud. QuickSight lets you easily create and publish interactive BI dashboards that include Machine Learning-powered insights. QuickSight dashboards can be accessed from any device, and seamlessly embedded into your applications, portals, and websites.
 
 === Application Integration
 * Amazon Simple Notification Service (Amazon SNS)*:: Amazon Simple Notification Service (SNS) is a flexible, fully managed pub/sub messaging and mobile notifications service for coordinating the delivery of messages to subscribing endpoints and clients.
@@ -47,14 +54,14 @@
 *Amazon Elastic Container Service (Amazon ECS)*::
 * Amazon Elastic Container Service (ECS) is a highly scalable, high-performance container orchestration service that supports Docker containers and allows you to easily run and scale containerized applications on AWS.
 * Amazon ECS eliminates the need for you to install and operate your own container orchestration software, manage and scale a cluster of virtual machines, or schedule containers on those virtual machines.
-*Amazon Elastic Kubernetes Service (Amazon EKS)*:: TODO
-*AWS Fargate*:: TODO
+*Amazon Elastic Kubernetes Service (Amazon EKS)*:: Amazon EKS gives you the flexibility to start, run, and scale Kubernetes applications in the AWS Cloud or on-premises. Amazon EKS helps you provide highly available and secure clusters and automates key tasks such as patching, node provisioning, and updates.
+*AWS Fargate*:: AWS Fargate is a technology that provides on-demand, right-sized compute capacity for containers .
 
 === Database
 *Amazon Aurora*:: Amazon Aurora is a MySQL and PostgreSQL-compatible relational database built for the cloud that combines the performance and availability of traditional enterprise databases with the simplicity and cost-effectiveness of open source databases.
 *Amazon DynamoDB*:: AWS NoSQL option for high-performance database work. DynamoDB is often used with large online gaming and IoT solutions.
 *Amazon ElastiCache*:: Managed memcache and redis machines
-*Amazon RDS*:: TODO
+*Amazon RDS*:: RD makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching and backups. It frees you to focus on your applications so you can give them the fast performance, high availability, security and compatibility they need.
 *Amazon Redshift*:: A fast, scalable data warehouse that allows you to easily and cost-effectively analyze all your data across your data warehouse and data lake. Redshift delivers 10 times faster performance than other data warehouses by using machine learning, massively parallel query execution and columnar storage on high-performance disks.
 
 === Developer Tools
@@ -65,24 +72,24 @@
 *AWS CodeStar*:: Quickly develop applications by using template code and `CodeCommit`, `CodeBuild` etc
 
 === Customer Engagement
-* Amazon Connect
+*Amazon Connect*:: Amazon Connect is an easy to use omnichannel cloud contact center that helps you provide superior customer service at a lower cost.
 
 === Management, Monitoring, and Governance
 *AWS Auto Scaling*::  *100 launch configurations* per region and *20 Auto Scaling groups* per region.
-* AWS Budgets
-* AWS CloudFormation
+*AWS Budgets*:: Improve planning and cost control with flexible budgeting and forecasting.
+*AWS CloudFormation*:: Speed up cloud provisioning with infrastructure as code
 *AWS CloudTrail*:: A tool that allows you to closely monitor the API calls that permit clients to configure and interact with AWS.
 It is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account. With CloudTrail, you can log, continuously monitor, and retain account activity related to actions across your AWS infrastructure.
 *Amazon CloudWatch*:: CloudWatch is the primary monitoring tool in AWS.
-* AWS Config
-* AWS Cost and Usage Report
-* Amazon EventBridge (Amazon CloudWatch Events)
-* AWS License Manager
-* AWS Managed Services
+*AWS Config*:: TODO
+*AWS Cost and Usage Report*:: TODO
+*Amazon EventBridge (Amazon CloudWatch Events)*:: TODO
+*AWS License Manager*:: TODO
+*AWS Managed Services*:: TODO
 *AWS Organizations*:: Configure (sub)organisations and accounts
-* AWS Secrets Manager
-* AWS Systems Manager
-* AWS Systems Manager Parameter Store
+*AWS Secrets Manager*:: AWS Secrets Manager helps you protect secrets needed to access your applications, services, and IT resources.
+*AWS Systems Manager*:: AWS Systems Manager is the operations hub for AWS. Systems Manager provides a unified user interface so you can track and resolve operational issues across your AWS applications and resources from a central place.
+*AWS Systems Manager Parameter Store*:: Parameter Store, a capability of AWS Systems Manager, provides secure, hierarchical storage for configuration data management and secrets management. You can store data such as passwords, database strings, Amazon Machine Image (AMI) IDs, and license codes as parameter values. You can store values as plain text or encrypted data.
 *AWS Trusted Advisor*:: AWS Trusted Advisor inspects the AWS environment and makes recommendations for saving money, improving system performance and reliability, and closing security gaps. The Trusted Advisor service, which aids in management and operation of AWS, is available with all support plans.
 *AWS OpsWorks*:: A fully managed configuration service that provides managed instances of Chef and Puppet. Chef and Puppet are automation platforms that allow you to use code to automate the configurations of your servers. OpsWorks lets you use Chef and Puppet to automate how servers are configured, deployed, and managed across your Amazon EC2 instances or on-premises compute environments.
 
@@ -105,24 +112,24 @@ It is a service that enables governance, compliance, operational auditing, and r
 
 === Security, Identity, and Compliance
 *AWS Artifact*:: It is your go-to central resource for compliance-related information that matters to you. It provides on-demand access to AWS’s security and compliance reports and select online agreements. Reports available in AWS Artifact include our Service Organization Control (SOC) reports, Payment Card Industry (PCI) reports, and certifications from accreditation bodies across geographies and compliance verticals that validate the implementation and operating effectiveness of AWS security controls.
-* AWS Certificate Manager (ACM)
-* AWS CloudHSM
+*AWS Certificate Manager (ACM)*:: TODO
+*AWS CloudHSM*:: TODO
 *Amazon Cognito*:: Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily.
-* Amazon Detective
-* Amazon GuardDuty
+*Amazon Detective*:: TODO
+*Amazon GuardDuty*:: TODO
 *AWS Identity and Access Management (IAM)*::
 * AWS Identity and Access Management (IAM) is a web service for securely controlling access to AWS services. With IAM, you can centrally manage users, security credentials such as access keys, and permissions that control which AWS resources users and applications can access.
 * Identity and Access Management (IAM) policies are an AWS customer responsibility.
-*Amazon Inspector*:: TODO
-*AWS License Manager*:: TODO
-*Amazon Macie*:: TODO
-*AWS Shield*:: TODO
+*Amazon Inspector*:: Automated security assessment service to help improve the security and compliance of applications deployed on AWS
+*AWS License Manager*:: AWS License Manager makes it easier to manage your software licenses from vendors such as Microsoft, SAP, Oracle, and IBM across AWS and on-premises environments.
+*Amazon Macie*:: Amazon Macie is a fully managed data security and data privacy service that uses machine learning and pattern matching to discover and protect your sensitive data in AWS.
+*AWS Shield*:: AWS Shield is a managed Distributed Denial of Service (DDoS) protection service that safeguards applications running on AWS
 *AWS WAF*::
 * AWS Web Application Firewall (WAF) can help protect your web applications from SQL injection attacks and other vulnerabilities in your application code.
 * AWS Web Application Firewall (WAF) can be deployed on Amazon CloudFront and the Application Load Balancer (ALB). As part of Amazon CloudFront, it can be part of your content distribution network (CDN), protecting your resources and content at the Edge Locations, and as part of the Application Load Balancer, it can protect your origin web servers running behind the ALBs.
 
 === Storage
-*AWS Backup*:: TODO
+*AWS Backup*:: AWS Backup provides a centralized console to automate and manage backups across AWS services. AWS Backup supports Amazon EBS, Amazon RDS, Amazon DynamoDB, Amazon EFS, Amazon FSx, Amazon EC2, and AWS Storage Gateway
 *Amazon Elastic Block Store (Amazon EBS)*::
 * EBS is an easy-to-use, scalable, high-performance block-storage service designed for Amazon Elastic Compute Cloud (EC2).
 * EBS volumes are the new default for root volumes in EC2.
@@ -137,13 +144,13 @@ It is a service that enables governance, compliance, operational auditing, and r
 *Amazon S3 Glacier*::
 * Glacier is the least expensive of the S3 storage classes, but keep in mind that it can take up to a couple hours to restore.
 * Glacier is for data archiving and is not designed for frequent access.
-*AWS Snowball Edge*:: TODO
+*AWS Snowball Edge*:: AWS Snowball Edge is a type of Snowball device with on-board storage and compute power for select AWS capabilities. Snowball Edge can do local processing and edge-computing workloads in addition to transferring data between your local environment and the AWS Cloud.
 *AWS Storage Gateway*::
 * Storage Gateway is an easy-to-implement tool to assist you in using a hybrid storage solution of local storage combined with cloud-based storage.
 * The cached volume type permits the caching of frequently accessed data on site, with the bulk of data residing in the cloud.
 * The storage gateway feature seeks to share data access and storage between on-premises and cloud locations. Some models cover caching, shared storage, and virtual tape.
 
-= GLOSSARY & TERMINOLOGY
+== GLOSSARY & TERMINOLOGY
 
 *VPC peering*:: A VPC peering connection is a networking connection between two VPCs that enables you to route traffic between them using private IPv4 addresses or IPv6 addresses. Instances in either VPC can communicate with each other as if they were within the same network. You can create a VPC peering connection between your own VPCs or with a VPC in another AWS account. The VPCs can be in different regions (also known as an inter-region VPC peering connection).
 
