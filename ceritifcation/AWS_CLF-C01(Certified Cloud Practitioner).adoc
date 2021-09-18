@@ -5,6 +5,8 @@
 * `20` is maximum amount of auto scaling groups per region.
 * `200` is the default limit placed on the number of subnets in a VPC.
 * The allowed CIDR block size is between a `/16` netmask (65,536 IP addresses) and a `/28` netmask (16 IP addresses).
+* `20 000` is the maximum IOPS per volume with *Provisioned IOPS* volume.
+* The supported volume size for a *Provisioned IOPS* volume is from `4 GB to 16 TB`.
 
 === TOOLS/TECHNOLOGIES
 == General
