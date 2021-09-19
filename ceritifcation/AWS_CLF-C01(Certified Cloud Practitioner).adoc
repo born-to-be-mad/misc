@@ -1,9 +1,13 @@
 == Numbers to remember
 
+* `2 to 5` geographically separate zones contained within a region. One of them is an AWS Availability Zone (AZ).
+* `3` years is the longest duration of a typical reserved instance contract.
 * `5` is the maximum number of security groups that can be applied to any EC2 instance, although this is a soft limit that can be raised.
+* `5` Tb is the maximum size of object in S3 bucket, but you can store an unlimited number of objects in an S3 bucket.
 * `100` is maximum amount of launch configurations per region.
 * `20` is maximum amount of auto scaling groups per region.
 * `200` is the default limit placed on the number of subnets in a VPC.
+* `99.99`% is durability rating for   Reduced Redundancy S3 storage class, while the other three storage classes(Standard,Infrequent Access, Glacier) are rated at `99.999999999`%.
 * The allowed CIDR block size is between a `/16` netmask (65,536 IP addresses) and a `/28` netmask (16 IP addresses).
 * `20 000` is the maximum IOPS per volume with *Provisioned IOPS* volume.
 * The supported volume size for a *Provisioned IOPS* volume is from `4 GB to 16 TB`.
@@ -62,7 +66,7 @@
 === Database
 *Amazon Aurora*:: Amazon Aurora is a MySQL and PostgreSQL-compatible relational database built for the cloud that combines the performance and availability of traditional enterprise databases with the simplicity and cost-effectiveness of open source databases.
 *Amazon DynamoDB*:: AWS NoSQL option for high-performance database work. DynamoDB is often used with large online gaming and IoT solutions.
-*Amazon ElastiCache*:: Managed memcache and redis machines
+*Amazon ElastiCache*:: A web service that makes it easy to deploy, operate, and scale an in-memory cache in the cloud. The service improves the performance of web applications by allowing you to retrieve information from fast, managed, in-memory caches, instead of relying entirely on slower disk-based databases. Interestingly, ElastiCache is not an AWS proprietary solution and runs the standardized Redis or Memcached solutions
 *Amazon RDS*:: RD makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching and backups. It frees you to focus on your applications so you can give them the fast performance, high availability, security and compatibility they need.
 *Amazon Redshift*:: A fast, scalable data warehouse that allows you to easily and cost-effectively analyze all your data across your data warehouse and data lake. Redshift delivers 10 times faster performance than other data warehouses by using machine learning, massively parallel query execution and columnar storage on high-performance disks.
 
@@ -79,10 +83,10 @@
 === Management, Monitoring, and Governance
 *AWS Auto Scaling*::  *100 launch configurations* per region and *20 Auto Scaling groups* per region.
 *AWS Budgets*:: Improve planning and cost control with flexible budgeting and forecasting.
-*AWS CloudFormation*:: Speed up cloud provisioning with infrastructure as code
-*AWS CloudTrail*:: A tool that allows you to closely monitor the API calls that permit clients to configure and interact with AWS.
+*AWS CloudFormation*:: Speed up cloud provisioning with infrastructure as code(IaC)
+*AWS CloudTrail*:: A web service that records AWS API calls for your account and delivers log files to you. Features include detailed reports of recorded information, which can include the identity of the API caller, the time of the API call, the source IP address of the API caller, the request parameters, and the response elements returned by the AWS service.
 It is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account. With CloudTrail, you can log, continuously monitor, and retain account activity related to actions across your AWS infrastructure.
-*Amazon CloudWatch*:: CloudWatch is the primary monitoring tool in AWS.
+*Amazon CloudWatch*:: A monitoring service for AWS Cloud resources and the applications you run on AWS. CloudWatch can collect and track metrics, collect and monitor log files, set alarms, and automatically react to changes in your AWS resources.
 *AWS Config*:: TODO
 *AWS Cost and Usage Report*:: TODO
 *Amazon EventBridge (Amazon CloudWatch Events)*:: TODO
@@ -96,13 +100,13 @@ It is a service that enables governance, compliance, operational auditing, and r
 *AWS OpsWorks*:: A fully managed configuration service that provides managed instances of Chef and Puppet. Chef and Puppet are automation platforms that allow you to use code to automate the configurations of your servers. OpsWorks lets you use Chef and Puppet to automate how servers are configured, deployed, and managed across your Amazon EC2 instances or on-premises compute environments.
 
 === Networking and Content Delivery
-*Amazon API Gateway*:: Create HTTP APIs and let them connect to different backends.
-*Amazon CloudFront*:: Content Delivery Network. CloudFront uses Edge Locations for low-latency, efficient delivery of cached content. CloudFront delivers static and streaming content using a global network of AWS Edge Locations.
+*Amazon API Gateway*:: A fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.  Create HTTP APIs and let them connect to different backends.
+*Amazon CloudFront*:: Global content delivery network (CDN). CloudFront uses Edge Locations for low-latency, efficient delivery of cached content. CloudFront delivers static and streaming content using a global network of AWS Edge Locations.
 *AWS Direct Connect*::
 * A cloud service solution that makes it easy to establish a dedicated network connection from your premises to AWS.
 * Using AWS Direct Connect, you can establish private connectivity between AWS and your data center, office, or colocation environment, which in many cases can reduce your network costs, increase bandwidth throughput, and provide a more consistent network experience than Internet-based connections.
 *Amazon Route 53*::
-* AWS DNS service. It got its name from the TCP and UDP port number, 53, that it relies on. Manage domain names and records.
+* It is highly available and scalable cloud Domain Name System (DNS) web service. It got its name from the TCP and UDP port number, 53, that it relies on. Manage domain names and records.
 * Amazon Route 53 does not support DNSSEC for DNS at this time. But Amazon Route 53 allows DNSSEC on domain registration.
 *Amazon VPC*::
 * Creates your own virtual private network within AWS.
@@ -126,9 +130,9 @@ It is a service that enables governance, compliance, operational auditing, and r
 *AWS License Manager*:: AWS License Manager makes it easier to manage your software licenses from vendors such as Microsoft, SAP, Oracle, and IBM across AWS and on-premises environments.
 *Amazon Macie*:: Amazon Macie is a fully managed data security and data privacy service that uses machine learning and pattern matching to discover and protect your sensitive data in AWS.
 *AWS Shield*:: AWS Shield is a managed Distributed Denial of Service (DDoS) protection service that safeguards applications running on AWS
-*AWS WAF*::
-* AWS Web Application Firewall (WAF) can help protect your web applications from SQL injection attacks and other vulnerabilities in your application code.
-* AWS Web Application Firewall (WAF) can be deployed on Amazon CloudFront and the Application Load Balancer (ALB). As part of Amazon CloudFront, it can be part of your content distribution network (CDN), protecting your resources and content at the Edge Locations, and as part of the Application Load Balancer, it can protect your origin web servers running behind the ALBs.
+*AWS Web Application Firewall (WAF)*::
+* WAF can help protect your web applications from SQL injection attacks and other vulnerabilities in your application code.
+* WAF can be deployed on Amazon CloudFront and the Application Load Balancer (ALB). As part of Amazon CloudFront, it can be part of your content distribution network (CDN), protecting your resources and content at the Edge Locations, and as part of the Application Load Balancer, it can protect your origin web servers running behind the ALBs.
 
 === Storage
 *AWS Backup*:: AWS Backup provides a centralized console to automate and manage backups across AWS services. AWS Backup supports Amazon EBS, Amazon RDS, Amazon DynamoDB, Amazon EFS, Amazon FSx, Amazon EC2, and AWS Storage Gateway
@@ -136,7 +140,9 @@ It is a service that enables governance, compliance, operational auditing, and r
 * EBS is an easy-to-use, scalable, high-performance block-storage service designed for Amazon Elastic Compute Cloud (EC2).
 * EBS volumes are the new default for root volumes in EC2.
 * EBS often serves as the boot volume in EC2 for operating systems.
-*Amazon Elastic File System (Amazon EFS)*:: Elastic File System (EFS) permits the mounting of many different clients simultaneously. The volume grows as needed.
+*Amazon Elastic File System (Amazon EFS)*::
+* Amazon Elastic File System provides simple, scalable file storage for use with Amazon EC2 instances in the AWS Cloud, or can even be used by on-premises servers in your organization.
+* EFS permits the mounting of many different clients simultaneously. The volume grows as needed.
 *Amazon S3*::
 * The storage options for uploading objects to an S3 bucket are Standard, Standard—Infrequent Access, and Reduced Redundancy.
 * AWS requires that all S3 bucket names be globally unique across all regions; in addition, bucket names must not include spaces between words.
@@ -144,6 +150,7 @@ It is a service that enables governance, compliance, operational auditing, and r
 *  Infrequent access (IA) offers slightly reduced availability, which saves money for data that you access less frequently.
 * There is a limit on the number of buckets you can create, and there is a limit to the size of an object, but when taken as a whole - there is no limit to the amount of data you can store in S3.
 *Amazon S3 Glacier*::
+* Amazon Glacier is a secure, durable, and extremely low-cost storage service for data archiving and long-term backup.
 * Glacier is the least expensive of the S3 storage classes, but keep in mind that it can take up to a couple hours to restore.
 * Glacier is for data archiving and is not designed for frequent access.
 *AWS Snowball Edge*:: AWS Snowball Edge is a type of Snowball device with on-board storage and compute power for select AWS capabilities. Snowball Edge can do local processing and edge-computing workloads in addition to transferring data between your local environment and the AWS Cloud.
@@ -154,13 +161,15 @@ It is a service that enables governance, compliance, operational auditing, and r
 
 == GLOSSARY & TERMINOLOGY
 
+*AWS Acceptable Use Policy (AUP)*:: It can be found on the AWS website. If you have any questions about how your use case aligns with AWS policies, consult a legal advisor. AWS Support cannot provide legal advice regarding your use of Amazon Web Services.
+
 *VPC peering*:: A VPC peering connection is a networking connection between two VPCs that enables you to route traffic between them using private IPv4 addresses or IPv6 addresses. Instances in either VPC can communicate with each other as if they were within the same network. You can create a VPC peering connection between your own VPCs or with a VPC in another AWS account. The VPCs can be in different regions (also known as an inter-region VPC peering connection).
 
 *VPC endpoint*:: A VPC endpoint enables you to privately connect your VPC to supported AWS services and VPC endpoint services powered by PrivateLink without requiring an Internet gateway, a NAT device, a VPN connection, or an AWS Direct Connect connection. Instances in your VPC do not require public IP addresses to communicate with resources in the service. Traffic between your VPC and the other service does not leave the Amazon network.
 
 *PILLARS of Well-Architected Framework*:: The five pillars of the AWS Well-Architected Framework are (1) operational excellence, (2) security, (3) reliability, (4) performance efficiency, and (5) cost optimization.
 
-*Traceability*:: The traceability characteristic falls under the *security* pillar.
+*Traceability*:: The traceability characteristic falls under the *Security* pillar.
 
 *Role*:: A role is a powerful alternative to a specific user account. A role is often perfect for use in a scenario where one service must access another service.
 
@@ -171,6 +180,7 @@ It is a service that enables governance, compliance, operational auditing, and r
 *Orchestration*:: Orchestration is often the result of sophisticated workflows and processes of many automated tasks and processes.
 
 *Availability Zone (AZ)*::
+* An AWS Availability Zone (AZ) is one of two to five geographically separate zones contained within a region.
 * Each Availability Zone (AZ) is designed to be an independent failure domain.
 * There is at least one discrete data center in an Availability Zone (AZ). Some AZs have more than one.
 * The Availability Zone (AZ) location does not impact the cost of your EC2 resources.
@@ -189,7 +199,7 @@ It is a service that enables governance, compliance, operational auditing, and r
 
 *Technical account manager(TAM)*:: Consultative partnerships support specific use cases and applications and include design reviews and architectural guidance. The support team of an Enterprise-level customer includes a designated technical account manager and access to an AWS solutions architect. Only the Enterprise level of support provides TAM access.
 
-*Free Tier*:: Iti 12 months. While SNS, Glacier, and CloudWatch can all remain free after the expiration of a Free Tier account, EC2 does not.
+*Free Tier*:: It is 12 months. While SNS, Glacier, and CloudWatch can all remain free after the expiration of a Free Tier account, EC2 does not.
 
 *AWS Forums*:: Forum access requires an AWS account—even a Free Tier account.
 
@@ -228,3 +238,4 @@ It is a service that enables governance, compliance, operational auditing, and r
 * Each tag consists of a key and an optional value, both of which you define.
 
 *CapEx vs OpExp*:: Cloud technology typically means you have lower `capital expenditures`(CapExp) and higher `operational expenditures`(OpExp).
+`OpEx` is the main cost model of AWS.
