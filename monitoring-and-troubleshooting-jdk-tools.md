@@ -1,3 +1,11 @@
+# JDK Binaries
+All of them are located in `jdk/bin` folder:
+* `jps` find running JVM process IDs, like `ps aux | grep java`
+* `javap <class_file>` disassembling Java class file
+* `jmap -heap <process_id` print summary of JVM's process's memory space
+* `jhat <dump_file` take a generated head dump file and run a local web server
+* `jinfo <process_id` see all system properties and command-line flags of a running JVM
+
 # Monitoring Tools
 * jconsole - graphical console to monitor and manage Java apps
 * jps - experimental:  list of instrumented JVMs on the target system
