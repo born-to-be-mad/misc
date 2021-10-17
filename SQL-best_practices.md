@@ -1,3 +1,71 @@
+## MUST-HAVE SQL Queries
+
+* Running Totals
+
+```sql
+SELECT id, month
+        , Amount
+        , SUM (Amount) OVER (ORDER BY id) as total_sum
+FROM table_name
+```
+
+* Common Table Expression
+
+```sql
+WITH tempdata as (
+    SELECT id as id
+    FROM some_table
+    WHERE (1 = 1) /*some condition*/
+)
+SELECT *
+FROM table_name1
+WHERE id in (SELECT id from tempdata)
+```
+
+* Ranking the Data
+
+```sql
+SELECT id,
+       Amount,
+       RANK() OVER (ORDER BY Amount desc)
+FROM table_name
+```
+
+```sql
+SELECT id,
+       Amount,
+       DENSE_RANK() OVER (ORDER BY Amount desc)
+FROM table_name
+```
+
+* Adding Subtotals
+*
+
+```sql
+SELECT Type,
+       id,
+       SUM(Amount) AS total_amount
+FROM table_name
+GROUP BY Type, id WITH ROLLUP
+```
+
+* Temporary Functions
+*
+
+```sql
+CREATE
+TEMPORARY FUNCTION get_gender(type varchar) AS (
+   CASE WHEN type = "M" THEN "male"
+        WHEN type = "F" THEN "female"
+        ELSE "N/A"
+   END
+)
+
+SELECT name,
+       get_gender(Type) as gender
+FROM table_name
+```
+
 ### ROWS versus default RANGE in analytic window clause
 * If you are doing analytic on the entire partition (or entire result set), then skip the window clause ( it means "do not write ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING"):
 ```sql
