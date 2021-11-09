@@ -23,6 +23,8 @@
 - [Как это отменить?! Git-команды для исправления своих ошибок](https://tproger.ru/translations/problems-with-git/)
 - [Полезные команды Git: безопасная отмена коммитов, добавление файла из другой ветки и другие](https://tproger.ru/translations/git-tips-and-tricks/)
 
+# GIT Tips and Tricks
+
 # GIT MUST-HAVE ALIASES
 
 ## How to configure aliases
@@ -242,6 +244,13 @@ git commit -a
 `git stash drop` discards the most recently stashed changeset.
 
 # GIT Tips and Tricks
+* `git commit --amend --no-edit` to modify the Previous Commit Without Changing the Commit Message
+* `git add -p <filename>` you can choose which parts of code from a file you want to include in your commit. After running the command you will get the list of the options you can add to Git: `add -p`.
+* `git reflog` to get the record of all the commits done in Git.
+   Then `git reset HEAD@{index}` or `git reset --soft` or `git reset --hard` 
+* `git checkout --conflict=diff3 <filename>` to comparing two conflicting versions, inc. the base version.
+  `git config --global merge.conflictstyle diff3` to set default
+* `git config --global help.autocorrect <integer>` The integer value represents a tenth of a second.
 
 ## Feature branching
 
