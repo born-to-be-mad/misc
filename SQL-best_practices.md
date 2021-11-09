@@ -39,7 +39,6 @@ FROM table_name
 ```
 
 * Adding Subtotals
-*
 
 ```sql
 SELECT Type,
@@ -50,7 +49,6 @@ GROUP BY Type, id WITH ROLLUP
 ```
 
 * Temporary Functions
-*
 
 ```sql
 CREATE
