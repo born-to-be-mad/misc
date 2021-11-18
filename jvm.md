@@ -21,9 +21,26 @@ Levels:
   * By avoiding long scopes, i.e. writing short methods, an object's scope is easier tio determine.
   
 #JVM tuning
+
+# Usefull commands
+* To see all options
+  * `java -X` to see all standard options
+  * `java -XX:+UnlockDiagnosticVMOptions -XX:+UnlockExperimentalVMOptions -XX:+PrintFlagsFinal` to see all advanced options
+* Set Garbage Collector
+  * Serial GC: -`XX:+UseSerialGC`
+  * Parallel GC: -`XX:+UseParalllGC`
+  * CMS: -`XX:+UseConcMarkSweepGC`
+  * G1: -`XX:+UseG1GC` (default on Java 11)
+  * ZGC: -`XX:+UnlockExperimentalVMOptions -XX:+UseZGC`
+  * Shenandoah: -`XX:+UnlockExperimentalVMOptions -XX:+UseShenandoahGC`
+* Set memory options
+  * initial heap size: `-Xms256m` in absolute values, `-XX:InitialRAMPercentage=60` - in percentage of RAM
+  * max heap size: `-Xmx8g` or `-XX:MaxRAMPercentage=60`
+  * make heap dump if out of memory happened: `-XX:+HeapDumpOnOutOfMemoryError`, setting an output file `-XX:HeapDumpPath`
+
 ## Possible tuning options
 * standard options: `–classpath`, `-cp`, `–version`, and so on
-* extra options -  start with `-X`  and thay are not supported by all JVM implementations and are usually subject to change
+* extra options -  start with `-X`  and they are not supported by all JVM implementations and are usually subject to change
 * advanced options - begin with `-XX`. 
   * `-XX:+PrintFlagsFinal` lists the global JVM tuning flags. 
     * Each flag has a specific type!
