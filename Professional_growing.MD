@@ -1,7 +1,9 @@
 # The road to become Java Craftsman
 
 # Achievements
-- [ ] AWS Certified Cloud Practitioner (CLF-C01)
+- [ ] AWS Certified Developer – Associate | DVA-C01
+- [x] AWS Certified Cloud Practitioner | CLF-C01 (Issue date: Oct 06 2021; Expiration date: Oct 06 2021)
+  ![View certificate](../master/certificates/Marudau_Dzmitry_AWS Certified Cloud Practitioner certificate.pdf)
 - [x] Oracle Certified Associate, Java SE 8 Programmer | 1Z0-808(on 4 June 2019)
   ![View certificate](../master/certificates/Marudau_Dzmitry_1Z0-808_eCertificate.png)
 - [ ] Java SE 11 Programmer II | 1Z0-817
@@ -13,10 +15,11 @@
 - [x] Workshop 'Microservices with Spring Cloud'(Orhan Kasimov, Sam-Solutions, on 8-9 June 2018)
 
 # Courses
+- [x] [DigitalCloud: AWS Certified Cloud Practitioner Practice Exams](https://digitalcloud.training/courses/aws-ccp-practice-exams/) (DigitalCloud, on 10/09/2021)
+      ![View certificate](../master/certificates/Dzmitry-Marudau-AWS-Certified-Cloud-Practitioner-Practice-Exams-Certificate-of-Achievement-CCP-Final-Exam-Simulator-Digital-Cloud-Training.pdf)
 - [x] [E-LEARNING AWS Cloud Practitioner Essentials](https://www.aws.training/Details/eLearning?id=60697) (6h, AWS, on 05/09/2021)
- ![View certificate](../master/certificates/Marudau_Dzmitry_AWS_Training_and_Certification_-_Certificate_of_Completion_Cloud_Practitioner.png)
+      ![View certificate](../master/certificates/Marudau_Dzmitry_AWS_Training_and_Certification_-_Certificate_of_Completion_Cloud_Practitioner.png)
 - [x] [AWS Certified Cloud Practitioner by Richard A. Jones](https://learning.oreilly.com/learning-paths/learning-path-aws/9780135940037/) (7h, O'Reily, on 28/08/2021)
-      
 - [x] [Complete React Developer in 2020 (w/ Redux, Hooks, GraphQL)](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/) (Udemy, on 03/06/2020)
       ![View certificate](../master/certificates/Marudau_Dzmitry_Complete%20React%20Developer%20in%202020.jpg)
 - [x] [Learn and Understand AngularJS](https://www.udemy.com/course/learn-angularjs/) (Udemy, on 14/04/2015)
