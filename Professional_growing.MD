@@ -15,6 +15,8 @@
 - [x] Workshop 'Microservices with Spring Cloud'(Orhan Kasimov, Sam-Solutions, on 8-9 June 2018)
 
 # Courses
+- [x] [AWS Certified Developer Associate Hands-On Video Training](https://digitalcloud.training/courses/aws-certified-developer-associate-exam-training/) (DigitalCloud, on 12/12/2021)
+  ![View certificate](../master/certificates/Dzmitry-Marudau-AWS-Certified-Developer-Associate-Hands-On-Video-Training-Certificate-of-Completion-Developer-Associate-Video-Training-Digital-Cloud-Training.pdf)
 - [x] [DigitalCloud: AWS Certified Cloud Practitioner Practice Exams](https://digitalcloud.training/courses/aws-ccp-practice-exams/) (DigitalCloud, on 10/09/2021)
       ![View certificate](../master/certificates/Dzmitry-Marudau-AWS-Certified-Cloud-Practitioner-Practice-Exams-Certificate-of-Achievement-CCP-Final-Exam-Simulator-Digital-Cloud-Training.pdf)
 - [x] [E-LEARNING AWS Cloud Practitioner Essentials](https://www.aws.training/Details/eLearning?id=60697) (6h, AWS, on 05/09/2021)
