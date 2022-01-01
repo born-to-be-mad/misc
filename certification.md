@@ -5,9 +5,9 @@ Since Sept. 2020 it includes both 1Z0-815 and 1Z0-816 (!)
   * Handle text using String and StringBuilder classes
   * Use local variable type inference, including as lambda parameters
 * Java Object-Oriented Approach
-  * Declare and instantiate Java objects including nested class objects, and explain objects' lifecycles (including creation, dereferencing by reassignment, and garbage collection)
+  * Declare and instantiate Java objects including nested class objects, and explain objects' lifecycles (including creation, de-referencing by reassignment, and garbage collection)
   * Define and use fields and methods, including instance, static and overloaded methods
-  * Initialize objects and their members using instance and static initialiser statements and constructors
+  * Initialize objects and their members using instance and static initializer statements and constructors
   * Understand variable scopes, apply encapsulation and make objects immutable
   * Create and use subclasses and superclasses, including abstract classes
   * Utilize polymorphism and casting to call methods, differentiate object type versus reference type

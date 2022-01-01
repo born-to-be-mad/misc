@@ -1,9 +1,10 @@
 # The road to become Java Craftsman
 
 # Achievements
-- [ ] AWS Certified Developer – Associate | DVA-C01
-- [x] AWS Certified Cloud Practitioner | CLF-C01 (Issue date: Oct 06 2021; Expiration date: Oct 06 2021)
-  ![View certificate](../master/certificates/Marudau_Dzmitry_AWS Certified Cloud Practitioner certificate.pdf)
+- [x] AWS Certified Developer – Associate | DVA-C01 (Issue date: Dec 29 2021; Expiration date: Dec 29 2024)
+  ![View certificate](../master/certificates/Marudau_Dzmitry_AWS_Certified_Developer-Associate_certificate.pdf) 
+- [x] AWS Certified Cloud Practitioner | CLF-C01 (Issue date: Oct 06 2021; Expiration date: Oct 06 2024)
+  ![View certificate](../master/certificates/Marudau_Dzmitry_AWS_Certified_Cloud_Practitioner_certificate.pdf)
 - [x] Oracle Certified Associate, Java SE 8 Programmer | 1Z0-808(on 4 June 2019)
   ![View certificate](../master/certificates/Marudau_Dzmitry_1Z0-808_eCertificate.png)
 - [ ] Java SE 11 Programmer II | 1Z0-817
