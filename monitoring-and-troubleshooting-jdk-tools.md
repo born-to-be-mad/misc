@@ -13,6 +13,18 @@ All of them are located in `jdk/bin` folder:
 * jstatd - experimental: monitors JVMs and enables remote monitoring tool to attach to JVM
 * jmc - Java Mission Control
 
+# JVM Profiling Tool
+APM(Application Performance Monitoring) is the practice of tracking key software application performance metrics using monitoring software and telemetry data. It is used to ensure system availability, optimize service performance and response times, and improve user experiences.
+* `VisualVM` - bundled with JDK(through Java 8), then available as stand-alone(https://visualvm.github.io)
+* `Java Flight Recorder` - a component of JDK Mission Control, is a handy utility fo event capturing and visualization.
+  * openjdk.java.net/projects/jmc
+  * www.oracle.com/java/technologies/jdk-mission.control.html
+* `Glowrot` is a light-weight open-source and easy-to-run Java APM with transaction reporting and instrumentation capabilities.
+  * https://glowroot.org
+  * requires Java-agent VM parameter
+* `Prometheus` is an open-source easy-to-run Java APM which cna easily capture Spring Boot metrics over time
+  * https://prometheus.io/download
+  * requires configuration file
 
 # Troubleshooting Commands
 A list of common commands used during the troubleshooting process is mentioned below. 
