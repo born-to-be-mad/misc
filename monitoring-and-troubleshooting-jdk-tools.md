@@ -3,6 +3,20 @@ All of them are located in `jdk/bin` folder:
 * `jps` find running JVM process IDs, like `ps aux | grep java`
 * `javap <class_file>` disassembling Java class file
 * `jmap -heap <process_id>` print summary of JVM's process's memory space
+   * `jmap -dum:live,format=b,file=heap.bin PID` to create heap dump
+   * `jmap -histo PID` allows quickly collect histogram data.
+   * offline heap dump by using core dump:
+  ```
+  sudo gcore 1234
+  jmap -dump:format=b,file=heap.bin /path/to/java core.1234
+  ```
+  * automatic heap dumps:
+    * `-XX+HeapDumpOnOutOfMemoryError` JVM flag
+    * `-XX+HeapDumpBeforeFullGC` JVM flag
+    * `-XX+HeapDumpAfterFullGC` JVM flag
+  * kill JVM after heap dump
+    * `-XX:ExitOnOutOfMemoryError`
+    * `-XX:CrashOnOutOfMemoryError`
 * `jhat <dump_file>` take a generated head dump file and run a local web server
 * `jinfo <process_id` see all system properties and command-line flags of a running JVM
 
