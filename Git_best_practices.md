@@ -387,6 +387,11 @@ And when you want to re-apply the changes you “stash”ed , use the command be
 * `git pull origin develop` - only fetches the remote changes of develop branch and not other branches. And it also merges the remote changes to the branch.
 * `git pull —rebase` if we want to rebase after fetching,cause by default, `git pull` will execute `git merge`.
 
+## Life hacks
+
+`git branch --merged | grep -v \* | xargs git branch -D` - to delete all local branches not present in the remote.
+`git branch --merged | egrep -v "(^\*|master|develop)" | xargs git branch -d` - to delete all local branches not present
+in the remote except master and develop
 
 # Materials
 - [Как склеить коммиты и зачем это нужно](https://htmlacademy.ru/blog/boost/tools/how-to-squash-commits-and-why-it-is-needed)
