@@ -10,6 +10,8 @@
 - [ ] Java SE 11 Programmer II | 1Z0-817
 
 # Master classes/workshops/trainings
+- [x] Kotlin for Java Developers by Svetlana Isakova and Andrey Breslav from Jetbrains](https://www.coursera.org/learn/kotlin-for-java-developers)
+See [Kotlin repository](https://github.com/born-to-be-mad/kotlin/tree/master/intro/src/main/kotlin)
 - [ ] Master class Course [Testing Spring Boot Applications Primer](https://rieckpil.de/course/tsbap-inspecting-the-spring-boot-starter-test)
 - [x] AWS Basics Training Program #8 (Epam, Mar 29, 2021 - Jun 03, 2021)
 - [x] Workshop 'From zero to reactive hero'(Java Champion Oleh Dokuka, Sam-Solutions, on 14-15 June 2019)
