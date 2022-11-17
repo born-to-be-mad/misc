@@ -1,4 +1,55 @@
-# 3Linux commands
+# Windows commands
+
+* `cls` to clear the screen
+* `ipconfig` to see Windows IP Configuration
+  * `ipconfig /all` to collect more details(LAN, DNS and etc.)
+  * `ipconfig /all | findstr DNS` to find DNS configuration
+  * `ipconfig /release` and `ipconfig /renew` to get fresh dynamic IP address
+  * `ipconfig /release "Wi-Fi"` to release the concrete interface
+  * `ipconfig /displaydns` to show information about DNS
+  * `ipconfig /displaydns | clip` to copy the output of the command into the clipboard
+  * `ipconfig /flushdns` to flush DNS entries 
+* `nslookup google.com` to check DNS resolution
+  * `nslookup google.com 8.8.8.8` to check DNS through the DNS server(8.8.8.8)
+  * `nslookup -type=ptr google.com` or `nslookup -type=txt google.com` to output the typed information
+* `getmac /v` to get the MAC address
+* `powercfg` to get information about the power configuration 
+  * `powercfg /energy` to get the report about the current energy state
+  * `powercfg /batteryreport` to get the report about the battery
+* `assoc` to see information about the file associations 
+  * `assoc .mp4=VLC.vlc` to re-define file association
+* `chkdsk` to check the disk
+  * `chkdsk /f` to check the disk errors
+  * `chkdsk /r` to fix disk errors
+* `sfc /scannow` to run the system file checker 
+* `DISM /Online /Cleanup-Image /CheckHealth` to run Deployment Image Servicing and Management Tool
+  * `DISM /Online /Cleanup-Image /ScanHealth` to scan 
+  * `DISM /Online /Cleanup-Image /RestoreHealth` to restore
+* `tasklist | findstr java` to find the java-tasks
+* `taskkill /f /pid 12345` to kill the process 12345
+* `netsh`
+  * `netsh wlan show wlanreport` to get the report about wireless situation
+  * `netsh interface show interface` to show information about interfaces
+  * `netsh interface ip show address | findstr "IP Address"` to get IP address
+  * `netsh interface ip show dnsservers` to show IPs of DNS servers
+  * `netsh advfirewall set allprofiles state off` to turn OFF Windows defender firewalls
+  * `netsh advfirewall set allprofiles state on` to turn ON Windows defender firewalls
+* `ping google.com` to ping the server
+  * `ping -t google.com` to do endless pinging
+* `tracert google.com` to trace the route to the server
+  * `tracert -d google.com` to trace the route to the server without DNS resolve
+* `netstat` to gather connection statistics
+  * `netstat -af` to show the opened connections with ports
+  * `netstat -o` to show the active connections with process IDs
+  * `netstat -e -t 5` to get the statistics every 5 seconds
+* `route` to show the routes
+  * `route print` to show the routes to certain networks
+  * `route add 192.168.40.0 mask 2555.255.255.0 10.7.1.44` to add the route
+  * `route delete 192.168.40.0` to delete the route
+* `shutdown /r /fw /f /t 0` to restart the computer and restart it into the system BIOS.
+
+
+# Linux commands
 
 * `killall -I notes`  kills the matching process by name(case insensitive.
 * `Ctrl + x + e` will open an editor where you can type your command. And upon saving the editor, the command will run
@@ -146,6 +197,7 @@ FOR /d /r . %d in (node_modules) DO @IF EXIST "%d" rm -rf "%d"
 ## Miscellaneous
 
 * random user password `openssl rand -base64 32`
+
 ```bash
 USERNAME=azureuser
 PASSWORD=$(openssl rand -base64 32)
