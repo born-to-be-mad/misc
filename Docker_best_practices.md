@@ -38,6 +38,7 @@ docker run hello-world
 - `docker container start CONTAINER_NAME` — start a stopped container
 - `docker container stop CONTAINER_NAME` — stop a running container
 - `docker container rm CONTAINER_NAME` — remove a container
+- `docker inspect CONTAINER_NAME | grep IPAddress` to geth the IP address of running container
 
 ## Deploy a Spring Boot application
 
@@ -272,3 +273,46 @@ select value from v$parameter where name='service_names';
 
 ### volumes
 - `docker volume ls` list volumes
+
+### Good docker templates
+
+* SpringBoot application: multi-stage build
+
+```docker
+FROM maven:3.8.6-eclipse-temurin-17-alpine@sha256:e88c1a981319789d0c00cd508af67a9c46524f177ecc66ca37c107d4c371d23b AS builder
+WORKDIR /build
+COPY . .
+RUN mvn clean package -DskipTests
+
+FROM eclipse-temurin:17.0.5_8-jre-alpine@sha256:02c04793fa49ad5cd193c961403223755f9209a67894622e05438598b32f210e
+WORKDIR /opt/app
+RUN addgroup --system javauser && adduser -S -s /usr/sbin/nologin -G javauser javauser
+COPY --from=builder /build/target/my_app-0.0.1-SNAPSHOT.jar app.jar
+RUN chown -R javauser:javauser .
+USER javauser
+HEALTHCHECK --interval=30s --timeout=3s --retries=1 CMD wget -qO- http://localhost:8080/actuator/health/ | grep UP || exit 1
+ENTRYPOINT ["java", "-jar", "app.jar"]
+```
+
+*
+  * SpringBoot application: layers
+
+```docker
+FROM eclipse-temurin:17.0.4.1_1-jre-alpine@sha256:e1506ba20f0cb2af6f23e24c7f8855b417f0b085708acd9b85344a884ba77767 AS builder
+WORKDIR application
+ARG JAR_FILE
+COPY target/${JAR_FILE} app.jar
+RUN java -Djarmode=layertools -jar app.jar extract
+
+FROM eclipse-temurin:17.0.4.1_1-jre-alpine@sha256:e1506ba20f0cb2af6f23e24c7f8855b417f0b085708acd9b85344a884ba77767
+WORKDIR /opt/app
+RUN addgroup --system javauser && adduser -S -s /usr/sbin/nologin -G javauser javauser
+COPY --from=builder application/dependencies/ ./
+COPY --from=builder application/spring-boot-loader/ ./
+COPY --from=builder application/snapshot-dependencies/ ./
+COPY --from=builder application/application/ ./
+RUN chown -R javauser:javauser .
+USER javauser
+HEALTHCHECK --interval=30s --timeout=3s --retries=1 CMD wget -qO- http://localhost:8080/actuator/health/ | grep UP || exit 1
+ENTRYPOINT ["java", "org.springframework.boot.loader.JarLauncher"]
+```
