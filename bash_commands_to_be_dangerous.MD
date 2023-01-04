@@ -42,6 +42,7 @@
   * `netstat -af` to show the opened connections with ports
   * `netstat -o` to show the active connections with process IDs
   * `netstat -e -t 5` to get the statistics every 5 seconds
+  * `netstat -a -n -o | findstr 8080` fins the processes using the  8080 port
 * `route` to show the routes
   * `route print` to show the routes to certain networks
   * `route add 192.168.40.0 mask 2555.255.255.0 10.7.1.44` to add the route
