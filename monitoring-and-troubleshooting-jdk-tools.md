@@ -29,16 +29,98 @@ All of them are located in `jdk/bin` folder:
 
 # JVM Profiling Tool
 APM(Application Performance Monitoring) is the practice of tracking key software application performance metrics using monitoring software and telemetry data. It is used to ensure system availability, optimize service performance and response times, and improve user experiences.
+`JDK Flight Recorder` - event-based diagnostic and profiling tool with extremely low overhead of <1%.
 * `VisualVM` - bundled with JDK(through Java 8), then available as stand-alone(https://visualvm.github.io)
 * `Java Flight Recorder` - a component of JDK Mission Control, is a handy utility fo event capturing and visualization.
   * openjdk.java.net/projects/jmc
-  * www.oracle.com/java/technologies/jdk-mission.control.html
+  * https://www.oracle.com/java/technologies/jdk-mission-control.html
 * `Glowrot` is a light-weight open-source and easy-to-run Java APM with transaction reporting and instrumentation capabilities.
   * https://glowroot.org
   * requires Java-agent VM parameter
-* `Prometheus` is an open-source easy-to-run Java APM which cna easily capture Spring Boot metrics over time
+* `Prometheus` is an open-source easy-to-run Java APM which can easily capture Spring Boot metrics over time
   * https://prometheus.io/download
   * requires configuration file
+
+## JDK FLight Recorder
+
+Covers Over 150 different events happening in JVM and Java Applications
+
+Useful links:
+* [Flight Recorder API Programmer's Guide](https://docs.oracle.com/en/java/javase/17/jfapi/preface.html)
+* [Inside Java Dumpster](https://github.com/jaokim/inside-java-dumpster)
+* [JFR:Scrub recording data](https://bugs.openjdk.org/browse/JDK-8271585)
+
+
+### Running JFR
+* start recording with application: 
+
+  `java -XX:StartFlightRecording=filename=recording.jfr,dumponexit=true -ja MyApp.jar`
+* start recording on running application:
+
+  `jcmd <pid> JFR.start filename=onfly-recording.jfr dumponexit=true`
+* extract recording from running application:
+
+  `jcmd <pid> JFR.dump`
+
+### Analyzing Recordings
+
+* JDK Mission Control
+* JFR CLI
+  * `jfr print --events 'jdk.ThreadStart' recording.jfr` to see thread start events
+
+### Creating Custom Events
+
+```java
+@Category({ "PII", "Critical" })
+@Label("MyCustomEventLabel")
+@Name("MyCustomEventName")
+public class MyCustomEvent extends jdk.jfr.Event {
+  @Description("My important value")
+  private String importantValue;
+
+  public void assignImportantValue(String importantValue) {
+    this.importantValue = importantValue;
+  }
+}
+
+MyClassProducer {
+  public void process() { 
+    MyCustomEvent event = new MyCustomEvent();
+    event.begin();
+    // do smth
+    event.assignImportantValue("my-value"); 
+    event.commit();
+  }
+}
+```
+Accepted fields: 8 primitives, String, Thread, Class. Others are silently ignored.
+
+### Configuring Events
+
+It is possible to configure flexibly via xml.
+
+### JFR Event Streaming
+
+* Added in JDK 14 (JEP 349)
+* Can allow JFR to be used for monitoring
+
+It is possible to do automated testing for events:
+```java
+  try(RecordingStream rs = new RecordingStream()) {
+    rs.onEvent("jfr event of interest", (event) -> {
+        // consume event information
+    });
+    rs.startAsynch();
+    //service execution
+    // check for fired events
+  } 
+```
+
+### Filtering Events from JFR Recording
+
+* `jfr scrub --exclude-categories 'PII' recording.jfr` remove events from, recording
+* `jfr scrub --include-events 'GC*' recording.jfr` include only certain events from a recording
+
 
 # Troubleshooting Commands
 A list of common commands used during the troubleshooting process is mentioned below. 
