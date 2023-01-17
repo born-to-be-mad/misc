@@ -52,7 +52,7 @@
 
 # Linux commands
 
-* `killall -I notes`  kills the matching process by name(case insensitive.
+* `killall -I notes`  kills the matching process by name(case insensitive).
 * `Ctrl + x + e` will open an editor where you can type your command. And upon saving the editor, the command will run
   on the terminal.
 * `touch a` to create an empty file 'a'.
