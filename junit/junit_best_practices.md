@@ -1,6 +1,7 @@
-Original suggetions from [Few hints on how to write better testsby Maciej Walkowiak](https://twitter.com/maciejwalkowiak/status/1549332878525431809)
+# Few hints on how to write better tests
+Original suggestions from [Few hints on how to write better tests by Maciej Walkowiak](https://twitter.com/maciejwalkowiak/status/1549332878525431809)
 
-* Don't use "test" prefix for test methods. This had to be done in JUnit 3 (!) but now it only adds noise. Instead use method names that express the intent.
+* Don't use `test` prefix for test methods. This had to be done in JUnit 3 (!) but now it only adds noise. Instead use method names that express the intent.
  ![img.png](junit-hint1.png)
 * Group related tests together with JUnit 5
   `@Nested` annotation. This will add structure and save you from repetition
@@ -21,3 +22,63 @@ Original suggetions from [Few hints on how to write better testsby Maciej Walkow
 * "Unit tests were green" type of fuckups are real. Don't rely solely on unit testing or you'll end up in a bad place. Write integration tests, use
   [Test containers](https://www.testcontainers.org/)
   , create few some tests that verify system end to end.
+
+# Testing with JUnit 5 and Spring
+
+See slides: https://www.slideshare.net/Pivotal/testing-with-junit-5-and-spring
+
+Junit 5.7/5.8 features:
+* Java Flight Recorder Support
+* `@EabledIf`/`@DisabledIf` based on condition methods
+* `@Isolated` to run the test in isolation during parallel execution
+* `TypedArgumentConverter`
+* `@Suite` and annotations `@ConfigurationParameter` 
+* `UniqueIdTrackingListener`
+* `assertThrowsExactly()`
+* `assertInstanceOf()`
+* `ClassOrdered` API
+* `@TempDir`
+* `Named` API
+
+## Examples
+
+* RandomNumberExtension
+    ```java
+    @Target({ ElementType.FIELD, ElementType.PARAMETER })
+    @Retention(RetentionPolicy.RUNTIME)
+    @ExtendWith(RandomNumberExtension.class)
+    public @interface Random { }
+    
+    class RandomNumberExtension implements BeforeAllCallback, BeforeEachCallback, ParameterResolver {
+      // implement
+    }
+    
+    class RandomNumberTests {
+      @Random 
+      private int randomNumber;
+      
+      @BeforeEach beforeEach(@Random int randomNumberInBefore) { }
+      
+      @Test
+      void test(@Random int randomNumberInTest) { }
+      
+    }
+    ```
+
+* ApplicationEvents
+    ```java
+   @RecordApplicationEvents
+   @AllArgConstructor
+    class ServiceTests {
+      private final Service service;
+      private final ApplicationEvents events;
+      
+      @Test
+      void testCall() {
+        //invoke service that publishes ServiceEvent 
+        service.call(new Message());
+        // verify the event was published
+        assertThat(events.strema(ServiceEvent.class)).hasSize(1);
+      }
+    }
+    ```
