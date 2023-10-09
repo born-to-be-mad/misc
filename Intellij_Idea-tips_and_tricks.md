@@ -55,6 +55,7 @@ to `C:\bin\git\bin\sh.exe --login -i`
 * *Highlight usages of element at caret*(Settings > General) - it is rather irritating option which is active by default. You can always highlight the element under the caret by 'Shift+Ctrl+F7'.
 * *Editor > Color scheme > General: section 'Editor', property 'Caret row'* - deactivate the checkbox 'Background'.
 * *Editor > Color scheme > Language Defaults, property 'Semantic highlighting'* - activate the checkbox 'Semantic highlighting'
+* *`Settings → Editor → General → Smart Keys.` anc select `Use CamelHumps words`* If you prefer to select words according to CamelCase, e.g. instead of selecting the whole word, select a part of it.
  
 ## Must-have plugins
 * *Presentation Assistance* - shows name and Win/Mac shortcuts of any action you invoke (View | Appearance | Descriptions of Actions)
@@ -97,6 +98,7 @@ Default hot-key can be changed in Settings|Keymap (search for "Copy as image" ac
 
 # Top Shortcuts in Intellij Idea
 ## Selection
+"\\d"
 | Command | Description |
 | ------------- | ------------- |
 | **Alt+Shift+Ins** | Column selection. You can exit column selection mode by using `Esc` key. Column selection mode can be also used with keyboard only. When in column selection mode and holding Shift, you can extend cursor to the line above/bellow by using ↑ or ↓ keys. |
@@ -106,7 +108,12 @@ Default hot-key can be changed in Settings|Keymap (search for "Copy as image" ac
 | **Alt+J** | Add occurrence. When you have a part of text selected, you can add the next occurrence of this string to your selection. You can exit add occurrence mode by using `Esc` key. |
 | **Shift+Alt+J** | Remove occurrence. Removing the last occurrence from your selection. You can exit mode by using `Esc` key. |
 
-# Top keybindings in Intellij Idea
+# Most productive hot keys
+| Win            | Mac                       | What it does        |
+|----------------|---------------------------|---------------------|
+| **Ctrl+Alt+J** | **^G**                    | Multi select cursor |
+
+# Top key bindings in Intellij Idea
 | Keybind | What it does |
 | ------------- | ------------- |
 | **Alt+Up/Down** | Jump to next method |
