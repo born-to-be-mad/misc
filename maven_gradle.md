@@ -31,20 +31,33 @@ dependencies.
 
 # Gradle
 
-* `type settings.gradle`  to see the setting via Windows-cmd
-* `gradlew build` to build via Gradle Wrapper
-* `gradlew clean` to clean `build` folders
-* `gradlew test` to run tests, `build\reports\tests` folder contains test report.
-* `gradlew test -p SUBMODULE_FOLDER\` to run tests only in `SUBMODULE_FOLDER`
-* `gradle init` to create a new Gradle project via wizard.
+* `./gradle init` to create a new Gradle project via wizard.
+
+## Tasks 
+* `./gradlew tasks` to see all available tasks
+* `./gradlew build` to build via Gradle Wrapper
+* `./gradlew clean` to clean `build` folders
+* `./gradlew test` to run tests, `build\reports\tests` folder contains test report.
+* `./gradlew test -p SUBMODULE_FOLDER\` to run tests only in `SUBMODULE_FOLDER`
 
 ## Structure
 
-- `settings.gradle`
-- `gradlew/gradlew.bat` to execute via Gradle Wrapper
-- `gradle` contains wrapper
-- `.gradle` is local Gradle folder
-- `build.gradle` main Gradle file, it presents in every module.
+```
+|—— build.gradle
+|—— gradle
+    |—— wrapper
+        |—— gradle-wrapper.jar
+        |—— gradle-wrapper.properties
+|—— gradlew
+|—— gradlew.bat
+|—— settings.gradle
+```
+- file `settings.gradle` sets project name, and etc.
+    - `type settings.gradle` to see the setting via Windows-cmd
+- file `./gradlew`(Linux/Mac) and `gradlew.bat`(Windows) to execute via Gradle Wrapper
+- folder `gradle` contains wrapper
+- hidden folder `.gradle` is local Gradle cache(should not be commited)
+- file `build.gradle` main Gradle build script file, it presents in every module.
 
 ## Tricks
 
